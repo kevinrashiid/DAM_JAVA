@@ -14,14 +14,20 @@ public class PracticaScanner {
 		Scanner teclado = new Scanner(System.in); /*System.in para poder leer por teclado y
 		 									y que se guarde en la variable teclado*/
 		System.out.println("Escribe tu nombre: ");
+	
 		String nombre = teclado.nextLine(); //metodo --> nombre del objeto + funcion
 		/*nextLine coje todo lo que escribo por teclado hasta que pulso ENTER y 
 		 * lo guarda en la variable*/
 									
-		System.out.println("Tu nombre es : " + nombre);
+		System.out.println("Tu nombre es: " + nombre);
 		
 		/*cuando utilizamos Scanner tenemos que cerrarlo*/
 		teclado.close();//es para liberar el espacio de memoria donde esta teclado
+		
+		int numero;
+		numero =teclado.nextInt(); //igual que nextLine pero con numeros
+		System.out.println(numero);
+		
 	}
 }
 
