@@ -29,6 +29,12 @@ public class parOimpar {
 		System.out.println("Escribe el segundo numero");
 		int num2 = numero2.nextInt();
 		
+		if (num1 > num2) {
+			System.out.println("El numero mas grande es: " + num1);
+		}
+		else {
+			System.out.println("El numero mas grande es: " + num2);
+		}
 		
 //		System.out.println("tu primer numero es " + num1);
 //		System.out.println("tu primer numero es " + num2);
@@ -37,7 +43,6 @@ public class parOimpar {
 	}
 }
 
-//PEDIR DOS NUMERO POR SEPARADO CUAL ES DE LOS DOS ES MAYOR
 
 
 
