@@ -118,5 +118,97 @@ public class HolaMundo {
 			System.out.println("Tienes 18 años");
 		}
 		System.out.println("Fin del programa");
+		
+/*===========================================*/
+
+		
+		/*  
+		si es menor de 18 
+		si tiene 18 
+		o 
+		si tiene mas de 18
+	
+		
+		int edad2 = 18;
+		if (edad2 < 18) {
+			System.out.println("Tienes menos de 18 años");
+		}
+		else if (edad2==18) { /*AÑADIMOS un else if 
+			System.out.println("Tienes EXACTAMENTE 18");
+		}
+		else {
+			System.out.println("Tienes mas de 18 años");
+		}
+		System.out.println("fin del programa de EDAD2");
+		*/
+		
+		
+	
+		/* DECIR A QUE CLASE ECONOMICA PERTENECES
+		sueldo=5000
+		dependiendo del sueldo
+		2500 clase media 
+		10.000 clase alta
+		1000 clase baja
+		*/
+		/*int sueldo = 5000  ;
+		if (sueldo < 1000) {
+			System.out.println("TIENES UN SUELDO BAJO, NO PAGAS IMPUESTOS");
+		}
+		else if(sueldo >= 1000 && sueldo < 10000) {
+			System.out.println("Clase media PAGAS 10%");
+		}
+		else if(sueldo >= 10000 ) {
+			System.out.println("Clase alta PAGAS 50%");
+		}
+		else {
+			System.out.println("NO TIENES SUELDO!!!");
+		}*/
+		
+		
+		/*
+		 IGUAL QUE EL ANTERIOR PERO HECHO POR EL PROFE
+		double sueldo = 700;
+		if (sueldo < 1000) { 
+			System.out.println("Tu sueldo es menor a 1000");
+		}
+		else if (sueldo < 10000){
+			System.out.println("tu sueldo es mayor a 1000 pero menor que 10000");
+		}
+		else {
+			System.out.println("tu sueldo es mayor a 10000");
+		}
+		*/
+		
+		/*CALCULAR EL SUELDO NETO SEGUN LO QUE COBRES
+		double sueldo = 30000;
+		double neto = 0;
+		if (sueldo < 1000) { 
+			System.out.println("Tu sueldo es menor a 1000 - no pagas IMPUESTOS");
+		}
+		else if (sueldo < 10000){
+			//neto = sueldo * 0.9;
+			neto = sueldo - (sueldo *10/100); //el profe lo soluciono asi
+			System.out.println("Cobras " + sueldo + " tu sueldo es mayor a 1000 pero menor que 10000 PAGAS UN 10% SERIA: " + neto);
+		}
+		else {
+			//neto = sueldo/2; //yo lo hice asi
+			neto = sueldo - (sueldo *50/100); //linea del profe
+			System.out.println("tu sueldo es mayor a 10000 PAGAS 50% tu sueldo seria; " + neto);
+		}
+		*/
+		//TIPO DE DATO CHAR
+		char letra ='X'; //comillas simples -- solo podemos meter UNA LETRA
+		String otraLetra = "X"; //comillas dobles -- podemos poner varias letras
+		
+		//blucle que saca del 0 al 9
+		/*for (int i=0; i<10; i++)
+			System.out.println(i); 
+
+		for (int i=0; i<10; i++) {
+			System.out.println(i);
+			//System.out.println("i");  i i i i i i i i i i i
+		}
+		*/
 	}
 }
