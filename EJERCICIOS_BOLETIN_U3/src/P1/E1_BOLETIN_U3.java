@@ -58,6 +58,14 @@ public class E1_BOLETIN_U3 {
 //		}
 		
 		
+//		/*===============EJERCICIO 4==============================*/
+/*Escribir un programa donde se muestren todos los números divisibles por 7 menores a
+10000*/
+		for (int i=0; i < 1000; i++) {
+			if(i%7==0) {
+				System.out.println(i);
+			}
+		}
 	}
 }
 
