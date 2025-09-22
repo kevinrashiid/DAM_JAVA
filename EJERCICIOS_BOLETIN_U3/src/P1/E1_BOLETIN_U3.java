@@ -107,8 +107,29 @@ public class E1_BOLETIN_U3 {
 		//		/*===============EJERCICIO 7==============================*/
 		/*Escribir un programa que pida un número por teclado al usuario que simule ser el precio de
 		 * un artículo y escriba el resultado de aplicarle el IVA del 21%*/
-
-
+		//		Scanner teclado = new Scanner(System.in);
+		//		System.out.println("CALCULO EL 21% DE UN PRECIO");
+		//		double articulo = teclado.nextInt();
+		//		double iva;
+		//		iva = articulo*0.21 ;
+		//		articulo=articulo - iva;
+		//		System.out.println(articulo);
+		
+		
+		
+		//			/*===============EJERCICIO 8==============================*/
+		//		Escribir un programa que reciba por teclado el importe de una cantidad a pagar en euros
+		//		(puede tener decimales) y el número de meses que contamos para pagarla (tiene que ser un
+		//		número entero) y nos devuelva el dinero que tendríamos que pagar cada mes. No aplicamos
+		//		intereses de ningún tipo y redondeamos a dos decimales
+		Scanner teclado = new Scanner(System.in);
+		Scanner teclado2 = new Scanner(System.in); //tengo que crear un scanner por cada entrada por teclado que hago
+		System.out.print("INTRODUCE EL TOTAL A PAGAR: ");
+		double total = teclado.nextDouble();
+		System.out.print("CUANTOS MESES TIENES PARAR PAGARLO: ");
+		int mes =teclado2.nextInt();
+		double mensualidad = total/mes ;
+		System.out.println("tienes que pagar " + mensualidad + "€");
 
 	}
 }
