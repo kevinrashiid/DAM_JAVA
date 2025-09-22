@@ -41,17 +41,33 @@ public class ComparacionWhilfor {
 		
 		
 		/*ASI SE PODRIA HACER CON EL DO WHILE*/
-		Scanner numero2 = new Scanner(System.in);
-		int tecla2 =9;
-		do { 
+//		Scanner numero2 = new Scanner(System.in);
+//		int tecla2 =9;
+//		do { 
+//			System.out.println("Escribe un entero 0 para salir: ");
+//			tecla2  = numero2.nextInt(); // CAMBIAMOS EL VALOR DE LA VARIABLE HASTA ESCRIBAMOS 0
+//		}while (tecla2 != 0); //SOLO en do while el ; (punto y coma) de esta linea es OBLIGATORIO
+//		System.out.println("Bucle termiando haz puesto " + tecla2);
+//		
+		
+		/*======= ESTO NUNCA SE DEBE DE HACER ESTE CODIGO ES MUY TIPICO DE DE CHATGPT===================*/
+		Scanner numero1 = new Scanner(System.in);
+		int tecla =9;
+		while (true) { 
 			System.out.println("Escribe un entero 0 para salir: ");
-			tecla2  = numero2.nextInt(); // CAMBIAMOS EL VALOR DE LA VARIABLE HASTA ESCRIBAMOS 0
-		}while (tecla2 != 0);
-		System.out.println("Bucle termiando haz puesto " + tecla2);
+			tecla  = numero1.nextInt(); // CAMBIAMOS EL VALOR DE LA VARIABLE HASTA ESCRIBAMOS 0
+			System.out.println(tecla);
+			if (tecla ==0)
+				break;
+		}
+		System.out.println("Bucle termiando haz puesto " + tecla);
+		
 		
 		//LA CONDICION DEL WHILE TIENE QUE DAR TRUE PARA QUE SE REPITA
 		//REPITE LO QUE TIENE EN SU BLOQUE HASTA QUE SE CUMPLE SU CONDICION
 		
+		
+		//break funciona rompiendo el bucle en el que esta 
 		
 	}
 }
