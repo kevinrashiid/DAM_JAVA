@@ -37,6 +37,8 @@ public class parOimpar {
 		else {
 			System.out.println("El numero mas grande es: " + num2);
 		}
+		numero1.close();
+		numero2.close();
 		
 //		System.out.println("tu primer numero es " + num1);
 //		System.out.println("tu primer numero es " + num2);
