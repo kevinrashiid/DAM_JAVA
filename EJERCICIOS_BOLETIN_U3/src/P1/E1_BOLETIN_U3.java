@@ -241,11 +241,53 @@ public class E1_BOLETIN_U3 {
 		//Escribir un programa que sirva como asistente para un juego de rol. Tu programa debería de
 		//pedir por teclado el número de dados que se van a tirar y el número de caras de estos (4, 6,
 		//8, 12, etc.) A continuación debería de hacer la tirada y mostrarla
+		//ESTA ERA MI SOLUCION PERO NO ES MUY enrevesado
+		
+		/*
 		Scanner teclado =new Scanner(System.in);
 		System.out.println("CUANTOS DADOS VAS A TIRAR?:  ");
 		int numDados = teclado.nextInt();
-		System.out.println("Cuantas caras tiene tus dados");
+		System.out.println("Cuantas caras tienen tus dados");
+		int numCarasFin = teclado.nextInt();
+		int inicio= 1;//inicio 1 por que siempre el menor numero de un dado va ser 1
 		
 		
+		if (numDados==1) {
+			System.out.println("VAS A UTILIZAR " + numDados + " DADO CON " + numCarasFin + " CARAS");
+			int tirada= (int)(Math.random()*(numCarasFin-inicio+1)+inicio)*numDados;
+			System.out.println("DADO UNO --> " + tirada);
+		}
+		else if (numDados==2) {
+			System.out.println("VAS A UTILIZAR " + numDados + " DADOS CON " + numCarasFin + " CARAS");
+			int tirada1= (int)(Math.random()*(numCarasFin-inicio+1)+inicio)*numDados;
+			int tirada2= (int)(Math.random()*(numCarasFin-inicio+1)+inicio)*numDados;
+		
+			System.out.println("DADO UNO, SALIO --> " + tirada1);
+			System.out.println("DADO DOS, SALIO --> " + tirada2);
+			System.out.println("=====================");
+			System.out.println("TOTAL: "+ (tirada1+tirada2));// entre () por que se tiene que hacer la suma no es una concatenacion
+															
+		}
+		else if (numDados==3) {
+			System.out.println("VAS A UTILIZAR " + numDados + " DADOS CON " + numCarasFin + " CARAS");
+			int tirada3= (int)(Math.random()*(numCarasFin-inicio+1)+inicio)*numDados;
+			int tirada4= (int)(Math.random()*(numCarasFin-inicio+1)+inicio)*numDados;
+			int tirada5= (int)(Math.random()*(numCarasFin-inicio+1)+inicio)*numDados;
+		
+			System.out.println("DADO UNO, SALIO --> " + tirada3);
+			System.out.println("DADO DOS, SALIO --> " + tirada4);
+			System.out.println("DADO TRES, SALIO --> " + tirada5);
+			System.out.println("=====================");
+			System.out.println("TOTAL: "+ (tirada3+tirada4+tirada5));// entre () por que se tiene que hacer la suma no es una concatenacion
+															
+		}
+		teclado.close();
+		*/
 	}
 }
+
+
+
+
+
+
