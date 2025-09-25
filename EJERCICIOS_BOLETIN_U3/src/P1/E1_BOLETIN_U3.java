@@ -258,18 +258,19 @@ public class E1_BOLETIN_U3 {
 		//pedir por teclado el número de dados que se van a tirar y el número de caras de estos (4, 6,
 		//8, 12, etc.) A continuación debería de hacer la tirada y mostrarla
 		//ESTA ERA MI SOLUCION PERO NO ES MUY enrevesado
-		
 		/*
-		 Scanner teclado =new Scanner(System.in);
+		Scanner teclado =new Scanner(System.in);
 		System.out.println("NUMERO DE DADOS: ");
 		int dados = teclado.nextInt();
 		System.out.println("CARAS DEL DADO PUENDEN SER 4 - 6 - 8 - 12: ");
 		int caras=teclado.nextInt();
-		
-		for(int i=0;i!=dados; i++) {
+		int contador=0;
+		for(int i=0;i<dados; i++) { //ver la explicacion de este for
+			contador++;
 			int tirada=(int)(Math.random()*(caras)+1);
-			System.out.println("TIRADA: "+tirada);
+			System.out.println("Dado: "+contador+ " --> " +tirada);
 		}
+		teclado.close();
 		*/
 		
 		
@@ -279,19 +280,30 @@ public class E1_BOLETIN_U3 {
 		(¡no existen!). En el caso de meter un número impar de caras el programa debería de
 		informarnos de que es erróneo y volver a preguntarnos por este dato.*/
 		
+		
 		Scanner teclado =new Scanner(System.in);
+		
 		System.out.println("NUMERO DE DADOS: ");
 		int dados = teclado.nextInt();
+
 		System.out.println("CARAS DEL DADO PUENDEN SER 4 - 6 - 8 - 12: ");
 		int caras=teclado.nextInt();
-		while(caras%2==0)	{
-			for(int i=0;i!=dados; i++) {
-				int tirada=(int)(Math.random()*(caras)+1);
-				System.out.println("TIRADA: "+tirada);
+		int contador =0;
+
+		while(caras%2!=0)	{
+
+			for(int i=0;i<dados; i++) {
+				contador++;
+				int tirada=(int)(Math.random()*caras)+1;
+				System.out.println("DADO: "+contador+" --> " +tirada);
 			}
-			System.out.println("numero de caras introducido IMPAR");
+//			if(caras%2!=0)
+//				caras++;
+//			if(caras%2!=0) {
+//			System.out.println("te vuelvo a preguntar las que tienen que ser pares: ");
+//			caras=teclado.nextInt();
+//			}
 		}
-		
 	}
 }
 
