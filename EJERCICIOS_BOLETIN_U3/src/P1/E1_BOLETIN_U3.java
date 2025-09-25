@@ -288,15 +288,19 @@ public class E1_BOLETIN_U3 {
 
 		System.out.println("CARAS DEL DADO PUENDEN SER 4 - 6 - 8 - 12: ");
 		int caras=teclado.nextInt();
-		int contador =0;
+		//int contador =0;
 
 		while(caras%2!=0)	{
+			System.out.println("no existe dados con caras impares INTRODUCE NUEVA CARA");
+			caras=teclado.nextInt();
 
 			for(int i=0;i<dados; i++) {
-				contador++;
+				//contador++;
 				int tirada=(int)(Math.random()*caras)+1;
-				System.out.println("DADO: "+contador+" --> " +tirada);
+				System.out.println("DADO: " + i +" --> " + tirada);
 			}
+			//REACER EL CODIGO
+			
 //			if(caras%2!=0)
 //				caras++;
 //			if(caras%2!=0) {
