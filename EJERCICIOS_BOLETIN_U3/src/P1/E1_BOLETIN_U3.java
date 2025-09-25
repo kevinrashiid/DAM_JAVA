@@ -220,13 +220,11 @@ public class E1_BOLETIN_U3 {
 		// ese resultado
 //		int inicio = 1;
 //		int fin = 6;
-//		
 //		int contador=0;
+//		int azar=1;//
+//		int azar2=0;//
 //		
-//		int azar=1;
-//		int azar2=0;
-//		
-//		while (azar!=azar2) {	
+//		while (azar!=azar2) {	//un while por que no se cuantos veces tengo que tirar los dados hasta que salgan iguales
 //			azar = (int) (Math.random() * (fin - inicio + 1) + inicio);
 //			azar2 = (int) (Math.random() * (fin - inicio + 1) + inicio);
 //			System.out.println("DADO 1 --> : " + azar);
@@ -234,8 +232,26 @@ public class E1_BOLETIN_U3 {
 //			System.out.println("  ");//SEPARACION PARA QUE SE VEA MAS CLARO 
 //			contador++;
 //		}
-//		System.out.println("Ha entrado al bucle " + contador + " veces");
+//		System.out.println("Haz hecho " + contador + " tiradas");
 //		
+		/*SOLUCION PROFE*/
+	
+		/*int azar=1;
+		int azar2=0;
+		int contador=0;
+		do {
+			azar = (int) (Math.random() * ((6)) + 1);
+			azar2 = ( int) (Math.random() * ((6)) + 1);
+			System.out.println("DADO 1 --> : " + azar);
+			System.out.println("DADO 2 --> : " + azar2);
+			System.out.println("  ");//SEPARACION PARA QUE SE VEA MAS CLARO 
+			contador++;
+		}while(azar!=azar2);
+		System.out.print("He tenido que tirar los dados  "+ contador);
+		if (contador==1) {
+			System.out.print(" vez");
+		}else
+			System.out.print(" veces");*/
 		
 		// *===============EJERCICIO 12==============================*/
 		//Escribir un programa que sirva como asistente para un juego de rol. Tu programa debería de
@@ -244,45 +260,38 @@ public class E1_BOLETIN_U3 {
 		//ESTA ERA MI SOLUCION PERO NO ES MUY enrevesado
 		
 		/*
-		Scanner teclado =new Scanner(System.in);
-		System.out.println("CUANTOS DADOS VAS A TIRAR?:  ");
-		int numDados = teclado.nextInt();
-		System.out.println("Cuantas caras tienen tus dados");
-		int numCarasFin = teclado.nextInt();
-		int inicio= 1;//inicio 1 por que siempre el menor numero de un dado va ser 1
+		 Scanner teclado =new Scanner(System.in);
+		System.out.println("NUMERO DE DADOS: ");
+		int dados = teclado.nextInt();
+		System.out.println("CARAS DEL DADO PUENDEN SER 4 - 6 - 8 - 12: ");
+		int caras=teclado.nextInt();
 		
-		
-		if (numDados==1) {
-			System.out.println("VAS A UTILIZAR " + numDados + " DADO CON " + numCarasFin + " CARAS");
-			int tirada= (int)(Math.random()*(numCarasFin-inicio+1)+inicio)*numDados;
-			System.out.println("DADO UNO --> " + tirada);
+		for(int i=0;i!=dados; i++) {
+			int tirada=(int)(Math.random()*(caras)+1);
+			System.out.println("TIRADA: "+tirada);
 		}
-		else if (numDados==2) {
-			System.out.println("VAS A UTILIZAR " + numDados + " DADOS CON " + numCarasFin + " CARAS");
-			int tirada1= (int)(Math.random()*(numCarasFin-inicio+1)+inicio)*numDados;
-			int tirada2= (int)(Math.random()*(numCarasFin-inicio+1)+inicio)*numDados;
-		
-			System.out.println("DADO UNO, SALIO --> " + tirada1);
-			System.out.println("DADO DOS, SALIO --> " + tirada2);
-			System.out.println("=====================");
-			System.out.println("TOTAL: "+ (tirada1+tirada2));// entre () por que se tiene que hacer la suma no es una concatenacion
-															
-		}
-		else if (numDados==3) {
-			System.out.println("VAS A UTILIZAR " + numDados + " DADOS CON " + numCarasFin + " CARAS");
-			int tirada3= (int)(Math.random()*(numCarasFin-inicio+1)+inicio)*numDados;
-			int tirada4= (int)(Math.random()*(numCarasFin-inicio+1)+inicio)*numDados;
-			int tirada5= (int)(Math.random()*(numCarasFin-inicio+1)+inicio)*numDados;
-		
-			System.out.println("DADO UNO, SALIO --> " + tirada3);
-			System.out.println("DADO DOS, SALIO --> " + tirada4);
-			System.out.println("DADO TRES, SALIO --> " + tirada5);
-			System.out.println("=====================");
-			System.out.println("TOTAL: "+ (tirada3+tirada4+tirada5));// entre () por que se tiene que hacer la suma no es una concatenacion
-															
-		}
-		teclado.close();
 		*/
+		
+		
+		
+		// *===============EJERCICIO 13==============================*/
+		/*Modifica el programa anterior para que no admita dados con un número de caras impares
+		(¡no existen!). En el caso de meter un número impar de caras el programa debería de
+		informarnos de que es erróneo y volver a preguntarnos por este dato.*/
+		
+		Scanner teclado =new Scanner(System.in);
+		System.out.println("NUMERO DE DADOS: ");
+		int dados = teclado.nextInt();
+		System.out.println("CARAS DEL DADO PUENDEN SER 4 - 6 - 8 - 12: ");
+		int caras=teclado.nextInt();
+		while(caras%2==0)	{
+			for(int i=0;i!=dados; i++) {
+				int tirada=(int)(Math.random()*(caras)+1);
+				System.out.println("TIRADA: "+tirada);
+			}
+			System.out.println("numero de caras introducido IMPAR");
+		}
+		
 	}
 }
 
