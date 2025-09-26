@@ -408,7 +408,8 @@ public class E1_BOLETIN_U3 {
 		//se detenga cuando salga el 666. Los números que ha tenido que generar tu programa hasta
 		//aparecer el 666 son los que restan para el apocalipsis. Tu programa debería de indicarlo con
 		//un mensaje tétrico (¡Faltan 236 días para que se acabe todo! por ejemplo)
-		int inicio=1;
+	
+		/*int inicio=1;
 		int fin=1000;
 		int infinito;//la creamos fuera para que se pueda utilizar fuera del bucle
 		//un do while por que no sabemos cuando va salir el 666
@@ -423,9 +424,25 @@ public class E1_BOLETIN_U3 {
 		}while(infinito!=666); // mientras que infinito sea diferente a 666 (true) vuelve al bucle
 								//si es igual se para
 		System.out.print("¡Faltan " +contador+ " días para el APOCALIPSIS");
-
+		
+		
+		*/
 		//===============EJERCICIO 19==============================
-
+		//Escribir un programa que pida un número por teclado y nos muestre sus divisores
+		Scanner teclado=new Scanner(System.in);
+		System.out.println("DAME UN NUMERO Y TE DIRE SUS DIVISORES");
+		int numero=teclado.nextInt();
+		
+		for (int i = 1 ; i<=numero ; i++) {
+			if(numero%i==0) {
+				System.out.println("Los divisores de "+numero+" son: "+i);
+			}
+			
+		}
+		//===============EJERCICIO 20==============================
+		//Escribir un programa que nos pida tres números por teclado en cualquier orden y nos los
+		//muestre en pantalla ordenados de menor a mayor
+			
 	}
 }
 
