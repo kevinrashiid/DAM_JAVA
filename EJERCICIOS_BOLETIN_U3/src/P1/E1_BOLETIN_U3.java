@@ -348,7 +348,8 @@ public class E1_BOLETIN_U3 {
 		//mayor que el segundo funcione correctamente. Es decir, si metemos en primer lugar el 50 y
 		//en segundo el 10 nos debería de generar un número aleatorio entre el 10 y el 50 (y no entre el
 		//50 y el 10 que no tiene mucha lógica…)
-		Scanner entrada=new Scanner(System.in);
+		
+		/*Scanner entrada=new Scanner(System.in);
 		System.out.print("Primer numero --> ");
 		int numero1=entrada.nextInt();
 		System.out.print("Segundo numero --> ");
@@ -362,7 +363,69 @@ public class E1_BOLETIN_U3 {
 		//siempre el mas grande - el mas pequeño +1 y le sumas el mas pequeño
 		int aleatorio=(int)(Math.random()*(numero2-numero1+1)+numero1); //generacion de un numero entre dos numeros 
 		System.out.println("EL NUMERO ALETARIO ENTRE " + numero1 + " y " + numero2 + " ES "+ aleatorio);
+		*/
 		//PREGUNTAR AL PROFE SI ESTA BIEN
+		
+		//===============EJERCICIO 16==============================
+		//Escribir un programa que genere seis números aleatorios entre el 1 y el 49 (simulando una
+		//lotería primitiva). Por el momento no te preocupes de que algunos números puedan salir
+		//repetidos. Ya resolveremos eso más adelante.
+		/*
+		int inicio = 1;
+		int fin=49;
+		int contador=1;
+		for(int i=0;i<6;i++) {
+			int aleatorio=(int)(Math.random()*(fin-inicio+1)+inicio);
+			System.out.println("El numero--> "+contador+ " es "+aleatorio);
+			contador++;
+		}
+		*/
+		
+		
+		//===============EJERCICIO 17==============================
+		//Escribir un programa que nos permita generar una quiniela. Para ello nos debe generar
+		//quince números aleatorios entre el 1 y el 3. Recuerda que los resultados válidos son 1 X o 2,
+		//así que si te sale un 3 lo que tienes que imprimir en pantalla es una X
+		
+		/*
+		int inicio=1;
+		int fin=3;
+		int quinceNum;
+		for(int i=0;i<15;i++) { //generamos 15 numeros
+			quinceNum=(int)(Math.random()*(fin-inicio+1)+inicio); //que sean entre 1 y 3
+			if(quinceNum==3) { //esos 15 numeros alguno es 3 que saque 3
+				System.out.println("X");
+			}
+			else if(quinceNum!=3) { //si es diferente a 3 que saque los que puede que son 1 o 2
+				System.out.println(quinceNum);
+			}
+		}
+		*/
+		
+		
+		//===============EJERCICIO 18==============================
+		//Escribe un programa que genere números aleatorios entre el 1 y el 1000 sin parar y que sólo
+		//se detenga cuando salga el 666. Los números que ha tenido que generar tu programa hasta
+		//aparecer el 666 son los que restan para el apocalipsis. Tu programa debería de indicarlo con
+		//un mensaje tétrico (¡Faltan 236 días para que se acabe todo! por ejemplo)
+		int inicio=1;
+		int fin=1000;
+		int infinito;//la creamos fuera para que se pueda utilizar fuera del bucle
+		//un do while por que no sabemos cuando va salir el 666
+		//un contador por que tenemos que contar cuantas veces entra al bucle 
+		//y ese numero sera el numero de dias que falta para el fin
+		int contador=0;
+						
+		do {
+			infinito=(int)(Math.random()*(fin-inicio+1)+inicio);//numero ramdons entre 1 y 1000
+			System.out.println(infinito );
+			contador++;
+		}while(infinito!=666); // mientras que infinito sea diferente a 666 (true) vuelve al bucle
+								//si es igual se para
+		System.out.print("¡Faltan " +contador+ " días para el APOCALIPSIS");
+
+		//===============EJERCICIO 19==============================
+
 	}
 }
 
