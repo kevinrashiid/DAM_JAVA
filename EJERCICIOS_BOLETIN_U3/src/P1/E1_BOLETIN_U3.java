@@ -478,9 +478,40 @@ public class E1_BOLETIN_U3 {
 		
 		//===============EJERCICIO 21==============================
 		//Escribir un programa que pida por teclado un número al usuario y calcule si es primo o no
-		Scanner teclado=new Scanner(System.in);
+		//numero primo es SOLo divisible entre 1 y el mismo numero y ningun otro
+		/*Scanner teclado=new Scanner(System.in);
 		System.out.println("TU NUMERO ES PRIMO?? --> ");
 		int numPrimo=teclado.nextInt();
+		SIN HACER
+		*/
+		
+		
+		
+		//===============EJERCICIO 22==============================
+		//Escribir un programa que genere un número primo aleatorio entre el 10.000.000 y el
+		//50.000.000
+		boolean esPrimo; //variable como bandera
+		int azar;
+		//este algoritmo es el peor codigo que podemos hacer pero funciona
+		do {
+			azar =(int) (Math.random()*(400000000+1))+100000000; //generar numero aleatorio
+			int raiz=(int)Math.sqrt(azar)+1; 
+			esPrimo=true; // estamos dando vuelta 
+			System.out.println("Probando el numero "+ azar+ "...");
+		//empezamos por 3 por que por 0 no se puede dividir y por 1 tampoco
+		//por que es primo y el 2 es el unico primo
+			if (azar%2==0)
+				esPrimo=false;//con esto me aseguro que el numero generado sea IMPAR
+			//divisor<azar && esPrimo==true dos condiciones que se tienen que cumplir
+			for(int divisor=3; divisor<raiz && esPrimo==true; divisor+=2) { //con el += son saltamos los pares
+				if (azar%divisor==0) {
+					esPrimo=false;	
+				}
+			}
+		}while(esPrimo == false);
+		System.out.println("El numero " + azar + " es primo" );
+		
+
 	}
 }
 
