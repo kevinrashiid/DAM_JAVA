@@ -19,27 +19,16 @@ public class ejercicios_Boletin2 {
 		System.out.println("Tercera palabra --->");
 		String letra3=teclado.nextLine();
 		
-//		String primera=letra1.compareTo(letra2);
-		
-		if (letra1.compareTo(letra2)==0) {
-			System.out.println("son iguales");
-		}else if(letra1.compareTo(letra2)>0)
-			System.out.println(letra1+"va detras de"+letra2);
-		else if(letra2.compareTo(letra3)>0) {
-			System.out.println(letra2 +" va detras de "+ letra3);
-		}
-		else
-			System.out.println("error");
-	
+		//String primera=letra1.compareTo(letra2);
+		String primera="";
+		String segunda="";
+		String tercera="";
 		
 		
-		
-		
-		
-		
-		
-	}
+
+	}	
 }
+
 
 
 
