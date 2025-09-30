@@ -59,10 +59,20 @@ public class CadenaTexto {
 			System.out.println(nombre1 +" va delante de " +nombre2);
 		
 		
+		
 		//SACANDO trozos de cadenas
 		//empezando a contar desde 0
 		System.out.println(nombre1.substring(3));//devolveria desde la R hasta el final
 		System.out.println(nombre1.substring(3,7));//el 3 esta incluido pero el segundo no
+		
+		//CADENA VACIA Y CADENA NULA
+		String cadenaVacia="";
+		String cadenaNula;
+		String cadenaNula2= null;
+		
+		if (cadenaVacia.isEmpty()) {
+			System.out.println("LA CADENA ESTA VACIA");
+		}
 	}
 }
 
