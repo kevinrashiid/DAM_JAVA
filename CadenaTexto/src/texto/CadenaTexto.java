@@ -8,12 +8,14 @@ public class CadenaTexto {
 		String texto1="hola mundo";
 		String texto2=new String("Hola mundo cruel");
 		
+		//con el = modificamos el texto1 y reasignamos
 		texto1= texto1 + " cruel";
 		System.out.println(texto1);
 		
-		//con el = modificamos el texto1 y reasignamos
 		texto1 =texto1.concat(" Bienvenidos al goya");// es lo mimo que esto texto1= texto1 + " cruel";
-		texto1.concat(" Bienvenidos al goya");//por ejemplo aqui no modificamos
+		
+		//por ejemplo aqui no modificamos solo mostramos por pantalla
+		texto1.concat(" Bienvenidos al goya");
 		System.out.println(texto1);
 		
 		//esto es lo mismo
@@ -21,7 +23,7 @@ public class CadenaTexto {
 		System.out.println(texto1.concat(" Bienvenidos al goya"));
 		
 		int precio=55;
-		System.out.println("El precio es de "+precio+" euros");//el + como sabe que no puede sumar el texto une/concatena
+		System.out.println("El precio es de "+precio+" euros");//el + como sabe que no puede sumar el texto lo une o concatena
 		
 		System.out.println(texto2.length());//devuelve longitud de una cadena
 		System.out.println(texto2.charAt(3));//devuelve el caracter num 3 se empieza a contar desde 0
@@ -50,10 +52,10 @@ public class CadenaTexto {
 		
 		
 		
-		if (nombre1.compareTo(nombre2)==0) {//compareTo devuelve un numero 0 cuando las dos cadenas son iguales 
+		if (nombre1.compareTo(nombre2)==0) {//compareTo devuelve un  0 cuando las dos cadenas son iguales 
 			System.out.println("Son iguales");
-		}
-		else if(nombre1.compareTo(nombre2)>0) //si duvuelve un numero mayor que 0 quiere decir que la primera cadena es mayor que la segunda
+		}//si duvuelve un numero mayor que 0 quiere decir que la primera cadena es mayor que la segunda
+		else if(nombre1.compareTo(nombre2)>0) 
 			System.out.println(nombre1 + " va detras de "+ nombre2);
 		else
 			System.out.println(nombre1 +" va delante de " +nombre2);
