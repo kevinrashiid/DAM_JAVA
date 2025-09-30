@@ -51,7 +51,7 @@ public class CadenaTexto {
 			System.out.println("No son iguales");
 		
 		
-		
+		//para organizar alfabeticamente
 		if (nombre1.compareTo(nombre2)==0) {//compareTo devuelve un  0 cuando las dos cadenas son iguales 
 			System.out.println("Son iguales");
 		}//si duvuelve un numero mayor que 0 quiere decir que la primera cadena es mayor que la segunda
@@ -68,15 +68,50 @@ public class CadenaTexto {
 		System.out.println(nombre1.substring(3,7));//el 3 esta incluido pero el segundo no
 		
 		//CADENA VACIA Y CADENA NULA
-		String cadenaVacia="";
-		String cadenaNula;
-		String cadenaNula2= null;
+		String cadenaVacia=""; //esta inicializada pero esta vacia
 		
-		if (cadenaVacia.isEmpty()) {
+		//ESTOS DOS CASOS SI SE UTILIZAN DARA ERROR 
+		String cadenaNula;  //
+		String cadenaNula2= null; 
+		
+		if (cadenaVacia.isEmpty()) {//comprobar si la cadena esta vacia TRUE o FALSE
 			System.out.println("LA CADENA ESTA VACIA");
 		}
+		
+		
+		//COMPARAR SI LA CADENA ESTA VACIA
+		if (cadenaVacia.isEmpty()) {//comprobar si la cadena esta vacia TRUE o FALSE
+			System.out.println("LA CADENA ESTA VACIA");
+		}
+		if (cadenaVacia.equals("")) {//comprobar si la cadena esta vacia TRUE o FALSE
+			System.out.println("LA CADENA ESTA VACIA");
+		}
+		if (cadenaVacia.compareTo("")==0) {//comprobar si la cadena esta vacia TRUE o FALSE
+			System.out.println("LA CADENA ESTA VACIA");
+		}
+		
+		String texto="Hola Mundo soy java";
+		//la cadena dada tiene que coincidir exactamente
+		System.out.println(texto.indexOf("m"));//devuelve el numero del caracter cuando encuentre la primera (m)
+		System.out.println(texto.indexOf("A")); //si no lo encuentra devuelve -1
+		//indexOf funciona tambien con cadenas por ejemplo
+		System.out.println(texto.indexOf("soy"));//devuelve la cadena de la primera palabra s
+		System.out.println(texto.indexOf("soY")); //aqui devolveria -1
+		
+		System.out.println(texto.replace(" ", "/"));//todos los espacios en blanco los sustituye por un /
+		//como vemos no modifica el texto solo se modifica si se VUELVE ASIGNAR
+		System.out.println(texto);
+		
+		//como aqui, que se a modificado la variable
+		texto = texto.replace(" ", "=");
+		System.out.println(texto);
+
 	}
 }
+
+
+
+
 
 
 
