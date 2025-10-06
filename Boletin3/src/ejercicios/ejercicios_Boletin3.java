@@ -115,50 +115,108 @@ public class ejercicios_Boletin3 {
 		//Escribir un programa que pida por teclado una cadena de texto y la escriba en sin
 		//espacios en blanco (si los hubiera). Además, nos debe de decir el número de espacios
 		//que ha encontrado y suprimido.
+		/*
+		//==================SIN ACABAR=======================
 		Scanner teclado= new Scanner(System.in);
+		
 		String espacio=" ";
 		System.out.print("texto--> ");
+		
 		String texto=teclado.nextLine();
+		
 		int contador=0;
 		
-		for(int i=0;i<texto.length();i++) {
+		for(int i=0; i<texto.length(); i++) {
 				texto=texto.replace(" ", "");
-				if(texto.charAt(i)==espacio) {
-					contador++;
+				if(espacio.equals(texto.charAt(i))) {
+					contador=contador+1;
 				}
 		}
-		System.out.println(contador);
-		System.out.println(texto);
+		*/
+		//SOLUCION DEL PROFE PARA COGER SOLTURA CON LOS BUCLES
+		/*Scanner teclado= new Scanner(System.in);
 		
-						
-				//================ejercicio 4=============================
-				//Escribir un programa que pida por teclado una cadena de texto y la escriba en sin
-				//espacios en blanco (si los hubiera). Además, nos debe de decir el número de espacios
-				//que ha encontrado y suprimido
-				Scanner teclado= new Scanner(System.in);
-				System.out.println("INTRODUCE TEXTO CON ESPACIOS");
-				String textoConEspacio=teclado.nextLine();
-				int contador=0;
-				String espacio=" ";
-				textoConEspacio=textoConEspacio.replace(" " , "");
-				System.out.println(textoConEspacio);
-				//falta contar CUANTOS ESPACIO ELIMINO
+		System.out.print("texto--> ");
+		
+		String texto=teclado.nextLine();
+		
+		int contador=0;
+		String sinEspacios="";
+
+		for(int i=0; i<texto.length(); i++) {
+			if(texto.charAt(i) != ' ') {//caracteres con comillas simples ''
+				sinEspacios = sinEspacios + texto.charAt(i);
+			}else {//cuando i sea igual a un espacio sumara +1 al contador
+				contador++; 
+			}
+		}
+		System.out.println("CADENA SIN ESPACIOS ---> "+sinEspacios);
+		System.out.println("ESPACIOS ELIMINADOS --> "+contador);
+		*/
+		
+		// ================ejercicio 5=============================
+		//Escribir un programa que pida por teclado una cadena de texto y la imprima escrita al
+		//reves (es decir, si el usuario escribe Hola Mundo el programa debería de escribir
+		//odnuM aloH)
+		/*Scanner teclado =new Scanner(System.in);
+		
+		String alReves="";
+		
+		System.out.println("INTRODUCE TEXTO Y TE LO PONGO AL REVES --> ");
+
+		String texto= teclado.nextLine();
+		
+		//recoriendo el texto al reves //el i-- es para ir restando ya que vamos al reves
+		for(int i=texto.length()-1; i>=0; i--) {
+			alReves = alReves + texto.charAt(i);
+		}
+		System.out.println("CADENA AL REVES -->"+alReves);
+		*/
 		
 		
+		// ================ejercicio 6=============================
+		//Escribir un programa que pida por teclado una cadena de texto y la separe en dos
+		//distintas. En la primera de ellas estarían las letras que ocupan una posición par y en la
+		//segunda las que ocupan una posición impar. Por ejemplo, si el usuario escribe Hola
+		//Mundo la primera cadena sería Hl ud y la segunda oaMno
+		/*Scanner teclado =new Scanner(System.in);
+		System.out.print("INTRODUCE TEXTO--> ");
+		String texto= teclado.nextLine();
+		String pares="";
+		String impares="";
+		for(int i=0; i<texto.length(); i++) {
+			if(i%2==0) {//la i es par??
+				pares = pares + texto.charAt(i); //si es par la añadimos a pares
+			}else {//si no es par SI O SI es impar
+				impares = impares + texto.charAt(i); //pues lo añadimos a impares
+			}
+		}
+		System.out.println(pares);
+		System.out.println(impares);
+		*/
 		
+		// ================ejercicio 8=============================
+		//		Escribir un programa que reciba una cadena de texto por teclado y la muestre sin
+		//		vocales. Por ejemplo, si recibe la cadena “Hola Mundo” debería de devolver “Hl Mnd”.
+		Scanner teclado = new Scanner(System.in);
+		System.out.print("INTRODUCE TEXTO--> ");
+		String texto = teclado.nextLine();
+		String sinVocales = "";
+		String minusculas = texto.toLowerCase();
+		for (int i = 0; i < texto.length(); i++) {
+			char c = minusculas.charAt(i);
+			switch (c) {
+			case 'a', 'e', 'i', 'o', 'u': //si es VOCAL no lo añade
+				break;
+			default://el default es como un else
+				//si es todo lo demas (consonantes) lo añade 
+				sinVocales = sinVocales + texto.charAt(i);
+			}
+		}
+		System.out.println(sinVocales);
 		
 	}
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
