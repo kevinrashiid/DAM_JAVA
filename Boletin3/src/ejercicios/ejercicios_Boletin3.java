@@ -198,6 +198,7 @@ public class ejercicios_Boletin3 {
 		// ================ejercicio 8=============================
 		//		Escribir un programa que reciba una cadena de texto por teclado y la muestre sin
 		//		vocales. Por ejemplo, si recibe la cadena “Hola Mundo” debería de devolver “Hl Mnd”.
+		/*
 		Scanner teclado = new Scanner(System.in);
 		System.out.print("INTRODUCE TEXTO--> ");
 		String texto = teclado.nextLine();
@@ -214,9 +215,49 @@ public class ejercicios_Boletin3 {
 			}
 		}
 		System.out.println(sinVocales);
+		*/
+		// ================ejercicio 10=============================
+		//Escribe un programa que valide si un NIF español introducido por teclado es correcto.
+		//La longitud exacta de la cadena ha de ser de 9 caractéres. Los ocho primeros han de
+		//ser números comprendidos entre el 0 y el 9 y el último una letra que puede estar
+		//escrita en mayúsculas o minúsculas
+		Scanner teclado = new Scanner(System.in);
+
+		System.out.print("INTRODUCE LOS NUMEROS DE TU DNI --> ");
+		int dniNumeros = teclado.nextInt();
 		
+		System.out.println("INTRODUCE LA LETRA DE TU DNI");
+		String dniLetra = teclado.nextLine();
+		
+		String abecedario = "abcdefghijklmnopqrstuvwxyz";
+//		for (int i = 0; i < abecedario.length(); i++) {
+			if (dniNumeros <= 99999999 && abecedario.indexOf(dniLetra) != -1) {
+				System.out.println("ERES ESPAÑOL! DNI CON 9 CARACTERES");
+			} else {
+				System.out.println("NO ERES ESPAÑOL! ");
+			}
+			
+		
+		/*
+//		System.out.println(dni.substring(0,8));
+		int numeros=0;
+		for (int i = 0; i < dni.length()-1; i++) {
+			numeros=(int)(numeros + dni.charAt(i));
+			switch (numeros) {
+			case 0,1,2,3,4,5,6,7,8,9:
+				numeros=(int)(numeros+dni.charAt(i));
+			System.out.println(numeros);
+				break;
+			default:
+				System.out.println("ERROR");
+			}
+		}*/
+//		int numerosDni=numerosDni + dni.substring(0,9);
+//		int numerosDni=(int)(numerosDni + dni.substring(0,9));
+		
+		}
 	}
-}
+
 
 
 
