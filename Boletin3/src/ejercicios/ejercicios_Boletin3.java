@@ -216,12 +216,45 @@ public class ejercicios_Boletin3 {
 		}
 		System.out.println(sinVocales);
 		*/
+		// ================ejercicio 9=============================
+		//Escribir un programa que nos pida elegir entre cuatro destinos turísticos (Francia,
+		//Italia, Chile o Japón) y dependiendo de nuestra respuesta nos diga cual es la capital de
+		//nuestro destino (París, Roma, Santiago de Chile o Tokio)
+		/*Scanner teclado = new Scanner(System.in);
+		String paisElegido= teclado.nextLine();
+		
+		switch (paisElegido) {
+		case "Francia":
+			System.out.println("La capital de "+paisElegido+"es Francia");
+			break;
+			
+		case "Italia":
+			System.out.println("La capital de "+paisElegido+"es Roma");
+			break;
+			
+		case "Santiago de chile":
+			System.out.println("La capital de "+paisElegido+"es Chile");
+			break;	
+		case "Tokio":
+			System.out.println("La capital de "+paisElegido+"es Japon");
+			break;
+			default:
+			System.out.println("error");
+		
+		}
+		*/
+
+		
+		
+		
+		
 		// ================ejercicio 10=============================
 		//Escribe un programa que valide si un NIF español introducido por teclado es correcto.
 		//La longitud exacta de la cadena ha de ser de 9 caractéres. Los ocho primeros han de
 		//ser números comprendidos entre el 0 y el 9 y el último una letra que puede estar
 		//escrita en mayúsculas o minúsculas
-		Scanner teclado = new Scanner(System.in);
+		//ESTE EJERCICIO SE RESOLVERA CUANDO SEPAMOS CAPTURAR EXPECIONES
+		/*Scanner teclado = new Scanner(System.in);
 
 		System.out.print("INTRODUCE LOS NUMEROS DE TU DNI --> ");
 		int dniNumeros = teclado.nextInt();
@@ -230,35 +263,38 @@ public class ejercicios_Boletin3 {
 		String dniLetra = teclado.nextLine();
 		
 		String abecedario = "abcdefghijklmnopqrstuvwxyz";
-//		for (int i = 0; i < abecedario.length(); i++) {
+		//for (int i = 0; i < abecedario.length(); i++) {
 			if (dniNumeros <= 99999999 && abecedario.indexOf(dniLetra) != -1) {
 				System.out.println("ERES ESPAÑOL! DNI CON 9 CARACTERES");
 			} else {
 				System.out.println("NO ERES ESPAÑOL! ");
 			}
+			*/
 			
-		
-		/*
-//		System.out.println(dni.substring(0,8));
-		int numeros=0;
-		for (int i = 0; i < dni.length()-1; i++) {
-			numeros=(int)(numeros + dni.charAt(i));
-			switch (numeros) {
-			case 0,1,2,3,4,5,6,7,8,9:
-				numeros=(int)(numeros+dni.charAt(i));
-			System.out.println(numeros);
-				break;
-			default:
-				System.out.println("ERROR");
+		/*Scanner teclado = new Scanner(System.in);
+		System.out.print("INTRODUCE tu DNI --> ");
+		String dni = teclado.nextLine();
+		//System.out.println(dni.substring(0,8));
+		String abecedario = "abcdefghijklmnopqrstuvwxyz";
+		for (int i = 0; i < dni.length(); i++) {
+			if (dni.length() == 9) {
+				System.out.println("BIEN SON 9 CARACTERES");
+			} else {
+				System.out.println("TIENEN QUE SER 9 CARACTERES EXACTOS");
 			}
-		}*/
-//		int numerosDni=numerosDni + dni.substring(0,9);
-//		int numerosDni=(int)(numerosDni + dni.substring(0,9));
-		
+			if(dni.length()-1<=99999999 &&   ) {
+			}
 		}
+		//int numerosDni=numerosDni + dni.substring(0,9);
+		//int numerosDni=(int)(numerosDni + dni.substring(0,9));
+		 */
+		
+		//ELIMINAR ESPACIOS DE AL PRINCIPIO Y LOS DEL FINAL
+		String dni=" 23245235B ";
+		dni=dni.trim();
+		System.out.println(dni);
 	}
-
-
+}
 
 
 
