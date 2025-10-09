@@ -3,7 +3,6 @@ package boletin4;
 import java.util.Scanner;
 
 public class ejer_boletin4 {
-
 	public static void main(String[] args) {
 		// ================ejercicio 1=============================
 		// Escribir un programa que pida un número por teclado y calcule su factorial.
@@ -12,7 +11,8 @@ public class ejer_boletin4 {
 		// sucesivos factores que obtenemos restando uno hasta llegar a la unidad.
 		// Por ejemplo, el factorial de 6 (que se representa así 6!) sería este:
 		// 6! = 6*5*4*3*2*1 = 720
-		/*Scanner teclado = new Scanner(System.in);
+		/*
+		Scanner teclado = new Scanner(System.in);
 		System.out.println("introduce numero y te calculo sus factoriales -->");
 		int numeroPedido = teclado.nextInt();
 		int factorial = 1;
@@ -21,10 +21,34 @@ public class ejer_boletin4 {
 		}
 		System.out.println(factorial);
 		*/
-
+		
+		// ================ejercicio 2=============================
+		//En matemáticas, la sucesión de Fibonacci se trata de una serie infinita de números
+		//naturales. Los dos primeros son siempre el 0 y el 1. Los siguientes se obtienen
+		//sumando los dos anteriores. El tercero sería 1 (la suma de 0 + 1), el cuarto sería 2 (la
+		//suma de 1 + 1), el quinto 3 (la suma de 1 + 2) y así sucesivamente. La lista con los 10
+		//primeros números sería esta: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34].
+		//Queremos hacer un programa que reciba un número por teclado y nos calcule tantos
+		//números de la sucesión de fibonacci como indique ese número. Por ejemplo, si
+		//metemos un 8 la salida de tu programa debería de ser así:
+		//0,1,1,2,3,5,8,13
+		Scanner teclado =new Scanner(System.in);
+		//System.out.println("introduce numero -->");
+		//int numero =teclado.nextInt();
+		
+		int num0=0;
+		int num1=1;
+		for (int i=0 ; i<10 ; i++) { //imprimimos 10 numeros
+			System.out.print(num0 + " "); 
+			//sumamos los dos anteriores que se van actulizando 
+			//por que a num0 se le va asignar el valor antiguo de num1 
+			int nuevo=num1+num0; // SUMA DE DOS ANTERIORES
+			num0=num1; //el num1 pasa a ser el num0
+			num1=nuevo;//y el num1 se guarda el valor que dio de num1+num0
+		}
 		
 		
-		// ================ejercicio 4=============================
+		// ================ejercicio 5=============================
 		//Escribir un programa que nos diga si un número es capicúa.
 		//UN NUMERO CAPICUA ES SI SE LEE IGUAL DEL DERECHO Y DEL REVES POR EJMPLO:
 		//818 111 232
@@ -52,6 +76,10 @@ public class ejer_boletin4 {
 			System.out.println("EL NUMERO NOOO " +numeroPedido+ " ES CAPICUA\"");
 		}
 		*/
+	
+
+		
+		
 		// ================ejercicio 14=============================
 		//Escribe un programa que lea una hora por teclado en formato 24 horas (HH:MM). 
 		//Tu programa debería de decir si corresponde a la mañana (entre las 6 y las 11, ambas
@@ -66,21 +94,48 @@ public class ejer_boletin4 {
 		//2.-Caracter de separacion ==':'
 		//3.-horas entre 0>= <=23
 		//4.- Minutos entre 0>= <=59
+		/*
 		Scanner teclado = new Scanner(System.in);
 		System.out.print("INTRODUCE HORA EN FORMATO MM:HH --> ");
 		String hora= teclado.nextLine();
 		teclado.close();
 		boolean bandera=true; //bandera
 		int hhEntero=0;
-		if(hora.length()==5)	{
+		int mmEntero=0;
+		if(hora.length()==5 && hora.charAt(2)==':' && hhEntero>=0 && hhEntero<=23 && mmEntero>=0 && mmEntero<=59)	{	
+				hhEntero=Integer.parseInt(hora.substring(0,2)); //CORTAMOS LAS HORAS Y LAS CONVERTIMOS A INT
+				mmEntero=Integer.parseInt(hora.substring(3,5)); //CORTAMOS LOS MINUTOS Y LOS CONVERTIMOS A INT
+				}else {
+					bandera=false; //SI NO SE CUMPLE LO DEL IF BANDERA ES IGUAL A FALSE SALTA AL ELSE QUE ESTA DEBAJO
+				}
+		if(bandera=true) { 
+			System.out.println("la hora " + hora+" esta en un formato correcto");
+			if(hhEntero>=06 && hhEntero<=11)	{
+				System.out.println("Las "+hora+" es por la mañana");
+			}
+			else if(hhEntero>=12 && hhEntero<=19) {
+				System.out.println("Las "+hora+" es por la tarde");
+			}
+			else if(hhEntero>=20 && hhEntero<=23) {
+				System.out.println("Las "+hora+" es por la noche");
+			}
+			else if(hhEntero>=00 && hhEntero<=05) {
+				System.out.println("Las "+hora+" es de madrugada");
+			}
+		}else {
+			System.out.println("la hora " + hora+" esta en un formato INCORRECTO");
+		}
+		*/
+		
+		
+		///ESTO ES UNA ESTA BIEN HASTA QUE ENTRA EN EL IF QUE SE PUEDE UNIR TODO Y AHORRARTE VARIAS LINEAS DE CODIGO
+		/*if(hora.length()==5)	{
 			if(hora.charAt(2)==':') {
-				
-				/*
 				String hh=hora.substring(0,2);//extraemos las horas
 				String mm=hora.substring(3,5);//extraemos los minutos
 				int hhEntero=Integer.parseInt(hh); //conversion se horas a enteros
 				int mmEntero=Integer.parseInt(mm);//conversion se minutos a enteros
-				*/
+				
 				//ESTO ES LO MISMO QUE LO DE ARRIBA COMENRADO
 				hhEntero=Integer.parseInt(hora.substring(0,2)); //CORTAMOS LAS HORAS Y LAS CONVERTIMOS A INT
 				int mmEntero=Integer.parseInt(hora.substring(3,5)); //CORTAMOS LOS MINUTOS Y LOS CONVERTIMOS A INT
@@ -116,15 +171,12 @@ public class ejer_boletin4 {
 			}
 			else if(hhEntero>=00 && hhEntero<=05) {
 				System.out.println("Las "+hora+" es de madrugada");
-			}
-		}else {
+			}		}else {
 			System.out.println("la hora " + hora+" esta en un formato incorrecto");
 		}
-		/*
-		 * if()	{
-		 * }
-		 * */
-		
+		*/
+
+	
 		//MI POSIBLE SOLUCION SIN ACABAR
 		/*
 		Scanner teclado = new Scanner(System.in);
