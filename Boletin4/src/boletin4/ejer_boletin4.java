@@ -36,6 +36,7 @@ public class ejer_boletin4 {
 		//System.out.println("introduce numero -->");
 		//int numero =teclado.nextInt();
 		
+		
 		int num0=0;
 		int num1=1;
 		for (int i=0 ; i<10 ; i++) { //imprimimos 10 numeros
