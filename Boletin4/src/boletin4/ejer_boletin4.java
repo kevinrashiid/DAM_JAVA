@@ -80,7 +80,39 @@ public class ejer_boletin4 {
 		}
 		*/
 	
-
+		// ================ejercicio 13=============================
+		//Hacer un programa que lea un número y un carácter y visualice una matriz compacta
+		//repitiendo ese carácter y con tantas filas y columnas como indique el número. Por
+		//ejemplo, si metemos el 4 y la x nos debería de mostrar esto
+		
+		/*
+		System.out.println("introduce un caracter: ");
+		String caracter =teclado.nextLine();
+		
+		System.out.println("Introduce un numero de repeticiones: ");
+		int repeticiones =teclado.nextInt();
+		teclado.close();
+		
+		String linea="";
+		for(int i=0; i<repeticiones ; i++) {
+			linea=linea+caracter; 
+		}
+		for(int i=0; i<repeticiones ; i++) {
+			System.out.println(linea);
+		}
+		*/
+		
+		
+		//cuando tengo que repetir algo y luego ese algo lo tengo que repetir
+		//esto seria lo mismo que los dos for que los de atras
+		
+		/*for(int i=0; i<repeticiones ; i++) {
+			for(int j=0; j<repeticiones ; j++) {
+				System.out.print(caracter);
+			}
+			System.out.println();//salto de linea con println
+		}
+		*/
 		
 		
 		// ================ejercicio 14=============================
@@ -211,12 +243,6 @@ public class ejer_boletin4 {
 		}
 		*/
 		
-
-		Scanner teclado =new Scanner(System.in);
-		System.out.println("introduce un caracter: ");
-		String caracter =teclado.nextLine();
-		System.out.println("Introduce un numero de repeticiones: ");
-		int repeticiones =teclado.nextInt();
 		
 	}
 }
