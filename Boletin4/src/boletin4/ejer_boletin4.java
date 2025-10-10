@@ -32,6 +32,7 @@ public class ejer_boletin4 {
 		//números de la sucesión de fibonacci como indique ese número. Por ejemplo, si
 		//metemos un 8 la salida de tu programa debería de ser así:
 		//0,1,1,2,3,5,8,13
+		/*SIN ACABAR
 		Scanner teclado =new Scanner(System.in);
 		//System.out.println("introduce numero -->");
 		//int numero =teclado.nextInt();
@@ -47,6 +48,7 @@ public class ejer_boletin4 {
 			num0=num1; //el num1 pasa a ser el num0
 			num1=nuevo;//y el num1 se guarda el valor que dio de num1+num0
 		}
+		*/
 		
 		
 		// ================ejercicio 5=============================
@@ -208,9 +210,14 @@ public class ejer_boletin4 {
 			System.out.println("ERROR ESE NUMERO NO CORRESPONDE A LAS HORAS");
 		}
 		*/
-//		for(int i=0;i<tiempo.length();i++) {
-//		}
-//		
+		
+
+		Scanner teclado =new Scanner(System.in);
+		System.out.println("introduce un caracter: ");
+		String caracter =teclado.nextLine();
+		System.out.println("Introduce un numero de repeticiones: ");
+		int repeticiones =teclado.nextInt();
+		
 	}
 }
 
