@@ -32,15 +32,12 @@ public class ejer_boletin4 {
 		//números de la sucesión de fibonacci como indique ese número. Por ejemplo, si
 		//metemos un 8 la salida de tu programa debería de ser así:
 		//0,1,1,2,3,5,8,13
-		/*SIN ACABAR
-		Scanner teclado =new Scanner(System.in);
-		//System.out.println("introduce numero -->");
-		//int numero =teclado.nextInt();
-		
-		
+		/*Scanner teclado =new Scanner(System.in);
+		System.out.println("Cuantos numeros quieres sacar de Fibonacci -->");
+		int numero =teclado.nextInt();		
 		int num0=0;
 		int num1=1;
-		for (int i=0 ; i<10 ; i++) { //imprimimos 10 numeros
+		for (int i=0 ; i<numero ; i++) { //imprimimos 10 numeros
 			System.out.print(num0 + " "); 
 			//sumamos los dos anteriores que se van actulizando 
 			//por que a num0 se le va asignar el valor antiguo de num1 
@@ -49,7 +46,41 @@ public class ejer_boletin4 {
 			num1=nuevo;//y el num1 se guarda el valor que dio de num1+num0
 		}
 		*/
-		
+		// ================ejercicio 3=============================
+		//Queremos ahora hacer un programa que reciba un número por teclado y nos muestre
+		//en orden todos los números de la sucesión de fibonacci que sean menores o iguales
+		//al que has enviado como argumento. Por ejemplo, si metemos el número 4 nos
+		//debería de devolver esto:
+		//0,1,1,2,3
+		/*
+		Scanner teclado =new Scanner(System.in);
+		System.out.println("Cuantos numeros quieres sacar de Fibonacci -->");
+		int numero =teclado.nextInt();		
+		int num0=0;
+		int num1=1;
+		for (int i=0 ; i<numero ; i++) { //imprimimos 10 numeros
+			if(numero>num0) { //si numero es mayor num0 imprime cuando num0 se pase deja de imprimir
+			System.out.print(num0 + " "); 
+			//sumamos los dos anteriores que se van actulizando 
+			//por que a num0 se le va asignar el valor antiguo de num1 
+			int nuevo=num1+num0; // SUMA DE DOS ANTERIORES
+			num0=num1; //el num1 pasa a ser el num0
+			num1=nuevo;//y el num1 se guarda el valor que dio de num1+num0
+			}
+		}
+		*/
+		// ================ejercicio 4=============================
+		//Escribir un programa que cuente el número de cifras que tiene un número (por
+		//ejemplo, el 8 tiene una cifra, el 221 tres y el 456789 seis).
+		/*
+		int numero=200;
+		String numeroRecorrido=String.valueOf(numero);
+		int contador=0;
+		for(int i=0; i<numeroRecorrido.length(); i++) {
+			contador++;
+		}
+		System.out.println(contador);
+		*/
 		
 		// ================ejercicio 5=============================
 		//Escribir un programa que nos diga si un número es capicúa.
@@ -79,7 +110,32 @@ public class ejer_boletin4 {
 			System.out.println("EL NUMERO NOOO " +numeroPedido+ " ES CAPICUA\"");
 		}
 		*/
-	
+		
+		// ================ejercicio 6=============================
+		//Escribir un programa que muestre por pantalla los 50 primeros números primos, sus
+		//raíces cuadradas, sus cuadrados y sus cubos
+		
+		// ================ejercicio 8=============================
+		//Escribe un programa que sume por un lado las cifras pares y por otro las impares de
+		//un número y nos muestre ambos resultados. Por ejemplo, si el número en cuestión es
+		//el 128 nos debería e decir que la suma de las cifras pares es 9 y la de las impares 2
+		/*
+		int numero =3221; //numero entregado
+		//las inicializamos fuera para poderse utilizar tanto fuera del bucle como dentro
+		int pares=0;
+		int impares=0;
+		//LO CONVERTIMOS A TEXTO PARA PODERSE RECORRER
+		String convertido=String.valueOf(numero);
+		for(int i=0;i<convertido.length();i++) {
+			if(i%2==0) {
+				pares=pares+i;
+			}else {
+				impares=impares+i;
+			}
+		}
+		System.out.println("PARES --> " +pares);
+		System.out.println("IMPARES --> "+impares);
+		*/
 		// ================ejercicio 13=============================
 		//Hacer un programa que lea un número y un carácter y visualice una matriz compacta
 		//repitiendo ese carácter y con tantas filas y columnas como indique el número. Por
@@ -210,39 +266,13 @@ public class ejer_boletin4 {
 			System.out.println("la hora " + hora+" esta en un formato incorrecto");
 		}
 		*/
-
-	
-		//MI POSIBLE SOLUCION SIN ACABAR
-		/*
-		Scanner teclado = new Scanner(System.in);
-		int horasConvertidas=0;
-		String horas="";
-		String tiempo="";
-		do {
-		System.out.println("INTRODUCE LA HORA");
-		teclado.nextLine();
-		horas=tiempo.substring(0,2);
-		System.out.println(horas);
-		horasConvertidas=Integer.parseInt(horas);
-		}while(horasConvertidas>=00 && horasConvertidas<=23 ==false);
 		
-		if(horasConvertidas>=06 && horasConvertidas<=11)	{
-			System.out.println("Las "+horas+" es por la mañana");
-		}
-		else if(horasConvertidas>=12 && horasConvertidas<=19) {
-			System.out.println("Las "+tiempo+" es por la tarde");
-		}
-		else if(horasConvertidas>=20 && horasConvertidas<=23) {
-			System.out.println("Las "+tiempo+" es por la noche");
-		}
-		else if(horasConvertidas>=00 && horasConvertidas<=05) {
-			System.out.println("Las "+tiempo+" es de madrugada");
-		}
-		else if(horasConvertidas>24) {
-			System.out.println("ERROR ESE NUMERO NO CORRESPONDE A LAS HORAS");
-		}
-		*/
-		
+		//Suma de los números del 1 al 100 (método de Gauss).
+		int inicio =1;
+		int fin=100;
+		int resultado=0;
+		resultado=((inicio+fin)*100)/2;
+		System.out.println(resultado);
 		
 	}
 }

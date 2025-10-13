@@ -490,7 +490,8 @@ public class E1_BOLETIN_U3 {
 		//===============EJERCICIO 22==============================
 		//Escribir un programa que genere un número primo aleatorio entre el 10.000.000 y el
 		//50.000.000
-		boolean esPrimo; //variable como bandera
+		/*
+		 boolean esPrimo; //variable como bandera
 		int azar;
 		//este algoritmo es el peor codigo que podemos hacer pero funciona
 		do {
@@ -510,28 +511,38 @@ public class E1_BOLETIN_U3 {
 			}
 		}while(esPrimo == false);
 		System.out.println("El numero " + azar + " es primo" );
+		*/
 		
-
+		//===============EJERCICIO 25==============================
+		//Escribir un programa que reciba por teclado un número y muestre sucesivamente el
+		//resultado de ir dividiéndolo por dos sucesivamente hasta llegar a un número igual o menor a
+		//1. Caso de ser necesario los resultados se mostrarán con dos decimales. Un ejemplo de una
+		//ejecución correcta después de introducir el número 34 ser´ía esta:
+		//Haz introducido el número 34
+		//17
+		//8.5
+		//4.25
+		//2.12
+		//1.06
+		//0.53
+		/*
+		Scanner teclado=new Scanner(System.in);
+		System.out.println("INTRODUCE EL NUMERO Y LO DIVIDIRE ENTRE 2 HASTA QUE SEA MENOR QUE 1");
+		System.out.print("INTRODUCE EL NUMERO--> ");
+		double numero= teclado.nextInt();
+		teclado.close();
+		//EN ESTE BUCLE SE CUMPLE ESTO
+		//si el numero dado es MAYOR que 1 SIGUE DENTRO
+		//O si el resultado de la division entre 2 que se añade a numero
+		//es menor que 1 sigue y lo imprime con dos decimales
+		while(numero>1) {
+			numero=numero/2;//divide el numero dado entre 2 y lo añade a numero
+			numero=Math.floor(numero*100.0)/100.0; //PARA que tenga solo dos decimales y no los eleve
+			System.out.println(numero);
+		}
+		*/
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
