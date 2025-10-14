@@ -136,10 +136,63 @@ public class ejer_boletin4 {
 		System.out.println("PARES --> " +pares);
 		System.out.println("IMPARES --> "+impares);
 		*/
+		
+		// ================ejercicio 9=============================
+		//Escribir un programa que nos pida por teclado primero una cadena y luego un
+		//carácter. A continuación debe de imprimirnos cuantas veces aparece dicho carácter y
+		//en las posiciones de la cadena donde lo hace. Por ejemplo, si nuestra cadena es Hola
+		//Mundo y el carácter la o nos debería de decir algo así:
+		//La o aparece en 2 ocasiones
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.println("INTRODUCE TEXTO");
+		String texto=teclado.nextLine();
+		
+		System.out.println("INTRODUCE CARACTER");
+		String caracter=teclado.nextLine();
+		teclado.close();
+		
+		int contador=0;
+		
+		for(int i=0;i<texto.length();i++) {
+			if(texto.charAt(i)) {
+				
+			}
+		}
+		
+		// ================ejercicio 11=============================
+		/*String texto="programando en java";
+		String textoPares="";
+		for(int i=0;i<texto.length();i++) {//recoremos la cadena
+				textoPares=textoPares +"-"+ texto.charAt(i);//accedemos a la letra y la añadimos a textoPares
+				//con esto soluciono el guion del inicio
+				if(i==0) {
+					textoPares=textoPares.substring(1);
+				}
+				textoPares=textoPares.replace("- -", " ");
+			}
+		
+		System.out.print(textoPares);
+		*/
+		/////////////SOLUCION DEL PROFE/////////////
+		/*
+		String texto="programando en java";
+		String textoPares=""+ texto.charAt(0);
+		for(int i=1;i<texto.length();i++) {//recoremos la cadena
+				textoPares=textoPares +"-"+ texto.charAt(i);//accedemos a la letra y la añadimos a textoPares
+				//con esto soluciono el guion del inicio
+				
+				textoPares=textoPares.replace("- -", " ");
+			}
+		System.out.print(textoPares);
+		*/
 		// ================ejercicio 13=============================
 		//Hacer un programa que lea un número y un carácter y visualice una matriz compacta
 		//repitiendo ese carácter y con tantas filas y columnas como indique el número. Por
 		//ejemplo, si metemos el 4 y la x nos debería de mostrar esto
+		
+		
 		
 		/*
 		System.out.println("introduce un caracter: ");
@@ -267,13 +320,49 @@ public class ejer_boletin4 {
 		}
 		*/
 		
+		// ================ejercicio 15=============================
+		//Escribe un programa que reciba por teclado una fecha en el formato DD/MM/YYYY. El
+		//programa debe de comprobar si la fecha es correcta teniendo en cuenta:
+		//Qué el formato sea el correcto
+		//Que la fecha sea totalmente válida teniendo en cuenta incluso los años que son
+		//bisiestos (aquellos que son divisibles entre cuatro).
+		//VAMOS A RESOLVER ESTO SEGUN LO QUE SABEMOS
+		
+		/*
+		String fecha="22/11/2024";
+		boolean fechaCorrecta=true;
+		if(fecha.length()!=10) {
+			fechaCorrecta=false;
+			// operacion OR || SI O SI tiene que tener las dos / /
+			//si una de las dos condiciones no se cumplen no es una fecha
+		}else if(fecha.charAt(2)!='/' || fecha.charAt(5) !='/'){ 
+			fechaCorrecta=false;
+		}else {
+			int dia =Integer.parseInt(fecha.substring(0,2));
+			int mes =Integer.parseInt(fecha.substring(3,5));
+			if(dia<1 || dia >31) {
+				fechaCorrecta=false;
+			}else if(mes<1 || mes >12){
+				fechaCorrecta =false;
+			}
+		}
+
+		//comprobacion DE QUE APROBO todas las banderas
+		if(fechaCorrecta==true) {
+			System.out.println("la fecha " +fecha+" es correcta");
+		}else {
+			System.out.println("INCORRECTA");
+		}
+		*/
+		
 		//Suma de los números del 1 al 100 (método de Gauss).
+		/*
 		int inicio =1;
 		int fin=100;
 		int resultado=0;
 		resultado=((inicio+fin)*100)/2;
 		System.out.println(resultado);
-		
+		*/
 	}
 }
 
