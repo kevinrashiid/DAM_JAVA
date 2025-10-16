@@ -59,7 +59,26 @@ public class ejercicios_Boletin3 {
 		 * lo que quiere decir es que -->
 		 * mientras sean DIFERENTES se vuelva a ejecutar*/
 		
-		
+		//================ejercicio 1=============================
+		boolean salir=false;
+		Scanner teclado = new Scanner(System.in);
+		while(salir==false) {
+			System.out.println("escribe tu contraseña");
+			 String contra1=teclado.nextLine();
+			 System.out.println("escribe tu contraseña");
+			 String contra2=teclado.nextLine();
+			// SI DA 0 SON IGUALES
+			// SI DA MAYOR 0 la primera es mayor alfabeticamente que la segunda
+			//SI DA MENOR QUE 0 LA PRIMERA es menor que la segunda
+			 if(contra1.compareTo(contra2)==0) { 
+				 System.out.println("son iguales");
+				 salir=true;
+			 }
+			 else {
+				 System.out.println("Las contraseñas no coinciden");
+			 }
+
+		}
 		
 		//================ejercicio 2=============================
 		//Modifica el programa anterior para que cuando coincidan ambas contraseñas nos

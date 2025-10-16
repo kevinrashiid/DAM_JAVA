@@ -143,23 +143,46 @@ public class ejer_boletin4 {
 		//en las posiciones de la cadena donde lo hace. Por ejemplo, si nuestra cadena es Hola
 		//Mundo y el carácter la o nos debería de decir algo así:
 		//La o aparece en 2 ocasiones
+		//Las posiciones en las que aparece son: 1,9
 		
 		Scanner teclado = new Scanner(System.in);
-		
+
 		System.out.println("INTRODUCE TEXTO");
-		String texto=teclado.nextLine();
-		
-		System.out.println("INTRODUCE CARACTER");
-		String caracter=teclado.nextLine();
+		String texto = teclado.nextLine();
+
+		System.out.print("INTRODUCE CARACTER --> ");
+		String caracter = teclado.nextLine();
+
 		teclado.close();
-		
-		int contador=0;
-		
-		for(int i=0;i<texto.length();i++) {
-			if(texto.charAt(i)) {
-				
+
+		int contador = 0;
+
+		// CON ESTE FOR E IF COMPROBAMOS CUANTAS VECES APARECE UN CARACTER
+		for (int i = 0; i < texto.length(); i++) {
+			// comparacion de chart // .charAt(0) 0 por que como solo es un caracter
+			if (texto.charAt(i) == caracter.charAt(0)) {
+				contador++;
 			}
 		}
+		System.out.println("EL CARACTER " + caracter + " APARECIO " + contador + " VECES");
+		// PARA CONTAR PONER LAS POSICIONES SIN COMA AL FINAL
+		// POR QUE TIENE QUE SALIR SI O SI ASI --> 1,9
+//		int contadorPosiciones=0;
+		String posciones = "";
+		System.out.print("LAS POSICIONES EN LAS QUE APARECE SON --> ");
+		for (int i = 0; i < texto.length(); i++) {
+			if (texto.charAt(i) == caracter.charAt(0)) {
+//				contadorPosiciones++;
+//				System.out.print(i);
+//				if(contadorPosiciones!=contador) {
+//					System.out.println(", ");
+//				}
+				posciones = posciones + i + ", "; //ESTO SERIA IGUAL QUE LAS LINEAS COMENTADAS ANTES
+			}
+		}//CORTAMOS Y MOSTRAMOS SOLO DESDE EL PRINCIPIO Y CORTAMOS EL ESPACIO Y LA COMA --> DOS CARACTERES ", "
+		//POR ESO RESTAMOS -2 
+		posciones = posciones.substring(0, posciones.length() - 2);
+		System.out.println(posciones);
 		
 		// ================ejercicio 11=============================
 		/*String texto="programando en java";
