@@ -144,7 +144,7 @@ public class ejer_boletin4 {
 		//Mundo y el carácter la o nos debería de decir algo así:
 		//La o aparece en 2 ocasiones
 		//Las posiciones en las que aparece son: 1,9
-		
+		/*
 		Scanner teclado = new Scanner(System.in);
 
 		System.out.println("INTRODUCE TEXTO");
@@ -183,6 +183,27 @@ public class ejer_boletin4 {
 		//POR ESO RESTAMOS -2 
 		posciones = posciones.substring(0, posciones.length() - 2);
 		System.out.println(posciones);
+		*/
+		
+		// ================ejercicio 10=============================
+		//Escribir un programa que nos pida una cadena por teclado y luego nos imprima sólo
+		//las cifras que aparecen en ella.
+		//Por ejemplo, si introducimos la cadena “Beverly Hills, 5. CP: 28934” Debería
+		//devolvernos: 528934
+		Scanner teclado = new Scanner(System.in);
+		System.out.print("INTRODUCE TEXTO CON NUMERO --> ");
+		String cadenaTexto=teclado.nextLine();
+		for(int i=0;i<cadenaTexto.length();i++) {
+			switch(cadenaTexto.charAt(i)) {
+			case '0','1','2','3','4','5','6','7','8','9':
+				System.out.print(cadenaTexto.charAt(i));
+			break;
+//			default:
+//				System.out.println("TU TEXTO NO TIENE NUMEROS");
+			}
+		}
+		
+		
 		
 		// ================ejercicio 11=============================
 		/*String texto="programando en java";
