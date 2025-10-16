@@ -11,7 +11,7 @@ public class ejercicios_Boletin2 {
 		//================ejercicio 1 SIN ACABAR=============================
 		//Escribir un programa que nos pida tres palabras por teclado en cualquier orden y nos las
 		//muestre en pantalla ordenadas alfabeticamente en orden ascendente
-		/*Scanner teclado= new Scanner(System.in);
+		Scanner teclado= new Scanner(System.in);
 		
 		System.out.println("Primera palabra --->");
 		String letra1=teclado.nextLine();
@@ -22,12 +22,16 @@ public class ejercicios_Boletin2 {
 		System.out.println("Tercera palabra --->");
 		String letra3=teclado.nextLine();
 		
-		//String primera=letra1.compareTo(letra2);
-		String primera="";
-		String segunda="";
-		String tercera="";
+		if(letra1.compareTo(letra2)==0) {
+			System.out.println(letra1 +" son iguales "+ letra2);
+		}else if(letra1.compareTo(letra2)==1){
+			System.out.println(letra1 +" "+ letra2);
+		}
 		
-		*/
+//		String primera=letra1.compareTo(letra2);
+	
+		
+		
 		
 		//================ejercicio 9=============================
 		//Escribir un programa que pida números entre el 1 y el 100 por teclado hasta que
@@ -157,6 +161,7 @@ public class ejercicios_Boletin2 {
 		//a cinco decimales). Si no las recuerdas, las fórmulas son las siguientes:
 		//area = 3.14159 * radio2
 		//longitud = 2 * 3.14159 * radio
+		/*
 		Scanner teclado=new Scanner(System.in);
 		System.out.println("Introduce un radio de tu circunferencia-->");
 		double radio= teclado.nextDouble();
@@ -169,7 +174,7 @@ public class ejercicios_Boletin2 {
 		//1.- multiplicamos por 1 seguido de cinco ceros
 		longitud=longitud*100000;
 		area=area*100000;
-		
+		*/
 		//2.-Convertimos a entero
 		
 	}	

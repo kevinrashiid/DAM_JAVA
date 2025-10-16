@@ -60,6 +60,7 @@ public class ejercicios_Boletin3 {
 		 * mientras sean DIFERENTES se vuelva a ejecutar*/
 		
 		//================ejercicio 1=============================
+		/*
 		boolean salir=false;
 		Scanner teclado = new Scanner(System.in);
 		while(salir==false) {
@@ -67,19 +68,19 @@ public class ejercicios_Boletin3 {
 			 String contra1=teclado.nextLine();
 			 System.out.println("escribe tu contraseña");
 			 String contra2=teclado.nextLine();
-			// SI DA 0 SON IGUALES
-			// SI DA MAYOR 0 la primera es mayor alfabeticamente que la segunda
-			//SI DA MENOR QUE 0 LA PRIMERA es menor que la segunda
-			 if(contra1.compareTo(contra2)==0) { 
+			 
+			// SI DA 0 --> SON IGUALES
+			// SI DA POSITIVO --> la primera es mayor alfabeticamente que la segunda
+			//SI DA NEGATIVO --> LA PRIMERA es menor que la segunda
+			 if(contra1.compareTo(contra2)==0) {
 				 System.out.println("son iguales");
 				 salir=true;
 			 }
 			 else {
 				 System.out.println("Las contraseñas no coinciden");
 			 }
-
 		}
-		
+		*/
 		//================ejercicio 2=============================
 		//Modifica el programa anterior para que cuando coincidan ambas contraseñas nos
 		//informe del número de intentos inválido
@@ -214,6 +215,42 @@ public class ejercicios_Boletin3 {
 		System.out.println(impares);
 		*/
 		
+		// ================ejercicio 7=============================
+		//Escribir un programa que pida por teclado una cadena de texto y la escriba con el
+		//alfabeto típico de los hackers sustituyendo 
+		//las letras a por el número 4, 
+		//las letras e por el número 3, 
+		//las letras i por el número 1
+		//las letras o por el número 0. 
+		//Considera que las vocales pueden estar escritas en mayúsculas o minúsculas, 
+		//pero NO hace falta que tengas en cuenta que además podrían ir acentuadas
+		// ================MI SOLUCION=============================
+		Scanner teclado = new Scanner(System.in);
+		System.out.print("INTRODUCE TEXTO Y TE LO PONDRE CON ALFABETO HACKER --> ");
+		String texto = teclado.nextLine();
+		teclado.close();
+		// lo transformamos a minusculas para que sea mas facil la comparacion en el case del switch
+		texto=texto.toLowerCase();
+		for (int i = 0; i < texto.length(); i++) {
+			switch (texto.charAt(i)) {
+			case 'a'://reemplazamos el contenido de la i por un 4 por que encontro que es la i en esa vuelta es (a) 
+				texto = texto.replace(texto.charAt(i), '4'); 
+				break;
+			case 'e':
+				texto = texto.replace(texto.charAt(i), '3');
+				break;
+			case 'i':
+				texto = texto.replace(texto.charAt(i), '1');
+				break;
+			case 'o':
+				texto = texto.replace(texto.charAt(i), '0');
+				break;
+			}
+		}
+		System.out.println(texto);
+		
+		
+		
 		// ================ejercicio 8=============================
 		//		Escribir un programa que reciba una cadena de texto por teclado y la muestre sin
 		//		vocales. Por ejemplo, si recibe la cadena “Hola Mundo” debería de devolver “Hl Mnd”.
@@ -309,9 +346,11 @@ public class ejercicios_Boletin3 {
 		 */
 		
 		//ELIMINAR ESPACIOS DE AL PRINCIPIO Y LOS DEL FINAL
+		/*
 		String dni=" 23245235B ";
 		dni=dni.trim();
 		System.out.println(dni);
+		*/
 	}
 }
 
