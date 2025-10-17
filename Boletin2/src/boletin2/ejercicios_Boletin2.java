@@ -11,7 +11,7 @@ public class ejercicios_Boletin2 {
 		//================ejercicio 1 SIN ACABAR=============================
 		//Escribir un programa que nos pida tres palabras por teclado en cualquier orden y nos las
 		//muestre en pantalla ordenadas alfabeticamente en orden ascendente
-		Scanner teclado= new Scanner(System.in);
+		/*Scanner teclado= new Scanner(System.in);
 		
 		System.out.println("Primera palabra --->");
 		String letra1=teclado.nextLine();
@@ -29,7 +29,24 @@ public class ejercicios_Boletin2 {
 		}
 		
 //		String primera=letra1.compareTo(letra2);
-	
+	*/
+		//================ejercicio 8=============================
+		//Escribe un programa que pida un número por teclado y escriba todos sus divisores
+		//separados por comas (y evitando poner una coma al final). Por ejemplo, si el número
+		//introducido es el 14 tu programa debería de mostrar lo siguiente:
+		//Divisores del número 14: 1, 2, 7, 14
+		//================SIN ACABAR CREO QUE ESTA MAL=============================
+		//da un error
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("INTRODUCE UN NUMERO Y TE DIRE TODOS SUS DIVISORES");
+		int numero=teclado.nextInt();
+		int divisor=0;
+		for(int i=1;numero!=divisor;i++) {
+			if(numero%i==0 && i>0) {
+				System.out.println("DIVISORES DEL NUMERO "+numero+" son "+i);
+			}
+		}
+		teclado.close();
 		
 		
 		
@@ -176,6 +193,53 @@ public class ejercicios_Boletin2 {
 		area=area*100000;
 		*/
 		//2.-Convertimos a entero
+		
+		
+		//================ejercicio 17=============================
+		//Escribir un programa que reciba por teclado una temperatura en cualquiera de las
+		//tres unidades básicas (Celcius, Farenheit o Kelvin) y la devuelva en las otras dos.
+		//Tu programa reconocerá la unidad que has usado al introducir la entrada por teclado
+		//porque irá acompañado de una letra que lo indique. Por ejemplo, 12C, 280.57K o
+		//98.6F
+		//Se admitirán decimales en la entrada, (como se ve en los ejemplos anteriores) y se
+		//devolverá el resultado con dos decimales
+		//Las formulas de conversión entre unidades son las siguientes:
+		//Para convertir de ºC a ºF use la fórmula: ºF = ºC x 1.8 + 32. !!
+		//Para convertir de ºF a ºC use la fórmula: ºC = (ºF-32) ÷ 1.8.   
+		//Para convertir de ºK a ºC use la fórmula: ºC = ºK – 273.15 
+		//Para convertir de ºC a ºK use la fórmula: ºK = ºC + 273.15.  !!
+		//Para convertir de ºF a ºK use la fórmula: ºK = 5/9 (ºF – 32) + 273.15.
+		//Para convertir de ºK a ºF use la fórmula: ºF = 1.8(ºK – 273.15) + 32
+		//================ SIN ACABAR =============================
+		/*
+		Scanner teclado=new Scanner(System.in);
+		System.out.println("INTRODUCE UNA TEMPERATURA ");
+		String temperatura =teclado.nextLine();		
+		teclado.close();
+		double numero=Double.parseDouble(temperatura.substring(0,temperatura.length()-1)); //cojemos la parte del numero
+		char unidad =temperatura.charAt(temperatura.length()-1);//cojemos la unidad
+		
+		System.out.println(numero+ " - " +unidad);
+		double calculo=0;
+		switch(unidad) {
+		case 'C','c':
+			calculo=(numero*1.8)+32;
+			System.out.println(temperatura +" equivale a "+calculo+"F");
+			calculo=numero+273.15;
+			System.out.println(temperatura +" equivale a "+calculo+"K");
+			break;
+		case 'F':
+			break;
+		case 'K':
+			
+			break;
+			default: 
+				System.out.println("Launidad no esta reconocida");
+			
+		}
+		*/
+		
+		
 		
 	}	
 }

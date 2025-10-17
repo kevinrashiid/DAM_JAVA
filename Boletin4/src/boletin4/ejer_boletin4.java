@@ -32,7 +32,8 @@ public class ejer_boletin4 {
 		//números de la sucesión de fibonacci como indique ese número. Por ejemplo, si
 		//metemos un 8 la salida de tu programa debería de ser así:
 		//0,1,1,2,3,5,8,13
-		/*Scanner teclado =new Scanner(System.in);
+		/*
+		Scanner teclado =new Scanner(System.in);
 		System.out.println("Cuantos numeros quieres sacar de Fibonacci -->");
 		int numero =teclado.nextInt();		
 		int num0=0;
@@ -72,6 +73,7 @@ public class ejer_boletin4 {
 		// ================ejercicio 4=============================
 		//Escribir un programa que cuente el número de cifras que tiene un número (por
 		//ejemplo, el 8 tiene una cifra, el 221 tres y el 456789 seis).
+		
 		/*
 		int numero=200;
 		String numeroRecorrido=String.valueOf(numero);
@@ -190,19 +192,22 @@ public class ejer_boletin4 {
 		//las cifras que aparecen en ella.
 		//Por ejemplo, si introducimos la cadena “Beverly Hills, 5. CP: 28934” Debería
 		//devolvernos: 528934
+		/*
 		Scanner teclado = new Scanner(System.in);
 		System.out.print("INTRODUCE TEXTO CON NUMERO --> ");
 		String cadenaTexto=teclado.nextLine();
-		for(int i=0;i<cadenaTexto.length();i++) {
-			switch(cadenaTexto.charAt(i)) {
-			case '0','1','2','3','4','5','6','7','8','9':
-				System.out.print(cadenaTexto.charAt(i));
-			break;
-//			default:
-//				System.out.println("TU TEXTO NO TIENE NUMEROS");
+		teclado.close();//cerramos por que ya no lo vamos a utilizar mas
+		System.out.print("Los numeros del texto son--> ");
+		for(int i=0;i<cadenaTexto.length();i++) { //RECOREMOS EL TEXTO Y
+			switch(cadenaTexto.charAt(i)) {//SI EL CONTENIDO DE LA i
+			case '0','1','2','3','4','5','6','7','8','9': //ES ENTRE 0 Y 9
+				System.out.print(cadenaTexto.charAt(i));  //LA IMPRIMES
+				break;
+				default:
+					System.out.println("TU TEXTO NO TIENE NUMEROS");
 			}
 		}
-		
+		*/
 		
 		
 		// ================ejercicio 11=============================
