@@ -39,14 +39,20 @@ public class ejercicios_Boletin2 {
 		//da un error
 		Scanner teclado = new Scanner(System.in);
 		System.out.println("INTRODUCE UN NUMERO Y TE DIRE TODOS SUS DIVISORES");
-		int numero=teclado.nextInt();
-		int divisor=0;
-		for(int i=1;numero!=divisor;i++) {
-			if(numero%i==0 && i>0) {
-				System.out.println("DIVISORES DEL NUMERO "+numero+" son "+i);
+		int numero = teclado.nextInt();
+		teclado.close();
+		String numeroMostrado = "";
+		for (int i = 1; i<=numero; i++) {//RECOREMOS HASTA QUE i SEA MAYOR AL NUMERO DADO
+			if (numero % i == 0) { //SI EL NUMERO DADO SE DIVIDE ENTRE i Y DA 0...
+				numeroMostrado = numeroMostrado+i + ", "; //GUARDAMOS i Y LA SEPARACION EN ESTE CASO LA COMA
 			}
 		}
-		teclado.close();
+		//CORTAMOS EL ESPACIO Y LA COMA AÑADIDOS--> (", ")
+		//MOSTRAMOS DESDE LA POSICION 0 HASTA LA ULTIMA -2
+		numeroMostrado=numeroMostrado.substring(0,numeroMostrado.length()-2);
+		System.out.println("DIVISORES DE "+numero+" SON: "+numeroMostrado);
+
+
 		
 		
 		
