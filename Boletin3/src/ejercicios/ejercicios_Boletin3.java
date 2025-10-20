@@ -362,6 +362,7 @@ public class ejercicios_Boletin3 {
 		//cualesquiera en mayúsculas a excepción de las vocales, la Ñ y la Q. Escribe un
 		//programa que detecte si una matrícula introducida por teclado es válida o no
 		//TENEMOS QUE DECIR SI TIENE VOCALES 
+		/*
 		Scanner teclado = new Scanner(System.in);
 		System.out.print("INTRODUCE TU MATRICULA --> ");
 		String matricula = teclado.nextLine();
@@ -371,13 +372,21 @@ public class ejercicios_Boletin3 {
 		}else{
 			System.out.println("MATRICULA INCORRECTA");
 		}
-		
+		*/
 		
 		// ================EJERCICIO 13=============================
 		//Modifica el programa anterior contemplando que entre los números y las letras
 		//podría haber un espacio en blanco (uno solo) o un guión. En ambos casos se
 		//considerará también que la matrícula es válida (si cumple todo lo demás, claro)
-		
+		Scanner teclado = new Scanner(System.in);
+		System.out.print("INTRODUCE TU MATRICULA --> ");
+		String matricula = teclado.nextLine();
+		// [-||\\s] QUE PUEDA SER EL QUINTO CARACTER GUION O ESPACIO
+		if(matricula.matches("[0-9]{4}[-||\\s][A-Z a-z&&[^AEIOUQ]]{3}")) {
+			System.out.println("MATRICULA CORRECTA");
+		}else{
+			System.out.println("MATRICULA INCORRECTA");
+		}		
 	}
 }
 
