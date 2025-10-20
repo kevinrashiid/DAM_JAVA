@@ -2,6 +2,7 @@ package ejercicios;
 
 import java.util.Scanner;
 
+
 public class ejercicios_Boletin3 {
 
 	public static void main(String[] args) {
@@ -225,7 +226,8 @@ public class ejercicios_Boletin3 {
 		//Considera que las vocales pueden estar escritas en mayúsculas o minúsculas, 
 		//pero NO hace falta que tengas en cuenta que además podrían ir acentuadas
 		// ================MI SOLUCION=============================
-		Scanner teclado = new Scanner(System.in);
+		
+		/*Scanner teclado = new Scanner(System.in);
 		System.out.print("INTRODUCE TEXTO Y TE LO PONDRE CON ALFABETO HACKER --> ");
 		String texto = teclado.nextLine();
 		teclado.close();
@@ -248,7 +250,7 @@ public class ejercicios_Boletin3 {
 			}
 		}
 		System.out.println(texto);
-		
+		*/
 		
 		
 		// ================ejercicio 8=============================
@@ -310,24 +312,26 @@ public class ejercicios_Boletin3 {
 		//ser números comprendidos entre el 0 y el 9 y el último una letra que puede estar
 		//escrita en mayúsculas o minúsculas
 		//ESTE EJERCICIO SE RESOLVERA CUANDO SEPAMOS CAPTURAR EXPECIONES
-		/*Scanner teclado = new Scanner(System.in);
+		/*
+		Scanner teclado = new Scanner(System.in);
 
 		System.out.print("INTRODUCE LOS NUMEROS DE TU DNI --> ");
-		int dniNumeros = teclado.nextInt();
-		
-		System.out.println("INTRODUCE LA LETRA DE TU DNI");
-		String dniLetra = teclado.nextLine();
-		
-		String abecedario = "abcdefghijklmnopqrstuvwxyz";
-		//for (int i = 0; i < abecedario.length(); i++) {
-			if (dniNumeros <= 99999999 && abecedario.indexOf(dniLetra) != -1) {
-				System.out.println("ERES ESPAÑOL! DNI CON 9 CARACTERES");
-			} else {
-				System.out.println("NO ERES ESPAÑOL! ");
+		String dni = teclado.nextLine();
+		//[0-9]que los primeros 8 caracteres sean entre 0 y 9
+		//{8}repeticiones numeros
+		//[A-Z a-z] la letra que sea entre A y Z minusculas y mayusculas
+		if (dni.length() == 9) {
+			if (dni.matches("[0-9]{8}[A-Z a-z]") == true) {
+				System.out.println("dni CORRECTO");
 			}
-			*/
-			
-		/*Scanner teclado = new Scanner(System.in);
+		}else {
+			System.out.println("algo en tu DNI falla");
+		}
+		*/
+		
+		//============SOLUCION MALA======================	
+		/*
+		Scanner teclado = new Scanner(System.in);
 		System.out.print("INTRODUCE tu DNI --> ");
 		String dni = teclado.nextLine();
 		//System.out.println(dni.substring(0,8));
@@ -351,6 +355,29 @@ public class ejercicios_Boletin3 {
 		dni=dni.trim();
 		System.out.println(dni);
 		*/
+		
+		
+		// ================EJERCICIO 12=============================
+		//Las matrículas españolas constan de un número de cuatro dígitos y tres letras
+		//cualesquiera en mayúsculas a excepción de las vocales, la Ñ y la Q. Escribe un
+		//programa que detecte si una matrícula introducida por teclado es válida o no
+		//TENEMOS QUE DECIR SI TIENE VOCALES 
+		Scanner teclado = new Scanner(System.in);
+		System.out.print("INTRODUCE TU MATRICULA --> ");
+		String matricula = teclado.nextLine();
+		//&&[^AEIOUQ] ESTO ES PARA QUE LA MATRICULA NO PUEDA TENER VOCALES
+		if(matricula.matches("[0-9]{4}\\s[A-Z a-z&&[^AEIOUQ]]{3}")) {// (\\s) ESPACIO EN BLANCO
+			System.out.println("MATRICULA CORRECTA");
+		}else{
+			System.out.println("MATRICULA INCORRECTA");
+		}
+		
+		
+		// ================EJERCICIO 13=============================
+		//Modifica el programa anterior contemplando que entre los números y las letras
+		//podría haber un espacio en blanco (uno solo) o un guión. En ambos casos se
+		//considerará también que la matrícula es válida (si cumple todo lo demás, claro)
+		
 	}
 }
 

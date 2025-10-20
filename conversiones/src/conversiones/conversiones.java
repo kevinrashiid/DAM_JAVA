@@ -48,8 +48,6 @@ public class conversiones {
 		System.out.println(max);
 		//para que duevla el minimo
 		double mim=Math.min(539.4, 3);
-
-		
 	}
 }
 
