@@ -114,8 +114,20 @@ public class B4 {
 		*/
 		
 		// ================ejercicio 6=============================
-		//Escribir un programa que muestre por pantalla los 50 primeros números primos, sus
-		//raíces cuadradas, sus cuadrados y sus cubos
+		//Escribir un programa que muestre por pantalla 
+		//los 50 primeros números primos, 
+		//sus raíces cuadradas, 
+		//sus cuadrados 
+		//sus cubos
+		
+		
+		// ================ejercicio 7=============================
+		//Decimos que dos números primos son gemelos cuando están separados por un único
+		//número (el 11 y el 13, el 17 y el 19, el 41 y el 43, etc.). Escribir un programa que calcule
+		//la primera pareja de primos gemelos por encima del 50
+		
+		
+		
 		
 		// ================ejercicio 8=============================
 		//Escribe un programa que sume por un lado las cifras pares y por otro las impares de
@@ -211,6 +223,10 @@ public class B4 {
 		
 		
 		// ================ejercicio 11=============================
+		//Escribir un programa que nos pida una frase por teclado y luego nos la imprima
+		//separando todos los caracteres de sus palabras (excepto los espacios) con un guión.
+		//Por ejemplo, si la frase introducida es “esto es una prueba” la salida del programa
+		//debería de ser “e-s-t-o e-s u-n-a p-r-u-e-b-a”
 		/*String texto="programando en java";
 		String textoPares="";
 		for(int i=0;i<texto.length();i++) {//recoremos la cadena
@@ -236,13 +252,26 @@ public class B4 {
 			}
 		System.out.print(textoPares);
 		*/
-		// ================ejercicio 13=============================
+		
+		
+		
+		// ================ejercicio 12=============================
+		//Crear un programa que lea un número de año por teclado e indique si es bisiesto o
+		//no. Un año bisiesto es aquel que es divisible por 4, siempre y cuando no lo sea por
+		//100. La excepción a esta regla son los años múltiplos de 400, que siempre son
+		//bisiestos.
+		
+		
+		
+		
+		//// ================ejercicio 13=============================
 		//Hacer un programa que lea un número y un carácter y visualice una matriz compacta
 		//repitiendo ese carácter y con tantas filas y columnas como indique el número. Por
 		//ejemplo, si metemos el 4 y la x nos debería de mostrar esto
-		
-		
-		
+		//xxxx
+		//xxxx
+		//xxxx
+		//xxxx		
 		/*
 		System.out.println("introduce un caracter: ");
 		String caracter =teclado.nextLine();

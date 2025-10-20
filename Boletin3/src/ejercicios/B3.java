@@ -137,25 +137,9 @@ public class B3 {
 		//espacios en blanco (si los hubiera). Además, nos debe de decir el número de espacios
 		//que ha encontrado y suprimido.
 		/*
-		//==================SIN ACABAR=======================
-		Scanner teclado= new Scanner(System.in);
 		
-		String espacio=" ";
-		System.out.print("texto--> ");
-		
-		String texto=teclado.nextLine();
-		
-		int contador=0;
-		
-		for(int i=0; i<texto.length(); i++) {
-				texto=texto.replace(" ", "");
-				if(espacio.equals(texto.charAt(i))) {
-					contador=contador+1;
-				}
-		}
-		*/
 		//SOLUCION DEL PROFE PARA COGER SOLTURA CON LOS BUCLES
-		/*Scanner teclado= new Scanner(System.in);
+		Scanner teclado= new Scanner(System.in);
 		
 		System.out.print("texto--> ");
 		
@@ -188,7 +172,7 @@ public class B3 {
 		String texto= teclado.nextLine();
 		
 		//recoriendo el texto al reves //el i-- es para ir restando ya que vamos al reves
-		for(int i=texto.length()-1; i>=0; i--) {
+		for(int i=texto.length()-1; i>=0; i--) {// RECORRIENDO AL REVES
 			alReves = alReves + texto.charAt(i);
 		}
 		System.out.println("CADENA AL REVES -->"+alReves);
@@ -225,8 +209,7 @@ public class B3 {
 		//las letras o por el número 0. 
 		//Considera que las vocales pueden estar escritas en mayúsculas o minúsculas, 
 		//pero NO hace falta que tengas en cuenta que además podrían ir acentuadas
-		// ================MI SOLUCION=============================
-		
+		// ================MI SOLUCION --> ESTA BIEN=============================
 		/*Scanner teclado = new Scanner(System.in);
 		System.out.print("INTRODUCE TEXTO Y TE LO PONDRE CON ALFABETO HACKER --> ");
 		String texto = teclado.nextLine();
@@ -238,7 +221,7 @@ public class B3 {
 			case 'a'://reemplazamos el contenido de la i por un 4 por que encontro que es la i en esa vuelta es (a) 
 				texto = texto.replace(texto.charAt(i), '4'); 
 				break;
-			case 'e':
+			case 'e':// SI LA i ES e LA REEMPLAZA POR 3
 				texto = texto.replace(texto.charAt(i), '3');
 				break;
 			case 'i':
@@ -329,34 +312,6 @@ public class B3 {
 		}
 		*/
 		
-		//============SOLUCION MALA======================	
-		/*
-		Scanner teclado = new Scanner(System.in);
-		System.out.print("INTRODUCE tu DNI --> ");
-		String dni = teclado.nextLine();
-		//System.out.println(dni.substring(0,8));
-		String abecedario = "abcdefghijklmnopqrstuvwxyz";
-		for (int i = 0; i < dni.length(); i++) {
-			if (dni.length() == 9) {
-				System.out.println("BIEN SON 9 CARACTERES");
-			} else {
-				System.out.println("TIENEN QUE SER 9 CARACTERES EXACTOS");
-			}
-			if(dni.length()-1<=99999999 &&   ) {
-			}
-		}
-		//int numerosDni=numerosDni + dni.substring(0,9);
-		//int numerosDni=(int)(numerosDni + dni.substring(0,9));
-		 */
-		
-		//ELIMINAR ESPACIOS DE AL PRINCIPIO Y LOS DEL FINAL
-		/*
-		String dni=" 23245235B ";
-		dni=dni.trim();
-		System.out.println(dni);
-		*/
-		
-		
 		// ================EJERCICIO 12=============================
 		//Las matrículas españolas constan de un número de cuatro dígitos y tres letras
 		//cualesquiera en mayúsculas a excepción de las vocales, la Ñ y la Q. Escribe un
@@ -378,6 +333,7 @@ public class B3 {
 		//Modifica el programa anterior contemplando que entre los números y las letras
 		//podría haber un espacio en blanco (uno solo) o un guión. En ambos casos se
 		//considerará también que la matrícula es válida (si cumple todo lo demás, claro)
+		/*
 		Scanner teclado = new Scanner(System.in);
 		System.out.print("INTRODUCE TU MATRICULA --> ");
 		String matricula = teclado.nextLine();
@@ -386,9 +342,53 @@ public class B3 {
 			System.out.println("MATRICULA CORRECTA");
 		}else{
 			System.out.println("MATRICULA INCORRECTA");
-		}		
+		}
+		*/
+		
+		// ================EJERCICIO 14=============================
+		//Modifica el programa que validaba si un NIF era correcto comprobando si la letra que
+		//incorpora lo es. La forma de hacerlo es la siguiente --> leer boletin 3:
+		//PREGUNTAR SOBRE LA TABLA DEL BOLETIN
+		// A QUE SE REFIERE CON ESA TABLA
+		/*
+		Scanner teclado = new Scanner(System.in);
+
+		System.out.print("INTRODUCE LOS NUMEROS DE TU DNI --> ");
+		String dni = teclado.nextLine();
+		//[0-9]que los primeros 8 caracteres sean entre 0 y 9
+		//{8}repeticiones numeros
+		//[A-Z a-z] la letra que sea entre A y Z minusculas y mayusculas
+		
+		if (dni.length() == 9) {
+			if (dni.matches("[0-9]{8}[A-Z a-z]") == true) {
+				System.out.println("DNI CORRECTO");
+			}
+		}else {
+			System.out.println("algo en tu DNI falla");
+		}
+		*/
+		// ================EJERCICIO 15=============================
+		//Escribe un programa que reciba por teclado una fecha en el formato DD/MM/YYYY. 
+		//El programa debe de comprobar si la fecha es correcta teniendo en cuenta:
+		//Qué el formato sea el correcto
+		//Que la fecha sea totalmente válida
+		
+		//teniendo en cuenta incluso los años que son bisiestos 
+		//(aquellos que son divisibles entre cuatro).
+		Scanner teclado = new Scanner(System.in);
+		System.out.print("INTRODUCE FECHA FORMATO DD/MM/YYYY --> ");
+		String fecha = teclado.nextLine();
+		//patron "[0-9]{2}[/-][0-9]{2}[/-][0-9]{4}"
+		if(fecha.matches("[0-9]{2}[/-][0-9]{2}[/-][0-9]{4}")){
+			System.out.println("FECHA CORRECTA!!");
+		}else {
+			System.out.println("FECHA INCORRECTA :(");
+		}
+		// MI SOLUCION PARA LA HACER LA COMPROBACIONES SERIA CORTANDO EL STRING
+		//PASARLO A INT Y COMPARAR CADA PARTE
 	}
 }
+
 
 
 
