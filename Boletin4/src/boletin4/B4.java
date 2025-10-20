@@ -2,7 +2,7 @@ package boletin4;
 
 import java.util.Scanner;
 
-public class ejer_boletin4 {
+public class B4 {
 	public static void main(String[] args) {
 		// ================ejercicio 1=============================
 		// Escribir un programa que pida un número por teclado y calcule su factorial.

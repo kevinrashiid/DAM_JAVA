@@ -2,7 +2,7 @@ package p2;
 
 import java.util.Scanner;
 
-public class PracticaScanner {
+public class scanner {
 
 	public static void main(String[] args) {
 		

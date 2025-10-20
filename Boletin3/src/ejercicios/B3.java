@@ -3,7 +3,7 @@ package ejercicios;
 import java.util.Scanner;
 
 
-public class ejercicios_Boletin3 {
+public class B3 {
 
 	public static void main(String[] args) {
 		//================ejercicio 1=============================

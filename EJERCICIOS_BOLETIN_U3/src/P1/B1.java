@@ -3,7 +3,7 @@ package P1;
 import java.util.Scanner;
 
 
-public class E1_BOLETIN_U3 {
+public class B1 {
 
 	public static void main(String[] args) {
 
