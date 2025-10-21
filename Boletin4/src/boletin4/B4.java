@@ -119,15 +119,67 @@ public class B4 {
 		//sus raíces cuadradas, 
 		//sus cuadrados 
 		//sus cubos
-		
-		
+		/*
+		int numero = 2;
+		// NUMERO AL AZAR ES PRIMO O NO??
+		int contador = 0;
+		for (contador = 0; contador < 50; contador++) { //LOS 50 PRIMEROS NUMEROS PRIMOS
+			boolean esPrimo;
+			// APARTIR DE AQUI COMPROBAMOS SI UN NUMERO ES PRIMO
+			do {
+				int raiz = (int) Math.sqrt(numero) * 1;// calcula la raiz cuadrada de un numero
+				esPrimo = true;
+				if (numero % 2 != 0) {// si es impar
+					for (int i = 2; i < raiz; i++) {
+						if (numero % i == 0) {
+							esPrimo = false;
+						}
+					}
+				}
+				if (esPrimo == false) {
+					numero++;
+				}
+			} while (esPrimo == false);
+			System.out.println(numero + " es primo");
+			//SACANDO RAIZ - CUADRADO- CUBO
+			double numeroRaiz=Math.sqrt(numero);
+			int cuadrado=numero*numero;
+			int cubo=numero*numero*numero;
+			System.out.println(numero +" |RaizCuadra --> " +numeroRaiz+" |Cuadrado --> "+ cuadrado+" |Cubo--> "+cubo);
+			numero++; // 
+		}
+		*/
 		// ================ejercicio 7=============================
 		//Decimos que dos números primos son gemelos cuando están separados por un único
 		//número (el 11 y el 13, el 17 y el 19, el 41 y el 43, etc.). Escribir un programa que calcule
 		//la primera pareja de primos gemelos por encima del 50
-		
-		
-		
+		int numero = 150;
+		int anterior=0;
+		boolean gemelosEncontrado = false;
+		while (gemelosEncontrado == false) {
+			boolean esPrimo;
+
+			do {
+				int raiz = (int) Math.sqrt(numero) * 1;// calcula la raiz cuadrada de un numero
+				esPrimo = true;
+				if (numero % 2 != 0) {// si es impar
+					for (int i = 2; i < raiz; i++) {
+						if (numero % i == 0) {
+							esPrimo = false;
+						}
+					}
+				}
+				if (esPrimo == false) {
+					numero++;
+				}
+			} while (esPrimo == false);
+			// si el numero primo encontrado tiene una diferencia de uno
+			if (numero - anterior == 2) {
+				gemelosEncontrado = true;
+			} else {
+
+			}
+		}
 		
 		// ================ejercicio 8=============================
 		//Escribe un programa que sume por un lado las cifras pares y por otro las impares de
@@ -158,7 +210,7 @@ public class B4 {
 		//Mundo y el carácter la o nos debería de decir algo así:
 		//La o aparece en 2 ocasiones
 		//Las posiciones en las que aparece son: 1,9
-		
+		/*
 		Scanner teclado = new Scanner(System.in);
 
 		System.out.println("INTRODUCE TEXTO");
@@ -197,7 +249,7 @@ public class B4 {
 		//POR ESO RESTAMOS -2 
 		posciones = posciones.substring(0, posciones.length() - 2);
 		System.out.println(posciones);
-		
+		*/
 		
 		// ================ejercicio 10=============================
 		//Escribir un programa que nos pida una cadena por teclado y luego nos imprima sólo

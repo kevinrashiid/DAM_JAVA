@@ -378,14 +378,28 @@ public class B3 {
 		Scanner teclado = new Scanner(System.in);
 		System.out.print("INTRODUCE FECHA FORMATO DD/MM/YYYY --> ");
 		String fecha = teclado.nextLine();
+		boolean bandera=true; //BANDERA
 		//patron "[0-9]{2}[/-][0-9]{2}[/-][0-9]{4}"
 		if(fecha.matches("[0-9]{2}[/-][0-9]{2}[/-][0-9]{4}")){
 			System.out.println("FECHA CORRECTA!!");
 		}else {
-			System.out.println("FECHA INCORRECTA :(");
+			bandera=false; //BANDERA
+			System.out.println("FECHA INCORRECTA");
 		}
 		// MI SOLUCION PARA LA HACER LA COMPROBACIONES SERIA CORTANDO EL STRING
 		//PASARLO A INT Y COMPARAR CADA PARTE
+		
+		//==TODO== COMPROBACION DE AÑO BISIESTO
+		int añoBisiesto=0;
+		String año=fecha.substring(6,fecha.length());
+		añoBisiesto=Integer.parseInt(año);
+		
+		if(añoBisiesto%4==0 && bandera==true) {
+			System.out.println("Año bisiesto");
+		}else {
+			System.out.println("Año no bisiesto");
+		}
+				
 	}
 }
 
