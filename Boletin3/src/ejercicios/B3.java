@@ -113,8 +113,6 @@ public class B3 {
 		 * Es el mismo ejercicio solo que hemos añadido el contador dentro del
 		 * bucle para saber cuantas veces paso por el contador*/
 
-		
-		
 		//================ejercicio 3=============================
 		//Escribir un programa que nos pida nuestro nombre y apellidos (dos peticiones
 		//diferentes hechas en ese orden) y nos lo escriba formateado de la siguiente forma:
@@ -129,7 +127,6 @@ public class B3 {
 		System.out.println(apellido+","+nombre);
 		//NO SE SI REFIERE A ESTO
 		*/
-		
 		
 		
 		//================ejercicio 4=============================
@@ -177,7 +174,6 @@ public class B3 {
 		}
 		System.out.println("CADENA AL REVES -->"+alReves);
 		*/
-		
 		
 		// ================ejercicio 6=============================
 		//Escribir un programa que pida por teclado una cadena de texto y la separe en dos
@@ -235,7 +231,6 @@ public class B3 {
 		System.out.println(texto);
 		*/
 		
-		
 		// ================ejercicio 8=============================
 		//		Escribir un programa que reciba una cadena de texto por teclado y la muestre sin
 		//		vocales. Por ejemplo, si recibe la cadena “Hola Mundo” debería de devolver “Hl Mnd”.
@@ -285,10 +280,6 @@ public class B3 {
 		}
 		*/
 
-		
-		
-		
-		
 		// ================ejercicio 10=============================
 		//Escribe un programa que valide si un NIF español introducido por teclado es correcto.
 		//La longitud exacta de la cadena ha de ser de 9 caractéres. Los ocho primeros han de
@@ -350,7 +341,7 @@ public class B3 {
 		//incorpora lo es. La forma de hacerlo es la siguiente --> leer boletin 3:
 		//PREGUNTAR SOBRE LA TABLA DEL BOLETIN
 		// A QUE SE REFIERE CON ESA TABLA
-		/*
+		
 		Scanner teclado = new Scanner(System.in);
 
 		System.out.print("INTRODUCE LOS NUMEROS DE TU DNI --> ");
@@ -366,7 +357,7 @@ public class B3 {
 		}else {
 			System.out.println("algo en tu DNI falla");
 		}
-		*/
+		
 		// ================EJERCICIO 15=============================
 		//Escribe un programa que reciba por teclado una fecha en el formato DD/MM/YYYY. 
 		//El programa debe de comprobar si la fecha es correcta teniendo en cuenta:
@@ -375,6 +366,8 @@ public class B3 {
 		
 		//teniendo en cuenta incluso los años que son bisiestos 
 		//(aquellos que son divisibles entre cuatro).
+		
+		/*
 		Scanner teclado = new Scanner(System.in);
 		System.out.print("INTRODUCE FECHA FORMATO DD/MM/YYYY --> ");
 		String fecha = teclado.nextLine();
@@ -399,6 +392,7 @@ public class B3 {
 		}else {
 			System.out.println("Año no bisiesto");
 		}
+		*/
 				
 	}
 }

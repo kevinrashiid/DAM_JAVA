@@ -1,5 +1,6 @@
 package boletin2;
 
+import java.security.NoSuchAlgorithmException;
 import java.util.Scanner;
 
 public class B2 {
@@ -37,6 +38,7 @@ public class B2 {
 		//Divisores del número 14: 1, 2, 7, 14
 		//================SIN ACABAR CREO QUE ESTA MAL=============================
 		//da un error
+		/*
 		Scanner teclado = new Scanner(System.in);
 		System.out.println("INTRODUCE UN NUMERO Y TE DIRE TODOS SUS DIVISORES");
 		int numero = teclado.nextInt();
@@ -51,11 +53,7 @@ public class B2 {
 		//MOSTRAMOS DESDE LA POSICION 0 HASTA LA ULTIMA -2
 		numeroMostrado=numeroMostrado.substring(0,numeroMostrado.length()-2);
 		System.out.println("DIVISORES DE "+numero+" SON: "+numeroMostrado);
-
-
-		
-		
-		
+		*/
 		//================ejercicio 9=============================
 		//Escribir un programa que pida números entre el 1 y el 100 por teclado hasta que
 		//escribamos la palabra FIN (con mayúsculas). Si el usuario introduce una entrada
@@ -246,6 +244,50 @@ public class B2 {
 		*/
 		
 		
+		//================ejercicio 18=============================
+		//Escribe un programa que le pida al usuario su sueldo anual (lógicamente puede ser
+		//un número con decimales) y le informe que porcentaje de retención le corresponde, el
+		//importe de la misma y el importe neto restante que cobrará
+		/*
+		Scanner teclado=new Scanner(System.in);
+		System.out.print("Dime tu sueldo te dire tu retencion --> ");
+		double sueldoAnual=teclado.nextDouble();
+		double retencion=0.0;
+		double sueldoNeto=0.0;
+		teclado.close();
+		if(sueldoAnual>0 && sueldoAnual<=12450) {
+			retencion=(sueldoAnual/100)*19; //19%
+			sueldoNeto=sueldoAnual-retencion;
+			System.out.println("Te corresponde un 19% de retencion ");
+			System.out.println("El importe de la retencion seria "+retencion+"€");
+			System.out.println("Tu sueldo se te quedaria en -> "+sueldoAnual+" - "+retencion+"="+sueldoNeto+"€");
+		}else if(sueldoAnual>12450 && sueldoAnual<=20200) {
+			retencion=(sueldoAnual/100)*24;
+			System.out.println("Te corresponde un 24% de retencion ");
+			System.out.println("El importe de la retencion seria "+retencion+"€");
+			System.out.println("Tu sueldo se te quedaria en -> "+sueldoAnual+" - "+retencion+"="+sueldoNeto+"€");
+		}else if(sueldoAnual>20200 && sueldoAnual<=35200) {
+			retencion=(sueldoAnual/100)*30;
+			System.out.println("Te corresponde un 30% de retencion ");
+			System.out.println("El importe de la retencion seria "+retencion+"€");
+			System.out.println("Tu sueldo se te quedaria en -> "+sueldoAnual+" - "+retencion+"="+sueldoNeto+"€");
+		}else if(sueldoAnual>35200 && sueldoAnual<=60000){
+			retencion=(sueldoAnual/100)*37;
+			System.out.println("Te corresponde un 37% de retencion ");
+			System.out.println("El importe de la retencion seria "+retencion+"€");
+			System.out.println("Tu sueldo se te quedaria en -> "+sueldoAnual+" - "+retencion+"="+sueldoNeto+"€");
+		}else if(sueldoAnual>60000 && sueldoAnual<300000){
+			retencion=(sueldoAnual/100)*45;
+			System.out.println("Te corresponde un 45% de retencion ");
+			System.out.println("El importe de la retencion seria "+retencion+"€");
+			System.out.println("Tu sueldo se te quedaria en -> "+sueldoAnual+" - "+retencion+"="+sueldoNeto+"€");
+		}else if(sueldoAnual>300000) {
+			retencion=(sueldoAnual/100)*47;
+			System.out.println("Te corresponde un 47% de retencion ");
+			System.out.println("El importe de la retencion seria "+retencion+"€");
+			System.out.println("Tu sueldo se te quedaria en -> "+sueldoAnual+" - "+retencion+"="+sueldoNeto+"€");
+		}
+		*/
 		
 	}	
 }
