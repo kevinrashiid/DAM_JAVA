@@ -25,6 +25,10 @@ public class vectores_arrays {
 		//una MATRIZ DE DOS FILAS Y DOS COLUMNAS
 		String[][] alumnos= {{"ana","lopez"},{"mario","perez"},{"kevin","mejia"}};
 		System.out.println(alumnos[1][1]); //fila[1]columna[]
+		System.out.println(alumnos[1][1] +" "+alumnos[1][0]); 
+
+		//RECORRIENDO UN ARRAY
+		
 	}
 }
 

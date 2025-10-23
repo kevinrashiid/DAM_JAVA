@@ -1,5 +1,7 @@
 package conversiones;
 
+import java.util.Arrays;
+
 public class conversiones {
 
 	public static void main(String[] args) {
@@ -48,6 +50,10 @@ public class conversiones {
 		System.out.println(max);
 		//para que duevla el minimo
 		double mim=Math.min(539.4, 3);
+		
+		//para convertir un array a texto
+		int diasDelMes[]= new int[12];
+		String texto= Arrays.toString(diasDelMes);
 	}
 }
 

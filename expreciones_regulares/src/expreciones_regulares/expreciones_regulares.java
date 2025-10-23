@@ -45,5 +45,14 @@ public class expreciones_regulares {
 		//PATRON MATRICULA [0-9]{4}\\s[A-Z a-z&&[^AEIOUQ]]{3}
 		//.find() //mira si encuentra el patron
 		//.matches() //tiene que coincidir EXACTAMENTE
+		
+		//[A-Z]? <-- con este padre solo puede salir una letra
+		//[0-9]{8}[A-Z]? //dni con una letra
+		//[A-Z]* //de la A ->Z puede apacer muchas veces
+		//[A-Z]+ //una o muchas si no tiene letras es falso
+		//[A-Z]{3,} // al menos 3 letras
+		//[A-Z]{3,8} // entre 3 y 8 letras
+		
+		
 	}
 }
