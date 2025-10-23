@@ -17,11 +17,12 @@ public class boletin5_arrays {
 		int[] numeros=new int[6];
 		//creo que se tiene que hacer con un do while //CORREGIR ESTA MAL
 		do {
-			if(numeros[contador]!=aleatorio) {
+			if(numeros[contador]!=aleatorio) {//esto esta mal
 				aleatorio=(int)(Math.random()*(numero2-numero1+1)+numero1);
 				numeros[contador]=aleatorio;	
 			}
 			contador++;
+			System.out.println(numeros[contador]);
 		}while(numeros[contador]!=aleatorio);
 		
 		
