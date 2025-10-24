@@ -13,7 +13,7 @@ public class vectores_arrays {
 		lista[2]=5;// metemos un 5 en la posicion 2
 		System.out.println(notas[2]); //recuperando contenido de la posicion 2
 		notas[1]=9.2; //modificamos el contenido de la posicion 1 de notas
-		System.out.println(notas[1]);
+		System.out.println(notas[1]); 
 		System.out.println(notas);// [D@378fd1ac <-- Referencia de la direccion de memoria
 		System.out.println(notas[20]);//no puede apuntar a una variable que no existe
 		
