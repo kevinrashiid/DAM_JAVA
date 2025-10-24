@@ -210,7 +210,7 @@ public class B4 {
 		//Mundo y el carácter la o nos debería de decir algo así:
 		//La o aparece en 2 ocasiones
 		//Las posiciones en las que aparece son: 1,9
-		/*
+		
 		Scanner teclado = new Scanner(System.in);
 
 		System.out.println("INTRODUCE TEXTO");
@@ -249,7 +249,7 @@ public class B4 {
 		//POR ESO RESTAMOS -2 
 		posciones = posciones.substring(0, posciones.length() - 2);
 		System.out.println(posciones);
-		*/
+		
 		
 		// ================ejercicio 10=============================
 		//Escribir un programa que nos pida una cadena por teclado y luego nos imprima sólo

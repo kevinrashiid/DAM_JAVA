@@ -86,7 +86,7 @@ public class arrays2 {
 		
 		
 		int diasDelMes[]= new int[12];//12 espacios
-		Arrays.fill(diasDelMes, 30);//rellena todas sus posiciones con la segunda posicion -->30
+		Arrays.fill(diasDelMes,30);//rellena todas sus posiciones con la segunda posicion -->30
 		for(int mes:diasDelMes) {
 			System.out.print(mes +"  ");
 		}
