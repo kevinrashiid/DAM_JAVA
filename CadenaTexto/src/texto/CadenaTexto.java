@@ -83,11 +83,11 @@ public class CadenaTexto {
 		if (cadenaVacia.isEmpty()) {//comprobar si la cadena esta vacia TRUE o FALSE
 			System.out.println("LA CADENA ESTA VACIA");
 		}
-		if (cadenaVacia.equals("")) {//comprobar si la cadena esta vacia TRUE o FALSE
-			System.out.println("LA CADENA ESTA VACIA");
+		if (cadenaVacia.equals("")) {//comprobar si la cadena es igual TRUE o FALSE
+			System.out.println("LA CADENA ESTA igual");
 		}
-		if (cadenaVacia.compareTo("")==0) {//comprobar si la cadena esta vacia TRUE o FALSE
-			System.out.println("LA CADENA ESTA VACIA");
+		if (cadenaVacia.compareTo("")==0) {//para ordenar alfabeticamente TRUE o FALSE
+			System.out.println("las palabras son iguales");
 		}
 		
 		String texto="Hola Mundo soy java";

@@ -11,6 +11,10 @@ public class conversiones {
 		int entero= 42;
 		double conDecimales=44.67;
 		
+		//de char a String
+		char c='a';
+		String s=String.valueOf(c);
+		
 		//de texto(String) a entero(int)
 		int num1= Integer.parseInt(textoEntero);//convertimos texto a numero
 		System.out.println(num1);
