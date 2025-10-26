@@ -49,6 +49,7 @@ public class boletin5_arrays {
 		//previamente por teclado. Las palabras pueden estar separadas por más de un espacio
 		//pero siempre debe de haber al menos uno. No tenemos en cuenta los signos de
 		//puntuación como separadores.
+		// SIN ACABAR
 		Scanner teclado=new Scanner(System.in);
 		System.out.println("FRASE --> ");
 		String frase=teclado.nextLine(); //para pedir la frase
@@ -60,8 +61,7 @@ public class boletin5_arrays {
 		for(int i=0;i<frase.length();i++) {
 			if(frase.charAt(i)!=espacio) {
 				c=String.valueOf(frase.charAt(i));
-				entera=entera+c.charAt(i);
-			
+				palabras[i]=c.charAt(i)+entera;
 			}
 		}
 		System.out.println(entera);

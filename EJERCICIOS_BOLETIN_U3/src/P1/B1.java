@@ -490,7 +490,7 @@ public class B1 {
 		//===============EJERCICIO 22==============================
 		//Escribir un programa que genere un número primo aleatorio entre el 10.000.000 y el
 		//50.000.000
-		/*
+		
 		 boolean esPrimo; //variable como bandera
 		int azar;
 		//este algoritmo es el peor codigo que podemos hacer pero funciona
@@ -511,7 +511,7 @@ public class B1 {
 			}
 		}while(esPrimo == false);
 		System.out.println("El numero " + azar + " es primo" );
-		*/
+		
 		
 		//===============EJERCICIO 25==============================
 		//Escribir un programa que reciba por teclado un número y muestre sucesivamente el

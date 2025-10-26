@@ -200,9 +200,128 @@ public class practicando_exa_1_1 {
 		}
 		*/
 		
+		
 		//···········EJERCICIO 14···········
+		//Escribir un programa que nos pida dos números por teclado y genere un número aleatorio
+		//comprendido entre ambos. Por el momento no te preocupes de que el primer número
+		//siempre debería de ser menor que el segundo, simplemente no los metas en un orden		
+		//incorrecto
+		/*
+		Scanner teclado= new Scanner(System.in);
+		System.out.println("primer numero ");
+		int inicio=teclado.nextInt();
+		System.out.println("segundo numero ");
+		int fin=teclado.nextInt();
+		int azar=(int)(Math.random()*(fin-inicio+1)+inicio);
+		System.out.println(azar);
+		*/
+		
+		//···········EJERCICIO 15···········
+		//Modificar el programa del punto anterior para que si el primer número que metemos es
+		//mayor que el segundo funcione correctamente. Es decir, si metemos en primer lugar el 50 y
+		//en segundo el 10 nos debería de generar un número aleatorio entre el 10 y el 50 (y no entre el
+		//50 y el 10 que no tiene mucha lógica…)
+		/*
+		Scanner teclado= new Scanner(System.in);
+		System.out.println("primer numero ");
+		int inicio=teclado.nextInt();
+		System.out.println("segundo numero ");
+		int fin=teclado.nextInt();
+			if(inicio<fin) {
+			int azar=(int)(Math.random()*(fin-inicio+1)+inicio);
+			System.out.println(azar);
+			}else {
+				System.out.println("El primero siempre tiene que ser menor que el segundo");
+			}
+			*/
+		//···········EJERCICIO 16···········
+		//Escribir un programa que genere seis números aleatorios entre el 1 y el 49 (simulando una
+		//lotería primitiva). Por el momento no te preocupes de que algunos números puedan salir
+		//repetidos. Ya resolveremos eso más adelante.
+		/*
+		for(int i=0;i<6;i++) {
+			int azar=(int)(Math.random()*(49-1+1)+1);
+			System.out.println(azar);
+		}
+		*/
+		//···········EJERCICIO 17···········
+		//Escribir un programa que nos permita generar una quiniela. Para ello nos debe generar
+		//quince números aleatorios entre el 1 y el 3. Recuerda que los resultados válidos son 1 X o 2,
+		//así que si te sale un 3 lo que tienes que imprimir en pantalla es una X
+		/*
+		for(int i=0;i<15;i++) {
+			int azar=(int)(Math.random()*(3-1+1)+1);
+			if(azar==3) {
+				System.out.println("x");
+			}else {
+				System.out.println(azar);
+			}
+		}
+		*/
+		//···········EJERCICIO 18···········
+		//Escribe un programa que genere números aleatorios entre el 1 y el 1000 sin parar y que sólo
+		//se detenga cuando salga el 666. Los números que ha tenido que generar tu programa hasta
+		//aparecer el 666 son los que restan para el apocalipsis. Tu programa debería de indicarlo con
+		//un mensaje tétrico (¡Faltan 236 días para que se acabe todo! por ejemplo)
+		/*
+		int azar=0;
+		int contador=0;
+		while(azar!=666) {
+			azar=(int)(Math.random()*(1000-1+1)+1);
+//			System.out.println(azar);
+			contador++;
+		}
+		System.out.println("¡Faltan "+contador+" días para que se acabe todo!");
+		*/
+		
+		//···········EJERCICIO 19···········
+		//Escribir un programa que pida un número por teclado y nos muestre sus divisores
+		/*
+		Scanner teclado=new Scanner(System.in);
+		System.out.println("numero--> ");
+		int numero=teclado.nextInt();
+		for(int i=numero;i>0;i--) {
+			if(numero%i==0) { //divisores
+				System.out.println(i+" es divisor");
+			}
+		}
+		*/
+		
+		
+		//···········EJERCICIO 20···········
+		//Escribir un programa que nos pida tres números por teclado en cualquier orden y nos los
+		//muestre en pantalla ordenados de menor a mayor
+		/*
+		Scanner teclado=new Scanner(System.in);
+		System.out.println("primer numero--> ");
+		int numero1=teclado.nextInt();
+		System.out.println("segundo numero--> ");
+		int numero2=teclado.nextInt();
+		System.out.println("tercer numero--> ");
+		int numero3=teclado.nextInt();
 
+		//ordenador 3 numeros ascendente
+		int max=Math.max(Math.max(numero1, numero2),numero3);
+		int min=Math.min(Math.min(numero1, numero2),numero3);
+		
+		int medio=(numero1+numero2+numero3)-(max+min);
+		System.out.println(min+"··"+medio+"··"+max);
+		*/
+		
+		//···········EJERCICIO 21···········
+		//Escribir un programa que pida por teclado un número al usuario y calcule si es primo o no
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
