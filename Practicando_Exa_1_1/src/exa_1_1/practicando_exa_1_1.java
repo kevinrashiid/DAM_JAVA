@@ -310,6 +310,13 @@ public class practicando_exa_1_1 {
 		
 		//···········EJERCICIO 21···········
 		//Escribir un programa que pida por teclado un número al usuario y calcule si es primo o no
+		Scanner teclado=new Scanner(System.in);
+		System.out.println("numero--> ");
+		int numero=teclado.nextInt();
+		boolean banderas=false;
+		while(banderas==false) {
+			if(numero%1==0 && numero%numero==0)
+		}
 	}
 }
 
