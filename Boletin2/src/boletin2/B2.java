@@ -77,6 +77,34 @@ public class B2 {
 		} while (!entrada.equals("fin")); // si entrada es distinto a sigue en el bucle
 		System.out.println("Has metido "+contador+" numeros entre 1 y el 100");
 		*/
+		//##################EJERCICIO 9 MEJORADO############################
+		/*
+		Scanner teclado=new Scanner(System.in);
+		boolean hemosAcabado=false;
+		String patronNumerico="[0-9]+";//
+		int contador=0;
+		do {
+			System.out.println("introduce frase");
+			String entrada=teclado.nextLine();
+			
+			if(entrada.equals("FIN")) {
+				hemosAcabado=true;
+			}else if(entrada.matches(patronNumerico)) {//"[0-9]+"
+				System.out.println("Es un numero entero");
+				int numero=Integer.parseInt(entrada);
+				if(numero>=1&&numero<=100) {
+					contador++;
+				}else {
+					System.out.println("Pero no es un entero entre 1 y 100");
+				}
+			}else {
+				System.out.println("Es otra cosa");
+			}
+		//}while(hemosAcabado!=true); ESTO ES IGUAL QUE EL DE ABAJO
+			
+		}while(hemosAcabado==false);
+		System.out.println("Has introducido "+contador+" numeros validos");
+		*/
 		//================ejercicio 12=============================
 		//Realiza un juego en el que debes de acertar un número entre el 1 y el 50 que el
 		//ordenador ha elegido de forma aleatoria. El programa te dejará tantos intentos como

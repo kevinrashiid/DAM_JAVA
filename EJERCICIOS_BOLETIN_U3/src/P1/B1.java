@@ -504,7 +504,8 @@ public class B1 {
 			if (azar%2==0)
 				esPrimo=false;//con esto me aseguro que el numero generado sea IMPAR
 			//divisor<azar && esPrimo==true dos condiciones que se tienen que cumplir
-			for(int divisor=3; divisor<raiz && esPrimo==true; divisor+=2) { //con el += son saltamos los pares
+			//con el += son saltamos los pares
+			for(int divisor=3; divisor<raiz && esPrimo==true; divisor+=2) {
 				if (azar%divisor==0) {
 					esPrimo=false;	
 				}
