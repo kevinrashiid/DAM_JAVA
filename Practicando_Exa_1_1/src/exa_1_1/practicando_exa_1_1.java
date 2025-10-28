@@ -1,5 +1,7 @@
 package exa_1_1;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class practicando_exa_1_1 {
@@ -357,8 +359,77 @@ public class practicando_exa_1_1 {
 		//···········EJERCICIO 1···········
 		//Escribir un programa que nos pida tres palabras por teclado en cualquier orden y nos
 		//las muestre en pantalla ordenadas alfabeticamente en orden ascendente
+		/*
+		Scanner teclado=new Scanner(System.in);
+		System.out.println("primera letra");
+		String letra0=teclado.nextLine();
+		System.out.println("segunda letra");
+		String letra1=teclado.nextLine();
+		System.out.println("tercera letra");
+		String letra2=teclado.nextLine();
 		
-	}
+		String[] arrayOrdenado=new String[3];
+		arrayOrdenado[0]=letra0;
+		arrayOrdenado[1]=letra1;
+		arrayOrdenado[2]=letra2;
+		System.out.println("--------------");
+		Arrays.sort(arrayOrdenado); //ordenar ascendente
+		for(String n:arrayOrdenado)
+			System.out.println(n);
+		*/
+		/*
+		//···········EJERCICIO 2···········
+		//al anterior pero ordenando ahora en orden descendente
+		Scanner teclado=new Scanner(System.in);
+		String[] arrayOrdenado=new String[3];
+
+		System.out.println("primera letra");
+		String letra0=teclado.nextLine();
+		System.out.println("segunda letra");
+		String letra1=teclado.nextLine();
+		System.out.println("tercera letra");
+		String letra2=teclado.nextLine();
+		
+		
+		arrayOrdenado[0]=letra0;
+		arrayOrdenado[1]=letra1;
+		arrayOrdenado[2]=letra2;
+		System.out.println("--------------");
+		Arrays.sort(arrayOrdenado); //ordenar array descendente
+		
+		for(int i=arrayOrdenado.length-1;i>=0;i--) { //recorrer array al reves
+			System.out.println(arrayOrdenado[i]);
+		}
+		*/
+		
+		//···········EJERCICIO 3···········
+		//Escribir un programa que pida un número por teclado al usuario que simule ser el
+		//precio de un artículo y escriba el resultado de aplicarle el IVA del 21%. El resultado
+		//debe de estar redondeado a dos decimales.
+		/*
+		Scanner tecladoScanner=new Scanner(System.in);
+		System.out.println("numero para aplicarle 21%IVA");
+		double numero=tecladoScanner.nextDouble();
+		numero=(numero+(numero/100)*21);//TODO SUMANDO EL 21% de IVA
+		numero=Math.floor(numero*100)/100;//con dos decimales
+		System.out.println(numero);
+		*/
+		//···········EJERCICIO 4···········
+		//Escribir un programa que nos pida por teclado dos calificaciones numéricas de un
+		//alumno y nos muestre la media aritmética resultante redondeada sin decimales. Las
+		//notas introducidas deben de estar entre 0 y 10 y admiten decimales. Caso de que una
+		//entrada sea errónea debería de advertirnos de ello y no hacer el cálculo
+		Scanner teclado=new Scanner(System.in);
+		System.out.println("primera nota");
+		String nota1=teclado.nextLine();
+		System.out.println("segunda nota");
+		String nota2=teclado.nextLine();
+		
+		if(nota1.matches("[0.0-10.0]")) {
+			
+		}
+		
+	}	
 }
 
 

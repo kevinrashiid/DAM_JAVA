@@ -1,5 +1,6 @@
 package boletin5;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Vector;
@@ -15,26 +16,25 @@ public class boletin5_arrays {
 		// 6 numeros aleatorios entre 1 y 49
 		// para el numero aleatorio
 		/*
-		int numero1 = 1;
-		int numero2 = 49;
-
-		int[] loteria = new int[6];
-		int aleatorio = 0;
-		// boolean banderas
-		boolean repetido = false;
-		for (int i = 0; i < loteria.length; i++) {
-			do {
-				aleatorio = (int) (Math.random() * (numero2 - numero1 + 1) + numero1);
-				repetido=false;
-				// Comprobar si el número ya existe en las posiciones anteriores
-				for (int x = 0; x < i; x++) {
-					if(loteria[x]==aleatorio) {
-						repetido=true;
-					}
+		int[] primitiva=  new int[6];
+		int contador=0;
+		while(contador<6) {
+			int aletorio=(int)(Math.random()*10)+1;
+			boolean yaExiste=false;
+			for (int i = 0; i < 6; i++) {
+				//comprobacion de que YA EXISTE
+				if(primitiva[i]==aletorio) {
+					yaExiste=true;
 				}
-			} while (repetido==true);// repetir mientras el número ya exista
-			loteria[i]=aleatorio;
-			System.out.println(loteria[i]);
+			}
+			//si no he metido ya ese numero...
+			if (yaExiste==false) {
+				primitiva[contador] = aletorio;
+				contador++;
+			}
+		}
+		for(int n:primitiva) {
+			System.out.println(n);
 		}
 		*/
 		
@@ -50,6 +50,7 @@ public class boletin5_arrays {
 		//pero siempre debe de haber al menos uno. No tenemos en cuenta los signos de
 		//puntuación como separadores.
 		// SIN ACABAR
+		/*
 		Scanner teclado=new Scanner(System.in);
 		System.out.println("FRASE --> ");
 		String frase=teclado.nextLine(); //para pedir la frase
@@ -66,7 +67,7 @@ public class boletin5_arrays {
 		}
 		System.out.println(entera);
 //		System.out.println(Arrays.toString(palabras));
-		
+		*/
 		
 		
 		
@@ -110,11 +111,41 @@ public class boletin5_arrays {
 		System.out.println("el mayor es "+max);
 		System.out.println("el menor es "+menor);
 		*/
+		int numero[] = new int[100];
+		for (int i = 0; i < 100; i++) {
+			numero[i]= (int) (Math.random()*50)+1;
+		}
+		Arrays.sort(numero);
+		for(int n:numero) {
+			System.out.println(n);
+		}
+		int repetidos[]=new int[50];
+		
+		
+		System.out.println();
+		System.out.println("el mas pequeño "+numero[0]);
+		System.out.println("el mas grande "+numero[99]);
+		
+
+		
 		// ================ejercicio 6====================================================
 		//Escribe un programa que nos permita contar el número de veces que se repite cada
 		//cifra en un número. Por ejemplo, el número 885210003 tiene tres 0, un 1, un 2, un 5 y
 		//dos 8.
-		
+		/*
+		String numero="489298";
+		int[] contador=new int[10];
+		for(int i=0;i<numero.length();i++) {
+			String cifra=""+numero.charAt(i);
+			int posicion=Integer.parseInt(cifra);
+			contador[posicion]=contador[posicion]+1;
+		}
+		for(int n=0;n<10;n++) {
+			if(contador[n]!=0) {//IMPRIMIR LAS CIFRAS QUE APARECEN MAS DE UNA VES
+			System.out.println("la cifra "+n+" aparece "+contador[n]+" veces");
+			}
+		}
+		*/
 
 	}
 }
