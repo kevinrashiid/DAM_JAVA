@@ -310,13 +310,54 @@ public class practicando_exa_1_1 {
 		
 		//···········EJERCICIO 21···········
 		//Escribir un programa que pida por teclado un número al usuario y calcule si es primo o no
+		/* SIN ACABAR
 		Scanner teclado=new Scanner(System.in);
 		System.out.println("numero--> ");
 		int numero=teclado.nextInt();
 		boolean banderas=false;
 		while(banderas==false) {
-			if(numero%1==0 && numero%numero==0)
+			if(numero%1==0 && numero%numero==0);
 		}
+		*/
+		//···········EJERCICIO 22···········
+		//Escribir un programa que nos pida tres palabras por teclado en cualquier orden y nos
+		//las muestre en pantalla ordenadas alfabeticamente en orden ascendente
+		
+		//···········EJERCICIO 23···········
+		//Escribir un programa que te escriba todos los números primos que hay entre el 1 y el 100
+		
+		//···········EJERCICIO 24···········
+		//Modifica el programa anterior para que sea el usuario quién introduzca dos números y se nos
+		//muestre los primos que hay entre ambos
+		
+		//···········EJERCICIO 25···········
+		//Escribir un programa que reciba por teclado un número y muestre sucesivamente el
+		//resultado de ir dividiéndolo por dos sucesivamente hasta llegar a un número igual o menor a 1.
+		//Caso de ser necesario los resultados se mostrarán con dos decimales. Un ejemplo de una
+		//ejecución correcta después de introducir el número 34 sería esta:
+		//Haz introducido el número 34
+		//17
+		//8.5
+		//4.25
+		//2.12
+		//1.06
+		//0.53
+		/*
+		Scanner teclado=new Scanner(System.in);
+		System.out.println("introduce numero--> ");
+		double numero=teclado.nextDouble();
+		teclado.close();
+		while(numero>1) {
+			numero=numero/2.0; //reasignamos numero con el cociente de la division
+			numero=Math.floor(numero*100)/100; //SALIDA CON DOS DECIMALES
+			System.out.println(numero);
+		}
+		*/
+		//TODO ------------------- BOLETIN 2------------------
+		//···········EJERCICIO 1···········
+		//Escribir un programa que nos pida tres palabras por teclado en cualquier orden y nos
+		//las muestre en pantalla ordenadas alfabeticamente en orden ascendente
+		
 	}
 }
 
