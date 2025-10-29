@@ -59,17 +59,36 @@ public class B4 {
 		int numero =teclado.nextInt();		
 		int num0=0;
 		int num1=1;
+		String texto="";
 		for (int i=0 ; i<numero ; i++) { //imprimimos 10 numeros
 			if(numero>num0) { //si numero es mayor num0 imprime cuando num0 se pase deja de imprimir
-			System.out.print(num0 + " "); 
-			//sumamos los dos anteriores que se van actulizando 
-			//por que a num0 se le va asignar el valor antiguo de num1 
-			int nuevo=num1+num0; // SUMA DE DOS ANTERIORES
-			num0=num1; //el num1 pasa a ser el num0
-			num1=nuevo;//y el num1 se guarda el valor que dio de num1+num0
+				System.out.print(", " + num0);
+				// sumamos los dos anteriores que se van actulizando
+				// por que a num0 se le va asignar el valor antiguo de num1
+				int nuevo = num1 + num0; // SUMA DE DOS ANTERIORES
+				num0 = num1; // el num1 pasa a ser el num0
+				num1 = nuevo;// y el num1 se guarda el valor que dio de num1+num0
 			}
 		}
 		*/
+		Scanner teclado = new Scanner(System.in);
+        System.out.print("Introduce un número límite --> ");
+        int limite = teclado.nextInt();
+        teclado.close();
+        int num0 = 0;
+        int num1 = 1;
+        String texto = "0"; // empieza con el primer número
+
+        // mientras el siguiente número sea menor o igual al límite
+        while (num1 <= limite) {
+            texto = texto+", " + num1;
+            int nuevo = num0 + num1;
+            num0 = num1;
+            num1 = nuevo;
+        }
+        System.out.println(texto);
+
+		
 		// ================ejercicio 4=============================
 		//Escribir un programa que cuente el número de cifras que tiene un número (por
 		//ejemplo, el 8 tiene una cifra, el 221 tres y el 456789 seis).
@@ -153,6 +172,7 @@ public class B4 {
 		//Decimos que dos números primos son gemelos cuando están separados por un único
 		//número (el 11 y el 13, el 17 y el 19, el 41 y el 43, etc.). Escribir un programa que calcule
 		//la primera pareja de primos gemelos por encima del 50
+		/*
 		int numero = 150;
 		int anterior=0;
 		boolean gemelosEncontrado = false;
@@ -180,7 +200,7 @@ public class B4 {
 
 			}
 		}
-		
+		*/
 		// ================ejercicio 8=============================
 		//Escribe un programa que sume por un lado las cifras pares y por otro las impares de
 		//un número y nos muestre ambos resultados. Por ejemplo, si el número en cuestión es
@@ -210,7 +230,7 @@ public class B4 {
 		//Mundo y el carácter la o nos debería de decir algo así:
 		//La o aparece en 2 ocasiones
 		//Las posiciones en las que aparece son: 1,9
-		
+		/*
 		Scanner teclado = new Scanner(System.in);
 
 		System.out.println("INTRODUCE TEXTO");
@@ -249,7 +269,7 @@ public class B4 {
 		//POR ESO RESTAMOS -2 
 		posciones = posciones.substring(0, posciones.length() - 2);
 		System.out.println(posciones);
-		
+		*/
 		
 		// ================ejercicio 10=============================
 		//Escribir un programa que nos pida una cadena por teclado y luego nos imprima sólo

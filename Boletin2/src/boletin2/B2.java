@@ -12,25 +12,40 @@ public class B2 {
 		//================ejercicio 1 SIN ACABAR=============================
 		//Escribir un programa que nos pida tres palabras por teclado en cualquier orden y nos las
 		//muestre en pantalla ordenadas alfabeticamente en orden ascendente
-		/*Scanner teclado= new Scanner(System.in);
-		
-		System.out.println("Primera palabra --->");
-		String letra1=teclado.nextLine();
-		
-		System.out.println("Segunda palabra --->");
-		String letra2=teclado.nextLine();
-		
-		System.out.println("Tercera palabra --->");
-		String letra3=teclado.nextLine();
-		
-		if(letra1.compareTo(letra2)==0) {
-			System.out.println(letra1 +" son iguales "+ letra2);
-		}else if(letra1.compareTo(letra2)==1){
-			System.out.println(letra1 +" "+ letra2);
-		}
-		
-//		String primera=letra1.compareTo(letra2);
-	*/
+		/*
+		Scanner teclado = new Scanner(System.in);
+        // Pedimos tres palabras al usuario
+        System.out.print("Primera palabra: ");
+        String p1 = teclado.nextLine();
+        System.out.print("Segunda palabra: ");
+        String p2 = teclado.nextLine();
+        System.out.print("Tercera palabra: ");
+        String p3 = teclado.nextLine();
+        teclado.close();
+        String temp; // variable auxiliar para intercambiar valores
+        // Comparamos p1 y p2 usando compareTo
+        // Si p1 viene después de p2 en orden alfabético, los intercambiamos
+        if (p1.compareTo(p2) > 0) { 
+            temp = p1;
+            p1 = p2;
+            p2 = temp;
+        }
+        // Comparamos p2 y p3 usando compareTo
+        // Si p2 viene después de p3, los intercambiamos
+        if (p2.compareTo(p3) > 0) {
+            temp = p2;
+            p2 = p3;
+            p3 = temp;
+        }
+        // Volvemos a comparar p1 y p2 por si p1 sigue estando después de p2
+        if (p1.compareTo(p2) > 0) {
+            temp = p1;
+            p1 = p2;
+            p2 = temp;
+        }
+        // Mostramos las palabras ya ordenadas alfabéticamente
+        System.out.println("Orden ascendente: " + p1 + ", " + p2 + ", " + p3);
+        */
 		//================ejercicio 8=============================
 		//Escribe un programa que pida un número por teclado y escriba todos sus divisores
 		//separados por comas (y evitando poner una coma al final). Por ejemplo, si el número
@@ -78,7 +93,7 @@ public class B2 {
 		System.out.println("Has metido "+contador+" numeros entre 1 y el 100");
 		*/
 		//##################EJERCICIO 9 MEJORADO############################
-		/*
+		
 		Scanner teclado=new Scanner(System.in);
 		boolean hemosAcabado=false;
 		String patronNumerico="[0-9]+";//
@@ -104,7 +119,7 @@ public class B2 {
 			
 		}while(hemosAcabado==false);
 		System.out.println("Has introducido "+contador+" numeros validos");
-		*/
+		
 		//================ejercicio 12=============================
 		//Realiza un juego en el que debes de acertar un número entre el 1 y el 50 que el
 		//ordenador ha elegido de forma aleatoria. El programa te dejará tantos intentos como

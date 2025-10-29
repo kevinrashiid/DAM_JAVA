@@ -1,5 +1,6 @@
 package exa_1_1;
 
+import java.io.LineNumberReader;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -419,19 +420,279 @@ public class practicando_exa_1_1 {
 		//alumno y nos muestre la media aritmética resultante redondeada sin decimales. Las
 		//notas introducidas deben de estar entre 0 y 10 y admiten decimales. Caso de que una
 		//entrada sea errónea debería de advertirnos de ello y no hacer el cálculo
-		Scanner teclado=new Scanner(System.in);
+		/*
+		Scanner teclado = new Scanner(System.in);
 		System.out.println("primera nota");
-		String nota1=teclado.nextLine();
+		double nota1 = teclado.nextDouble();
 		System.out.println("segunda nota");
-		String nota2=teclado.nextLine();
-		
-		if(nota1.matches("[0.0-10.0]")) {
-			
-		}
-		
-	}	
-}
+		double nota2 = teclado.nextDouble();
+		teclado.close();
+		double media = 0;
+		if (nota1 >= 0 && nota1 <= 10 && nota2 >= 0 && nota2 <= 10) {
 
+			media = (nota1 + nota2) / 2;
+			//podemos tambien convertirlo para que quede mas claro 
+			int mediaRedondeada=(int)Math.round(media);
+			System.out.println("media de notas " + mediaRedondeada); //redondeado sin decimales
+		} else {
+			System.out.println("introduce bien las notas!!");
+		}
+		*/
+		//···········EJERCICIO 5···········
+		//Escribir un programa que nos pida las notas obtenidas en un trimestre y nos muestre
+		//la media ponderada sabiendo que;
+		//1. La primera nota corresponde al trabajo en clase y cuenta como un 5% del total
+		//2. La segunda corresponde a los ejercicios prácticos: 15%
+		//3. La tercera la nota del examen: 80%
+		//El resultado debería de mostrarse de dos formas: redondeado con dos decimales
+		//(nota real) y sin redpmdeada sin decimales (nota de boletín)
+		
+		//···········EJERCICIO 9···········
+		//Escribir un programa que pida números entre el 1 y el 100 por teclado hasta que
+		//escribamos la palabra FIN (con mayúsculas). Si el usuario introduce una entrada
+		//inválida (números superiores a 100, otras cadenas de caracteres que no sean FIN, etc.)
+		//no se tendrá en cuenta pero se mostrará un mensaje de error y el programa seguirá
+		//su curso. Cuando terminamos (al introducir la palabra FIN, recuerda) mostraremos
+		//por pantalla el numero de entradas válidas que hemos hecho (sin contar esta última
+		//que sólo sirve para finalizar el programa)
+		/*
+		boolean salida=false;
+		String texto="";
+		String patron="[0-9]{1,3}";
+		int numero=0;
+		int valido=0;
+		int i=0;
+		int[] arrayValidos=new int[0];
+		Scanner teclado=new Scanner(System.in);
+		
+		while(salida==false) {
+			System.out.println("introduce un numeros entro 1 y 100--> ");
+			texto=teclado.nextLine();
+			if(texto.equals("FIN")) {
+				salida=true;
+			}
+			if(texto.matches(patron)) {
+				numero=Integer.parseInt(texto);
+				if(numero>=1&&numero<=100) {
+					arrayValidos=Arrays.copyOf(arrayValidos, arrayValidos.length+1);
+					arrayValidos[i]=numero;
+					i++;
+					valido++;
+				}else {
+					System.out.println("no esta en el rango");
+				}
+			}else {
+				System.out.println("es otra cosa");
+			}
+		}
+		System.out.println("Haz introducido "+valido+" numeros validos");
+		for(int n:arrayValidos) {
+			System.out.println(n);
+		}
+		*/
+		//···········EJERCICIO 10···········
+		//Modificar el programa anterior para que nos muestre al final la media aritmética de
+		//las entradas válidas
+		/*
+		boolean salida=false;
+		String texto="";
+		String patron="[0-9]{1,3}";
+		int numero=0;
+		int valido=0;
+		int i=0;
+		int[] arrayValidos=new int[0];
+		Scanner teclado=new Scanner(System.in);
+		
+		while(salida==false) {
+			System.out.println("introduce un numeros entro 1 y 100--> ");
+			texto=teclado.nextLine();
+			if(texto.equals("FIN")) {
+				salida=true;
+			}
+			if(texto.matches(patron)) {
+				numero=Integer.parseInt(texto);
+				if(numero>=1&&numero<=100) {
+					arrayValidos=Arrays.copyOf(arrayValidos, arrayValidos.length+1);
+					arrayValidos[i]=numero;
+					i++;
+					valido++;
+				}else {
+					System.out.println("no esta en el rango");
+				}
+			}else {
+				System.out.println("es otra cosa");
+			}
+		}
+		System.out.println("Haz introducido "+valido+" numeros validos");
+		for(int n:arrayValidos) {
+			System.out.println(n);
+		}
+		//TODO SACANDO MEDIA DE UN ARRAY
+		double media=0;
+		for(int x=0;x<arrayValidos.length;x++) {
+			media=media+arrayValidos[x];
+		}
+		media=media/arrayValidos.length;
+		System.out.println("la media es "+media);*/
+		//···········EJERCICIO 11···········
+		//Modificar el programa anterior para que, además, nos diga al final cual han sido el
+		//número mayor y el menor que has introducido
+		/*
+		boolean salida=false;
+		String texto="";
+		String patron="[0-9]{1,3}";
+		int numero=0;
+		int valido=0;
+		int i=0;
+		int[] arrayValidos=new int[0];
+		Scanner teclado=new Scanner(System.in);
+		
+		while(salida==false) {
+			System.out.println("introduce un numeros entro 1 y 100--> ");
+			texto=teclado.nextLine();
+			if(texto.equals("FIN")) {
+				salida=true;
+			}
+			if(texto.matches(patron)) {
+				numero=Integer.parseInt(texto);
+				if(numero>=1&&numero<=100) {
+					//TODO AUMENTANDO EL TAMAÑO DE UN ARRAY
+					arrayValidos=Arrays.copyOf(arrayValidos, arrayValidos.length+1);
+					arrayValidos[i]=numero;
+					i++;
+					valido++;
+				}else {
+					System.out.println("no esta en el rango");
+				}
+			}else {
+				System.out.println("es otra cosa");
+			}
+		}
+		System.out.println("Haz introducido "+valido+" numeros validos");
+		for(int n:arrayValidos) {
+			System.out.println(n);
+		}
+		//TODO SACANDO MEDIA DE UN ARRAY
+		double media=0;
+		for(int x=0;x<arrayValidos.length;x++) {
+			media=media+arrayValidos[x];
+		}
+		media=media/arrayValidos.length;
+		System.out.println("la media es "+media);
+		//TODO SACANDO EL MAYOR DE UN ARRAY
+		Arrays.sort(arrayValidos);
+		System.out.println("el mayor es "+arrayValidos[arrayValidos.length-1]);
+		*/
+		//···········EJERCICIO 12···········
+		//Realiza un juego en el que debes de acertar un número entre el 1 y el 50 que el
+		//ordenador ha elegido de forma aleatoria. El programa te indicará si has acertado, si te
+		//has pasado o si te has quedado corto. El programa finaliza cuando se acierta o cuando
+		//se superan el número máximo de intentos establecidos en 5
+		/*
+		int intentos=5;
+		boolean acertado=false;
+		int azar=(int)(Math.random()*50)+1;
+		int numeroInput=0;
+		Scanner teclado=new Scanner(System.in);
+		System.out.println(azar);
+		do {
+			System.out.println("Adivina Adivina el numero entre el 1 y 50");
+			numeroInput=teclado.nextInt();
+			if(numeroInput>azar) {
+				System.out.println("Te has pasado");
+				intentos--;
+			}else if(numeroInput<azar) {
+				System.out.println("Te has quedado corto");
+				intentos--;
+			}
+			if(numeroInput==azar) {
+				System.out.println("Acertaste el numero es "+azar);
+				//para que se cumplan las dos condiciones del while
+				acertado=true;
+				intentos=0;
+				teclado.close();
+			}
+		}while(intentos>0|acertado==false);
+		*/
+		
+		//···········EJERCICIO 13···········
+		//Modifica el programa anterior para que el programa te de todos los intentos que
+		//necesites pero que cuando aciertes te informe de cuantas veces has fallado antes de
+		//lograrlo
+		/*
+		boolean acertado=false;
+		int intentos=0;
+		int azar=(int)(Math.random()*50)+1;
+		int numeroInput=0;
+		Scanner teclado=new Scanner(System.in);
+		System.out.println(azar);
+		do {
+			System.out.println("Adivina Adivina el numero entre el 1 y 50");
+			numeroInput=teclado.nextInt();
+			if(numeroInput>azar) {
+				System.out.println("Te has pasado");
+				intentos++;
+			}else if(numeroInput<azar) {
+				System.out.println("Te has quedado corto");
+				intentos++;
+			}
+			if(numeroInput==azar) {
+				System.out.println("Acertaste el numero es "+azar);
+				System.out.println("Lo hiciste con "+intentos);
+				//para que se cumplan las dos condiciones del while
+				acertado=true;
+				teclado.close();
+			}
+		}while(acertado==false);
+		*/
+		
+		//···········EJERCICIO 14···········
+		//Modifica el programa anterior para que al final del programa te pida si quieres volver
+		//a jugar y en caso afirmativo comience una nueva partida
+		/*
+		boolean replay=false;
+		int intentos=0;
+		int azar=(int)(Math.random()*50)+1;
+		int numeroInput=0;
+		Scanner teclado=new Scanner(System.in);
+		System.out.println(azar);
+		String volverJugar="";
+		while(replay==false) {
+			System.out.println("Adivina Adivina el numero entre el 1 y 50");
+			numeroInput=teclado.nextInt();
+			if(numeroInput>azar) {
+				System.out.println("Te has pasado");
+				intentos++;
+			}else if(numeroInput<azar) {
+				System.out.println("Te has quedado corto");
+				intentos++;
+			}
+			if(numeroInput==azar) {
+				System.out.println("Acertaste el numero es "+azar);
+				System.out.println("Lo hiciste con "+intentos);
+				System.out.println("······Quieres volver a jugar??········");
+				teclado.nextLine();//limpiar buffer 
+				volverJugar=teclado.nextLine();
+				if(volverJugar.equals("si")) {//volver a jugar
+					replay=false;
+				}else if(volverJugar.equals("no")){
+					System.out.println("gracias por jugar!!");
+					replay=true;
+					teclado.close();
+				}
+			}
+		}
+		*/
+		//TODO ------------------- BOLETIN 3------------------
+		//···················EJERCICIO 7···········
+		//Escribir un programa que pida por teclado una cadena de texto y la escriba con el
+		//alfabeto típico de los hackers sustituyendo las letras a por el número 4, las letras e por
+		//el número 3, las letras i por el número 1 y las letras o por el número 0. Considera que
+		//las vocales pueden estar escritas en mayúsculas o minúsculas, pero no hace falta que
+		//tengas en cuenta que además podrían ir acentuadas
+		
+	}
+}
 
 
 

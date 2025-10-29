@@ -46,7 +46,7 @@ public class expreciones_regulares {
 		//.find() //mira si encuentra el patron
 		//.matches() //tiene que coincidir EXACTAMENTE
 		
-		//[A-Z]? <-- con este padre solo puede salir una letra
+		//[A-Z]? <-- con este patron solo puede salir una letra
 		//[0-9]{8}[A-Z]? //dni con una letra
 		//[A-Z]* //de la A ->Z puede apacer muchas veces
 		//[A-Z]+ //una o muchas si no tiene letras es falso

@@ -234,15 +234,15 @@ public class B3 {
 		// ================ejercicio 8=============================
 		//		Escribir un programa que reciba una cadena de texto por teclado y la muestre sin
 		//		vocales. Por ejemplo, si recibe la cadena “Hola Mundo” debería de devolver “Hl Mnd”.
-		/*
+		
 		Scanner teclado = new Scanner(System.in);
 		System.out.print("INTRODUCE TEXTO--> ");
 		String texto = teclado.nextLine();
 		String sinVocales = "";
 		String minusculas = texto.toLowerCase();
 		for (int i = 0; i < texto.length(); i++) {
-			char c = minusculas.charAt(i);
-			switch (c) {
+//			char c = minusculas.charAt(i);
+			switch (texto.charAt(i)) {
 			case 'a', 'e', 'i', 'o', 'u': //si es VOCAL no lo añade
 				break;
 			default://el default es como un else
@@ -251,7 +251,7 @@ public class B3 {
 			}
 		}
 		System.out.println(sinVocales);
-		*/
+		
 		// ================ejercicio 9=============================
 		//Escribir un programa que nos pida elegir entre cuatro destinos turísticos (Francia,
 		//Italia, Chile o Japón) y dependiendo de nuestra respuesta nos diga cual es la capital de
@@ -341,7 +341,7 @@ public class B3 {
 		//incorpora lo es. La forma de hacerlo es la siguiente --> leer boletin 3:
 		//PREGUNTAR SOBRE LA TABLA DEL BOLETIN
 		// A QUE SE REFIERE CON ESA TABLA
-		
+		/*
 		Scanner teclado = new Scanner(System.in);
 
 		System.out.print("INTRODUCE LOS NUMEROS DE TU DNI --> ");
@@ -357,6 +357,7 @@ public class B3 {
 		}else {
 			System.out.println("algo en tu DNI falla");
 		}
+		*/
 		
 		// ================EJERCICIO 15=============================
 		//Escribe un programa que reciba por teclado una fecha en el formato DD/MM/YYYY. 

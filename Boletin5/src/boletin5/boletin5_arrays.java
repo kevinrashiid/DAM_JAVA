@@ -111,20 +111,42 @@ public class boletin5_arrays {
 		System.out.println("el mayor es "+max);
 		System.out.println("el menor es "+menor);
 		*/
-		int numero[] = new int[100];
-		for (int i = 0; i < 100; i++) {
-			numero[i]= (int) (Math.random()*50)+1;
+		int cantidad = 19;
+		int numero[] = new int[20];
+		int contador = 0;
+		int numMaximo = 0;
+		int contadorMaximo = 0;
+		for (int i = 0; i < 20; i++) {
+			numero[i] = (int) (Math.random() * 10) + 1;
 		}
 		Arrays.sort(numero);
-		for(int n:numero) {
+		for (int n : numero) {
 			System.out.println(n);
 		}
-		int repetidos[]=new int[50];
+
+		for (int i = 0; i < cantidad - 1; i++) {
+			if (numero[i] == numero[i + 1]) {
+				contador++;
+				numMaximo = numero[i];
+				contadorMaximo = contador;
+				if (contador > contadorMaximo) {
+					contadorMaximo = contador;
+					numMaximo = numero[i];
+					// TODO falta esto -->
+					// SI son varios los que mas se repiten
+					// es decir tienen el mismo numero de repeticiones
+
+				} else {
+					contador = 0;
+				}
+			}
+		}
+		System.out.println("numero con mayor repeticiones "+numMaximo);
 		
 		
 		System.out.println();
 		System.out.println("el mas pequeño "+numero[0]);
-		System.out.println("el mas grande "+numero[99]);
+		System.out.println("el mas grande "+numero[19]);
 		
 
 		
