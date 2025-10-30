@@ -53,6 +53,77 @@ public class expreciones_regulares {
 		//[A-Z]{3,} // al menos 3 letras
 		//[A-Z]{3,8} // entre 3 y 8 letras
 		
+		/*
+		--------------------- REGEX EN JAVA (RESUMEN) ---------------------
+
+		► CLASES DE CARACTERES
+		[abc] -> a o b o c
+		[^abc] -> todo menos a, b, c
+		[a-c] -> de a a c
+		[a-c[f-h]] -> unión (a, b, c, f, g, h)
+		[a-c&&[b-c]] -> intersección (b, c)
+		[a-c&&[^b-c]] -> resta (a)
+
+		► CLASES PREDEFINIDAS
+		.  -> cualquier carácter
+		\d -> dígito [0-9]
+		\D -> no dígito
+		\s -> espacio en blanco
+		\S -> no espacio
+		\w -> carácter de palabra [a-zA-Z_0-9]
+		\W -> no palabra
+
+		► LÍMITES
+		^ -> inicio de línea
+		$ -> fin de línea
+		\b -> límite de palabra
+		\B -> no límite de palabra
+		\A -> inicio del texto
+		\Z -> fin del texto (excepto terminador)
+		\z -> fin absoluto del texto
+
+		► CLASE Pattern
+		Pattern.compile(regex) -> compila la expresión regular
+		Pattern.matches(regex, texto) -> verifica coincidencia total
+		pattern.split(texto) -> separa texto por el patrón
+		pattern.asPredicate() -> crea predicado para comprobar cadenas
+
+		► CLASE Matcher
+		matches() -> intenta coincidir todo el texto
+		find() -> busca la siguiente coincidencia
+		start(), end() -> índices del resultado
+
+		► OPERADORES LÓGICOS
+		XY -> X seguido de Y
+		X|Y -> X o Y
+
+		► GRUPOS Y REFERENCIAS
+		(...) -> define grupo
+		\1 -> referencia al grupo anterior
+		Ej: (\d\d)/\1 -> repite dos dígitos
+
+		► CUANTIFICADORES
+		X?  -> 0 o 1 vez
+		X*  -> 0 o más veces
+		X+  -> 1 o más veces
+		X{n} -> exactamente n
+		X{n,} -> al menos n
+		X{n,m} -> entre n y m
+
+		Modos:
+		Greedy -> lo más largo posible
+		Reluctant -> lo más corto posible
+		Possessive -> no retrocede
+
+		► FLAGS DE PATRONES
+		CASE_INSENSITIVE -> ignora mayúsculas/minúsculas
+		COMMENTS -> ignora espacios y comentarios con #
+		MULTILINE -> permite varias líneas
+		UNIX_LINES -> solo reconoce '\n'
+
+		---------------------------------------------------------------
+		*/
+
 		
 	}
 }
