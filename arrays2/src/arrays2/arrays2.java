@@ -130,7 +130,7 @@ public class arrays2 {
 		fraseCorrecta=fraseCorrecta.trim();
 		System.out.println(fraseCorrecta);
 		
-		//················SALIDAS POR PANTALLA···························33
+		//················SALIDAS POR PANTALLA···························
 		System.out.println("Esto va en una linea\nY esto en la de abajo");
 		String nombre ="jose maria";
 		String apellido="morales vazques";
