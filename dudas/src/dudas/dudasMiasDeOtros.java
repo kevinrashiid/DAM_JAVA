@@ -44,8 +44,8 @@ public class dudasMiasDeOtros {
 			*/
 		
 			//
-//		int azar2=(int)(Math.random()*6);
 			
+			/*EJERCICIO ENUNCIADO LO SUBIRA*/
 			Scanner teclado =new Scanner(System.in);
 			System.out.print("Introduce numero de dados ");
 			int numDados=teclado.nextInt();
