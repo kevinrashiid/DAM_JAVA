@@ -691,6 +691,7 @@ public class practicando_exa_1_1 {
 		//las vocales pueden estar escritas en mayúsculas o minúsculas, pero no hace falta que
 		//tengas en cuenta que además podrían ir acentuadas
 		
+		
 	}
 }
 
