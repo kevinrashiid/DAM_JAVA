@@ -59,7 +59,11 @@ public class dudasMiasDeOtros {
 			do {
 				contador++;
 				for (int i = 0; i < numDados; i++) {
-					azar = (int) (Math.random() * 6) + 1;
+					azar = (int) (Math.random() * 7) + 1;
+					//QUE ES EL 6 TENGA EL DOBLE DE PROBABILIDAD DE QUE SALGA
+					if(azar ==7) {//SI SALE 7 NO SERA 7 LO ASIGNAMOS COMO 6
+						azar=6;
+					}
 					tiradas[i] = azar;
 					frecuencia[azar]++;//incrementando la posicion del array
 					//el propio dado es el indice
