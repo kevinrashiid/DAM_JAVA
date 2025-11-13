@@ -1,25 +1,21 @@
-package dudas;
+package progra_Modular_KAPREKAR;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class kaprekar {
+public class KaprekarMALO {
 
 	public static void main(String[] args) {
-
-		// numero de 4 cifras y que no todos sean iguales
-		//es decir que al menos 1 sea diferente
-		// 1111 TODO MAL 
-		// 2231 TODO BIEN
+		//funcion que valide el numero optimo para hacer kaprekar
+		//funcion para hacer el orden de los ascendente 
+		//funcion para hacer el orden de los descendente
 		
-		// ······························EMPEZAR DE NUEVO·····························3
 		Scanner teclado = new Scanner(System.in);
 		System.out.println();
 		
 		System.out.println("NUMERO DE 4 CIFRAS CON AL MENOS UNA DIFERENTE A LAS DEMAS: ");
 		// constante es un numero que nunca cambia
 		final int kaprekar = 6174; // numero como constante kaprekar
-		boolean todoCorrecto=false;
 
 		// comprobacion de numero entero
 		int entrada = -1;// esto funciona como una bandera
@@ -101,4 +97,5 @@ public class kaprekar {
 		} // TODO AQUI ACABA EL ELSE*/
 
 	}
+
 }
