@@ -16,7 +16,8 @@ public class ejercicio8_Buscaminas {
 		 * 1 0 0 0 
 		 * 0 1 0 1 
 		 * 0 0 0 0 
-		 * 0 1 1 0 0 0 Modifica tu programa para que le
+		 * 0 1 1 0 
+		 * 0 0 Modifica tu programa para que le
 		 * puedas decir por teclado el tamaño del tablero de juego (siempre será
 		 * cuadrado, así que solo le dirás un número entero) y el número de minas.
 		 * Comprueba que no se pueden poner mas minas que las posiciones del tablero (en
