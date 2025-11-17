@@ -24,7 +24,6 @@ public class kaprekarModular {
 			}
 		}
 		System.out.println();
-
 	}
 
 	// funcion que valide el numero optimo para hacer kaprekar
