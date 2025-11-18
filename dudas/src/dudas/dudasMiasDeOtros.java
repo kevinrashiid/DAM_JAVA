@@ -85,6 +85,12 @@ public class dudasMiasDeOtros {
 				System.out.printf("El numero %d ha salido el %.2f %% de las veces\n"
 						,k,(double)(100*frecuencia[k])/(numDados*contador));
 			}
+			//DUDAS CONDICIONES COMPARACIONES(IF)
+			int n=5;
+			boolean encontrado=true;
+			if(n==5	) {
+				System.out.println("es verdad");
+			}
 		}
 	}
 

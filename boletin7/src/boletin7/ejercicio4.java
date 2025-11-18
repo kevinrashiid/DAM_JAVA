@@ -31,9 +31,7 @@ public class ejercicio4 {
 		for(String letra:letras) {
 			contarVocales+=buscaLetra(p, letra);
 		}
-		if(contarVocales>=4) {
-			tieneCuatroVocales=true;
-		}
+		
 		if(contarVocales>=4) {
 			tieneCuatroVocales=true;
 		}
