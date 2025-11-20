@@ -111,6 +111,7 @@ public class boletin5_arrays {
 		System.out.println("el mayor es "+max);
 		System.out.println("el menor es "+menor);
 		*/
+		/* CREO QUE ESTA MAL
 		int cantidad = 19;
 		int numero[] = new int[20];
 		int contador = 0;
@@ -142,19 +143,17 @@ public class boletin5_arrays {
 			}
 		}
 		System.out.println("numero con mayor repeticiones "+numMaximo);
-		
-		
 		System.out.println();
 		System.out.println("el mas pequeño "+numero[0]);
 		System.out.println("el mas grande "+numero[19]);
-		
+		*/
 
 		
 		// ================ejercicio 6====================================================
 		//Escribe un programa que nos permita contar el número de veces que se repite cada
 		//cifra en un número. Por ejemplo, el número 885210003 tiene tres 0, un 1, un 2, un 5 y
 		//dos 8.
-		/*
+		
 		String numero="489298";
 		int[] contador=new int[10];
 		for(int i=0;i<numero.length();i++) {
@@ -167,7 +166,8 @@ public class boletin5_arrays {
 			System.out.println("la cifra "+n+" aparece "+contador[n]+" veces");
 			}
 		}
-		*/
+		
+		
 
 	}
 }

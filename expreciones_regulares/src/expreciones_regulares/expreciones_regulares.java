@@ -40,6 +40,7 @@ public class expreciones_regulares {
 		}else {
 			System.out.println("telefono NO valido");
 		}
+		
 		//[A-Z a-z Ññ] {3}
 		//PATRON DNI [0-9]{8}[A-Z]
 		//PATRON MATRICULA [0-9]{4}\\s[A-Z a-z&&[^AEIOUQ]]{3}
