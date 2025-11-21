@@ -15,6 +15,12 @@ public class conversiones {
 		char c='a';
 		String s=String.valueOf(c);
 		
+		//de char a entero
+		String txtPin="231";
+		for(int i=0;i<txtPin.length();i++) {
+			int cifra=(int)txtPin.charAt(i)-48;
+		}
+		
 		//de texto(String) a entero(int)
 		int num1= Integer.parseInt(textoEntero);//convertimos texto a numero
 		System.out.println(num1);

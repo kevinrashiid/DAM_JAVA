@@ -99,6 +99,7 @@ System.out.println();
 	}
 	
 	public static boolean entre8y20caracteres(String contraseña) {
+		
 		return  (contraseña.matches(".{8,20}"));
 	}
 	public static boolean validarMayusMinus(String p) {
@@ -107,9 +108,10 @@ System.out.println();
 		return(tieneMinusculas.find());
 	}
 	//este es ta mal
-	public static boolean alMenosUnNumero(String contraseña) {
-		boolean p=contraseña.matches("[0-9]+");
-		return p;
+	public static boolean alMenosUnNumero(String p) {
+		Pattern numero=Pattern.compile("[0-9]+");
+		Matcher tieneUnNumero=numero.matcher(p);
+		return(tieneUnNumero.find());
 	}
 //	public static boolean compruebaLongitud(String contraseña) {
 //		Pattern simbolos=Pattern.compile("[a-zñ]");
