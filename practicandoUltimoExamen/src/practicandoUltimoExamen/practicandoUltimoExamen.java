@@ -15,7 +15,7 @@ public class practicandoUltimoExamen {
 			for (String linea : codigo) {
 				System.out.println(linea);
 			}
-			System.out.println(descifrarNumero(codigo));
+			System.out.println(descifrarNumero2(codigo));
 		}
 	}
 
@@ -29,7 +29,7 @@ public class practicandoUltimoExamen {
 		}
 		for (int i = 0; i < txtPin.length(); i++) {
 			int cifra = (int) txtPin.charAt(i) - 48;
-			codigo[i]=cifraNumero2(cifra);
+			codigo[i]=cifraNumero(cifra);
 		}
 		return codigo;
 	}
@@ -64,12 +64,21 @@ public class practicandoUltimoExamen {
 	
 	public static int descifrarNumero(String[] codigo) {
 		int numero=0;
-		for(String i:codigo) {
-			if(i.equals("0")) {
+		for(String elemento:codigo) {
+			if(elemento.equalsIgnoreCase("0")) {
 				numero++;
 			}
 		}
 		return numero;
+	}
+	public static int descifrarNumero2(String[] codigo) {
+		int posicion=0;
+		for(int i=0;i<codigo.length;i++) {
+			if(codigo[i]=="0") {
+				posicion+=i;
+			}
+		}
+		return posicion;
 	}
 	
 	
