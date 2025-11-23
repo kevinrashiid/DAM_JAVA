@@ -61,7 +61,7 @@ public class conversiones {
 		//para que duevla el minimo
 		double mim=Math.min(539.4, 3);
 		
-		//para convertir un array a texto
+		//para convertir un array int a texto
 		int diasDelMes[]= new int[12];
 		String texto= Arrays.toString(diasDelMes);
 	}

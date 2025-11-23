@@ -3,7 +3,21 @@ package boletin;
 public class b8_6 {
 
 	public static void main(String[] args) {
-
+//		EJERCICIO CON FORMATO DE EXAMEN
+//		Realiza un programa que lea una frase y nos diga si es un palíndromo o no. Un palíndromo es
+//		una palabra o frase que se lee igual hacia adelante que hacia atrás sin tener en cuenta los
+//		espacios en blanco ni que los caracteres tengan tilde o estén en mayúsculas.
+//		Ejemplos de palíndromos:
+//		La ruta nos aporto otro paso natural
+//		Atale demoníaco Cain o me delata
+//		Para facilitar la codificación se deberán introducir las frases sin tildes, pero si hay que tener
+//		en cuenta las mayúsculas y los espacios. Tampoco tendrán signos de puntuación
+//		Ejemplo de funcionamiento:
+//		Introduce un texto: Dabale arroz a la zorra el abad
+//		El texto introducido es un palíndromo
+//		No hace falta comprobaciones sobre la entrada (que siempre será una cadena de texto, pero
+//		si que es preciso vigilar que a veces puede que haya mas de un espacio entre las palabras o
+//		incluso al principio y al final de la frase
 		String texto = "La ruta nos aporto otro paso natural";
 		texto = texto.trim();// ELIMINA LOS ESPACIO DEL PRINCIPIO Y DEL FINAL
 		texto = texto.toLowerCase();
@@ -48,7 +62,7 @@ public class b8_6 {
 	public static String frasePalimdromo(String texto) {
 		String fraseInvertida = "";
 		texto = texto.toLowerCase();
-	
+
 		// reinvirtiendo la frase Y quital espacios
 		for (int i = texto.length() - 1; i >= 0; i--) {
 			String c = String.valueOf(texto.charAt(i));
@@ -57,15 +71,15 @@ public class b8_6 {
 		fraseInvertida = fraseInvertida.replace(" ", "");
 
 		// asignando los espacios del texto original al invertido
-		String fraseInvertidaConEspacio="";
-	    int indiceInvertida = 0;
+		String fraseInvertidaConEspacio = "";
+		int indiceInvertida = 0;
 		for (int q = 0; q < texto.length(); q++) {
 			if (texto.charAt(q) == ' ') {
-	            fraseInvertidaConEspacio += " ";
-	        } else {
-	            fraseInvertidaConEspacio += fraseInvertida.charAt(indiceInvertida);
-	            indiceInvertida++;
-	        }
+				fraseInvertidaConEspacio += " ";
+			} else {
+				fraseInvertidaConEspacio += fraseInvertida.charAt(indiceInvertida);
+				indiceInvertida++;
+			}
 		}
 		return fraseInvertidaConEspacio;
 	}
