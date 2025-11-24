@@ -9,11 +9,12 @@ public class b10_2 {
 
 		Scanner teclado = new Scanner(System.in);
 		boolean bandera = false;
+		//CORREGIR ESTE BUCLE NO SALE  DE EL SI LE METES UNA SALIDA
 		do {
 			try {
 				System.out.print("TU NUMERO ES PERFECTO?: ");
 				int numero = teclado.nextInt();
-				if (numeroPerfecto(numero) && numero > 0 && bandera == false) {
+				if (  numero > 0&& numeroPerfecto(numero) && bandera == false) {
 					System.out.println("Tu numero es perfecto");
 					bandera = true;
 				} else {
@@ -23,9 +24,11 @@ public class b10_2 {
 				
 			}catch (InputMismatchException e) {
 				System.out.println("NO PUEDE SER UNA LETRA");
+				bandera=false;
 			}
 			catch (Exception e) {
 				System.out.println("TIENE QUE SER UN NUMERO POSITIVO");
+				bandera=false;
 			}
 		}while (bandera == false);
 		teclado.close();
