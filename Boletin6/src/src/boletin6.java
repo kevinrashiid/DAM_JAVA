@@ -135,7 +135,7 @@ public class boletin6 {
 		//Una dirección IP pública de clase C. Cuatro bytes en formato decimal separados por un
 		//punto. Los dos primeros tienen que ser siempre 192.168.
 		//Ejemplo: 192.168.30.30
-		/*
+		
 		String ip="192.168.30.30";
 		//TODO SIN VALIDAR QUE PUEDE SER 255
 		if(ip.matches("^192\\.168\\.[0-9]{1,3}\\.[0-9]{1,3}")) { //TODO PATRON IP 
@@ -143,7 +143,7 @@ public class boletin6 {
 		}else {
 			System.out.println("incorrecto");
 		}
-		*/
+		
 		//TODO PARA VALIDAR QUE PUEDE SER HASTA 255
 		//"192\\.168\\." +
 		//"([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\\." +

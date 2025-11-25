@@ -75,7 +75,7 @@ public class practicandoUltimoExamen {
 		int posicion=0;
 		for(int i=0;i<codigo.length;i++) {
 			if(codigo[i]=="0") {
-				posicion+=i;
+				posicion=i;
 			}
 		}
 		return posicion;
