@@ -20,6 +20,12 @@ public class conversiones {
 		for(int i=0;i<txtPin.length();i++) {
 			int cifra=(int)txtPin.charAt(i)-48;
 		}
+		//DE CHAR A ENTERO
+		for(int i=0;i<txtPin.length();i++) {
+			int n=Character.getNumericValue(txtPin.charAt(i));
+		}
+
+		
 		
 		//de texto(String) a entero(int)
 		int num1= Integer.parseInt(textoEntero);//convertimos texto a numero

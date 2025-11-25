@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class ejercicio4 {
 
 	public static void main(String[] args) {
+		//BOLETIN 5 EJERCICICIO 4
 		//Escribir un programa que nos pida una cadena por teclado y luego cuente cuantas
 		//palabras hay en ella con cuatro o más vocales diferentes. Por ejemplo, si introducimos
 		//la frase “Crisis constitucional por culpa del murcielago guineoecuatorial” Nos debería de
@@ -44,11 +45,7 @@ public class ejercicio4 {
 		hayLetra=0;
 	}
 	return hayLetra;
-		
-		
-		
-	
-	
+
 	}
 	
 	

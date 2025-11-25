@@ -16,19 +16,25 @@ public class b8_3 {
 		// Atacamos mañana
 		// Se codificaría así:
 		// aAntaañcaamm os
-		int mensaje=2452;
-		System.out.println(codificado(mensaje));
-	}
-	public static int codificado(int mensaje) {
-		String numero = String.valueOf(mensaje);
-		String cifrado = "";
-		for (int i = numero.length()-1; i >= 0; i--) {// DE ATRAS A ADELANTE
-			for (int x = 0; x < numero.length(); x++) {// RECORRIDO NORMAL
-				cifrado =cifrado+ numero.charAt(i);
-				cifrado= numero.charAt(x)+cifrado;
-			}
+		
+		String texto="123456";
+		int i=0;
+		int j=texto.length()-1;
+		String txtCifrado="";
+		//RECORRIENDO CON UN WHILE
+		while(i<j){
+			txtCifrado=txtCifrado +texto.charAt(j);
+			txtCifrado=txtCifrado+texto.charAt(i);
+			i++;//APUNTADORES AL INDICE 0
+			j--;//APUNTADOR AL ULTIMO INDICE
 		}
-		int resultado = Integer.parseInt(cifrado);
-		return resultado;
+		//si es impar el del medio te lo deja en el medio
+		if(texto.length()%2!=0) {
+			txtCifrado=txtCifrado+texto.charAt(texto.length()/2);
+		}
+		System.out.println(txtCifrado);
+		
 	}
+
+
 }
