@@ -71,6 +71,5 @@ public class codigosDeControl {
 				
 				//con esto nos podemos ahorrar un varible pero no lo guardamos en una variable
 				//System.out.printf("%"+cifras+"."+decimales+"f",c1,e);
-		
 	}
 }
