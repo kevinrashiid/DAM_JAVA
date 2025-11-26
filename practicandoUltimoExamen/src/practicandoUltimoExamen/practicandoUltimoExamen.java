@@ -15,7 +15,7 @@ public class practicandoUltimoExamen {
 			for (String linea : codigo) {
 				System.out.println(linea);
 			}
-			System.out.println(descifrarNumero2(codigo));
+			System.out.println(descifrarNumero(codigo));
 		}
 	}
 

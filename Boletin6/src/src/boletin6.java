@@ -7,7 +7,7 @@ public class boletin6 {
 
 	public static void main(String[] args) {
 		//^incio $fin 
-		/*
+		
 		//TODO EXTRAER TEXTO DE CON EXPRESIONES REGULARES
 				String mensaje="hola llamame a este numero 622307406";
 				Pattern patron=Pattern.compile("[6-8][0-9]{8}");
@@ -16,7 +16,7 @@ public class boletin6 {
 				//String numero=matcher.group();
 					System.out.println("telefono "+matcher.group());
 				}
-		*/
+		
 		// ================ejercicio 1====================================================
 		//Validar un código postal de Madrid. Cinco números, los dos primeros siempre son el 28
 		//Ejemplo: 28032
