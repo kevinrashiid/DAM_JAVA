@@ -15,14 +15,14 @@ public class exa_2_CambioMonedas {
 				String entrada = teclado.nextLine();
 				teclado.close();
 				
-				char moneda = entrada.charAt(entrada.length()-1);
+				char moneda = entrada.charAt(entrada.length()-1);//cogiendo el ultimo caracter
 				double cantidad = Double.parseDouble(entrada.substring(0,entrada.length()-1));
 				
 				switch (moneda) {
 				case 'E' , 'e':
 					
 					break;
-				case 'P' , 'p':
+				case 'P' , 'p'://Multiplica por 10000 para "mover" 4 decimales a la izquierda.
 					double cambio = (double) Math.round(cantidad/cambioPeso)*10000/10000;
 					System.out.println(cantidad + " pesos cubanos equivalen a " + cambio + " euros");
 					break;
