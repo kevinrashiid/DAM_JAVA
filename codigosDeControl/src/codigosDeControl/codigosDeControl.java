@@ -11,6 +11,8 @@ public class codigosDeControl {
 				String apellido="morales vazques";
 				int edad=27;
 				double salario=1345.678;
+				String miNombre="kevin";
+				String miApellido="villarroel";
 		//#######codigos de control#################
 				//LA LETRA ES EL TIPO DE VARIABLE
 				//.printf
@@ -20,6 +22,9 @@ public class codigosDeControl {
 				//.2 para REDONDEAR A DOS DECIMALES SI ELLA SALE SON DOS DECIMALES
 				System.out.printf("tu nombre es %s apellido %s ,"
 						+ " tienes %d y cobras %.2f euros",nombre,apellido,edad,salario);
+				
+				//PRACTICANDO
+				System.out.printf("alineando texto: \n%10s\n%10s\n",miNombre,miApellido);
 				
 				//PROGRAMA DE CONTABILIDAD
 				int n1 =345;

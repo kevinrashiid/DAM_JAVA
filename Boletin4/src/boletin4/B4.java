@@ -110,7 +110,7 @@ public class B4 {
 		//para resolver esto tenemos que convertir a String para darle la vuelta
 		//luego de darle la vuelta lo volvemos a convertir a int 
 		//y ese int lo comparamos con int que pasamos por teclado
-		/*
+		
 		Scanner teclado = new Scanner(System.in);
 		System.out.print("introduce numero y te dire si es CAPICUA --> ");
 		int numeroPedido=teclado.nextInt();
@@ -130,7 +130,7 @@ public class B4 {
 		}else {
 			System.out.println("EL NUMERO NOOO " +numeroPedido+ " ES CAPICUA\"");
 		}
-		*/
+		
 		
 		// ================ejercicio 6=============================
 		//Escribir un programa que muestre por pantalla 

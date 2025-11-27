@@ -6,11 +6,18 @@ public class CadenaTexto {
 		//dos formas de crear un String
 		//las dos son iguales pero en realidad por detras estamos haciendo la otra
 		String texto1="hola mundo";
+		String kevin="kevin kevin";
 		String texto2=new String("Hola mundo cruel");
 		
 		//con el = modificamos el texto1 y reasignamos
 		texto1= texto1 + " cruel";
+		
+		//TODO separamos por palabras y lo metemos en un array
 		System.out.println(texto1);
+		String[] arrayTexto=kevin.split(" ");
+		for(String n:arrayTexto) {
+			System.out.println(n);
+		}
 		
 		texto1 =texto1.concat(" Bienvenidos al goya");// es lo mimo que esto texto1= texto1 + " cruel";
 		
