@@ -24,7 +24,7 @@ public class E2 {
 				int azar = (int) (Math.random() * 7);
 				int ultimoAzar=azar;
 				String premiado = clientes[azar];
-				String[] separados=premiado.split(" ");
+				String[] separados=premiado.split(" ");//separando por espacios y metiendo en un array 
 				String ApellidoNombre=separados[1]+", "+separados[0];
 				do {
 					azar = (int) (Math.random() * 7);

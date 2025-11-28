@@ -4,7 +4,7 @@ public class E3 {
 
 	public static void main(String[] args) {
 		int inicio=8;
-		int fin=23;
+		int fin=13;
 		int contador=0;
 		System.out.println("Números capicúas entre "+inicio+" y "+fin+":");
 		for(int i=inicio;i<fin;i++) {

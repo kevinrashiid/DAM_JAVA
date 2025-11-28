@@ -20,7 +20,12 @@ public class E1 {
 				for (int i = 0; i < tiradas; i++) {
 					int dado = (int) (Math.random() * 6) + 1;
 					sumaTotal = sumaTotal + dado;
-					System.out.print(dado + ", ");
+					System.out.print(dado);
+					if(i!=tiradas-1) {
+						System.out.print(", ");
+					}else {
+						System.out.println("");
+					}
 					if (dado == 1) {
 						contador1++;
 					}
@@ -28,15 +33,15 @@ public class E1 {
 						contador6++;
 					}
 				}
-				media = sumaTotal / tiradas;
+				media = 3*tiradas;
 				int mitad=(tiradas*6)/2;
 				if(contador1>0) {
-					System.out.println("\nEn " + contador1 + " dados ha salido un 1");
+					System.out.println("En " + contador1 + " dados ha salido un 1");
 				}
 				if(contador6>0) {
 					System.out.println("En " + contador6 + " dados ha salido un 6");					
 				}
-				System.out.println("\nLa suma de todos los dados da " + sumaTotal);
+				System.out.println("La suma de todos los dados da " + sumaTotal);
 				if(sumaTotal<(tiradas*6)) {
 					System.out.println("Tu tirada esta por debajo de la media "+mitad);
 				}
