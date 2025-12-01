@@ -8,7 +8,7 @@ public class ppo2 {
 		//pokemon de dos tipos
 
 		Pokemon[] pokedex=new Pokemon[151];//array de pokemon
-		pokedex[0]=gastly;//añadiendo un pokemon a
+//		pokedex[0]=gastly;//añadiendo un pokemon a
 		
 		gastly.infoPokemon();
 	}
