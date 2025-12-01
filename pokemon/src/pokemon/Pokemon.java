@@ -21,6 +21,7 @@ public class Pokemon {
 	public Pokemon(String name,int code,String type,String type2,String evo) {
 		this.nombre=name;
 		this.codigo=code;
+	
 		this.tipo[0]=type;
 		this.tipo[1]=type2;
 		this.evolucion=evo;
