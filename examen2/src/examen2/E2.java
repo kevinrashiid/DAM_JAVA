@@ -1,9 +1,6 @@
 package examen2;
-
 import java.util.Scanner;
-
 public class E2 {
-
 	public static void main(String[] args) {
 		// nombre y apellido
 		String[] clientes = { "Diego Norrea", "Inés Perado", "Demetrio Imedio", "Roberto Rija", "Rubén Tosidad",
@@ -33,5 +30,4 @@ public class E2 {
 			}
 		}
 	}
-
 }
