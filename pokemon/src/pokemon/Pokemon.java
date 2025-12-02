@@ -18,7 +18,7 @@ public class Pokemon {
 		this.tipo[0] = tipo;// metiendo en array de string
 //		this.evolucion=evo;
 		this.pv = (int) (Math.random() * 51) + 50;
-		this.dano = (int) (Math.random() * 75 - 25 + 1) + 1;
+		this.dano = (int) ((Math.random() * 51) + 25);
 	}
 
 	// constructor de dos tipos
@@ -29,7 +29,7 @@ public class Pokemon {
 		this.tipo[1] = type2;
 //		this.evolucion=evo;
 		this.pv = (int) (Math.random() * 51) + 50;// asignando puntos al azar
-		this.dano = (int) (Math.random() * 75 - 25) + 1;
+		this.dano = (int) ((Math.random() * 51) + 25);
 	}
 
 	public void infoPokemon() {
