@@ -75,6 +75,9 @@ public class Pokemon {
 		// SOLUCION JOSE.M
 		boolean bandera=false;
 		do {
+			if(atacado.pv<=0||this.pv<=0) {
+				bandera=true;
+			}
 			if (this.pv <= 0) {
 				System.out.println("Un programa sin PV no puede combatir");
 			} else if (bandera==false){
@@ -92,9 +95,7 @@ public class Pokemon {
 					System.out.println(atacado.nombre + " ha sido derrotado");
 				}
 			}
-			if(atacado.pv<=0||this.pv<=0) {
-				bandera=true;
-			}
+			
 		} while (bandera==false);
 	}
 }
