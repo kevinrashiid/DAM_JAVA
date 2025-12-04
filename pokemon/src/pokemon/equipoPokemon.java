@@ -28,6 +28,9 @@ public class equipoPokemon {
 	public void combateEntreEquipos() {
 		
 		
+		
+		
+		
 	}
 	
 	
