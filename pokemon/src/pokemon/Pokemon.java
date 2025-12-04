@@ -11,6 +11,7 @@ public class Pokemon {
 	private Pokemon evolucion;
 	private int dano;
 
+	// EL CONSTRUCTOR SE TIENE QUE LLAMAR IGUAL QUE LA CLASE
 	// constructor de un tipo
 	public Pokemon(int code, String name, String tipo) {
 		this.nombre = name;
@@ -63,39 +64,39 @@ public class Pokemon {
 	}
 
 	// FUNCION PARA HACER DAÑO
-	//HASTA QUE ALGUNO DE ELLOS LA VIDA LLEGUE A <= 0
-	public void combateContra(Pokemon atacado) {
-		// mi solucion al hacer un ataque
-//		Pokemon pokemon=this;
-//		if(pokemon.dano>=atacado.pv) {
-//			System.out.println("Pokemon derrotado");
-//		}else {
-//			System.out.println("Contrataca "+atacado+" y termina con daño de "+atacado.dano);
-//		}
+	// HASTA QUE ALGUNO DE ELLOS LA VIDA LLEGUE A <= 0
+	public boolean combateContra(Pokemon atacado) {
 		// SOLUCION JOSE.M
-		boolean bandera=false;
+		boolean conbateTerminado = false;
+		boolean vencedor=false;
 		do {
-			if(atacado.pv<=0||this.pv<=0) {
-				bandera=true;
+			if (atacado.pv <= 0 || this.pv <= 0) {
+				conbateTerminado = true;
 			}
 			if (this.pv <= 0) {
 				System.out.println("Un programa sin PV no puede combatir");
-			} else if (bandera==false){
+			} else if (conbateTerminado == false) {
 				int danyo = (int) ((Math.random() * 51) + 25);
 				atacado.pv -= danyo;
 				if (atacado.pv > 0) {
 					danyo = (int) ((Math.random() * 51) + 25);
 					this.pv -= danyo;
 					if (this.pv > 0) {
-						System.out.println("Ningun pokemon vencio el combate");
+						conbateTerminado = false;
 					} else {
+						vencedor=false;
 						System.out.println(this.nombre + " ha sido derrotado");
+						conbateTerminado = true;
 					}
 				} else {
+					vencedor=true;
 					System.out.println(atacado.nombre + " ha sido derrotado");
+					conbateTerminado = true;
 				}
 			}
-			
-		} while (bandera==false);
+		} while (conbateTerminado == false);
+		//TRUE SI GANA EL ATACANTE, FLASE SI EL ATACADO
+		return vencedor;
 	}
+
 }

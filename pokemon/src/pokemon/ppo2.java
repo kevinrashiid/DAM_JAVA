@@ -12,8 +12,19 @@ public class ppo2 {
 		Pokemon p3=new Pokemon(3,"charmander","fuego","Volador");
 		Pokemon p4=new Pokemon(4,"charmeleon","fuego","Volador");
 		Pokemon p5=new Pokemon(4,"charizar","fuego","dragon");
+		Pokemon p6=new Pokemon(5, "Metapod", "Agua");
+		Pokemon p7=new Pokemon(6, "Lucario", "Lucha","Siniestro");
 
+		
 
+		
+		System.out.println("~~~~FORMANDO EQUIPO DE 3 POKEMONS~~~~");
+		equipoPokemon equipo1=new equipoPokemon("ASH", p1, p2, p3);
+		equipoPokemon equipo2=new equipoPokemon("Kevin", p4, p5, p6);
+		equipo1.mostrarEquipo();
+		System.out.println("===============================");
+		
+		
 		Pokemon[] pokedex=new Pokemon[151];//array de pokemon
 //		pokedex[0]=gastly;//añadiendo un pokemon a
 		p1.infoPokemon();//mostrar informacion del pokemon
