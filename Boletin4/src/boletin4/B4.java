@@ -71,6 +71,7 @@ public class B4 {
 			}
 		}
 		*/
+		/*
 		Scanner teclado = new Scanner(System.in);
         System.out.print("Introduce un número límite --> ");
         int limite = teclado.nextInt();
@@ -87,7 +88,7 @@ public class B4 {
             num1 = nuevo;
         }
         System.out.println(texto);
-
+		 */
 		
 		// ================ejercicio 4=============================
 		//Escribir un programa que cuente el número de cifras que tiene un número (por
