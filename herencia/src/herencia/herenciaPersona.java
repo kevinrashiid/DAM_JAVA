@@ -4,6 +4,8 @@ public class herenciaPersona {
 	protected String nombre; // atributos
 	protected String apellido;
 
+//	abstract void funcionObligatorio(int x); //funcion clase abstracta
+	
 	public herenciaPersona(String nom, String ape) {
 		this.nombre=nom;
 		this.apellido=ape;
