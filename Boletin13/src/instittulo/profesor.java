@@ -3,7 +3,6 @@ package instittulo;
 public class profesor extends persona{
 	String grupo;
 	String departamento;
-
 	public profesor(String nom, String ape, String grupo, String depa) {
 		super(nom, ape);
 		this.grupo=grupo;
