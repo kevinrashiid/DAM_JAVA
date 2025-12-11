@@ -8,11 +8,15 @@ public class AjedrezAletorio {
 		int numeroTorres = 2;
 		int numeroCaballo=2;
 		int numeroReyna=1;
+		
+		
+		
 		colorarGuion(tablero, lado);
 		colorarTorre(tablero, numeroTorres, lado);
 		colocarCaballo(tablero, numeroTorres, lado);
 		colocarReyna(tablero, numeroReyna, lado);
 		mostrarTablero(tablero, lado);
+	
 		
 	}
 
@@ -27,11 +31,22 @@ public class AjedrezAletorio {
 	}
 
 	public static void mostrarTablero(String[][] tablero, int lado) {
+		//IMPRIMIR NUMEROS
+		int numero=9;
 		for (int e = 0; e < lado; e++) {// fila
+			System.out.print((numero-1)+" |");
+			numero--;
 			for (int r = 0; r < lado; r++) {// columna
 				System.out.print(tablero[e][r]);
 			}
 			System.out.println();
+		}
+		//IMPRIMIENDO LAS LETRAS
+		String[] coordenadasLetras= {" A "," B "," C "," D "," E "," F "," G "," H "};
+		System.out.print("   ");
+		for(int i=0;i<coordenadasLetras.length;i++) {
+			System.out.print(
+					coordenadasLetras[i]);
 		}
 	}
 
