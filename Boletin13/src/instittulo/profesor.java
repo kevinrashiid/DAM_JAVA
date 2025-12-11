@@ -11,17 +11,13 @@ public class profesor extends persona{
 	public String getGrupo() {
 		return grupo;
 	}
-
 	public void setGrupo(String grupo) {
 		this.grupo = grupo;
 	}
-
 	public String getDepartamento() {
 		return departamento;
 	}
-
 	public void setDepartamento(String departamento) {
 		this.departamento = departamento;
 	}
-
 }
