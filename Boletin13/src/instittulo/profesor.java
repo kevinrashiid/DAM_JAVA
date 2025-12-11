@@ -7,7 +7,6 @@ public class profesor extends persona{
 	public profesor(String nom, String ape, String grupo, String depa) {
 		super(nom, ape);
 		this.grupo=grupo;
-	
 	}
 	public String getGrupo() {
 		return grupo;
