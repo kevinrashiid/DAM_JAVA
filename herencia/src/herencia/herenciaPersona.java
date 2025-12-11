@@ -37,7 +37,6 @@ class Profesor extends herenciaPersona {//extends la clase profesor hereda de he
 	public String reutilizarCodigo() {
 		return "Señor Don" +super.getNombreCompleto();//reutilizando la funcion
 	}
-	
 }
 
 class Alumno extends herenciaPersona {
