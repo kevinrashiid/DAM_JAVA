@@ -13,6 +13,3 @@ public class Main {
 		modulo python=new modulo("Programacion python", 2025, 320, true);
 	}
 }
-
-
-
