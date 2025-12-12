@@ -1,16 +1,18 @@
 package instittulo;
 
 public class modulo {
-	String nombre;
-	int año;
-	int horasLectivasSemana;
-	boolean optativo;
+	private String nombre;
+	private int año;
+	private int horasLectivasSemana;
+	private boolean optativo;
+	//CONSTRUCTOR CREAR OBJETO Y VUELVE
 	public modulo(String nom,int año,int horas,boolean opta) {
 		this.nombre=nom;
 		this.año=año;
 		this.horasLectivasSemana=horas;
 		this.optativo=opta;
 	}
+	
 	public String getNombre() {
 		return nombre;
 	}

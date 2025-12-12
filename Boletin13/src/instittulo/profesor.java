@@ -1,11 +1,19 @@
 package instittulo;
 
 public class profesor extends persona{
-	String grupo;
-	String departamento;
-	public profesor(String nom, String ape, String grupo, String depa) {
+	private String grupo;
+	private String departamento=null;//poniendo como null para comparar mas rapidos
+	public profesor(String nom, String ape, String depa) {
 		super(nom, ape);
-		this.grupo=grupo;
+		if(!depa.equalsIgnoreCase("Informatica")&&
+				!depa.equalsIgnoreCase("Ingles")&&
+				!depa.equalsIgnoreCase("Empresa")) {
+			System.out.println("ERROR: Departamento");
+		}else {
+			this.departamento=depa.toUpperCase();
+		}
+		//this.grupo=grupo;
+		
 	}
 	public String getGrupo() {
 		return grupo;
@@ -19,4 +27,5 @@ public class profesor extends persona{
 	public void setDepartamento(String departamento) {
 		this.departamento = departamento;
 	}
+	
 }

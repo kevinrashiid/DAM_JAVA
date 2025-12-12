@@ -6,6 +6,8 @@ public class ciclo {
 	String tutor;
 	int numAlumnos;
 	String[] alumnosMatriculados;
+
+	//CONSTRUCTOR
 	public ciclo(String nombre,int año,String tutor,int numeroAlumnos) {
 		this.nombreCiclo=nombre;
 		this.año=año;

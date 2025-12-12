@@ -1,13 +1,17 @@
 package instittulo;
 
 public class alumno extends persona{
-	int edad;
+	private int edad;
 	String ciclo;
 	String grupo;
-	boolean mayorEdad;
-	public alumno(String nom, String ape, String grupo, String depa) {
+	private boolean mayorEdad;
+	public alumno(String nom, String ape,int edad) {
 		super(nom, ape);
-		this.grupo=grupo;
+//		this.grupo=grupo;
+		this.edad=edad;
+		if(edad>=18) {//MARCANDO SI ES MAYOR DE EDAD
+			this.mayorEdad=true;
+		}
 	}
 	public int getEdad() {
 		return edad;
@@ -33,5 +37,12 @@ public class alumno extends persona{
 	public void setMayorEdad(boolean mayorEdad) {
 		this.mayorEdad = mayorEdad;
 	}
+	
+	//FUNCION QUE AÑADE UN ALUMNO A UN GRUPO
+	public void añadirAlumno(String nombre, String apellido,String grupo) {
+		
+		
+	}
+	
 }
 
