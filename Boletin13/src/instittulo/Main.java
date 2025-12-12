@@ -11,6 +11,5 @@ public class Main {
 
 		modulo java=new modulo("Programacion", 2025, 320, false);
 		modulo python=new modulo("Programacion python", 2025, 320, true);
-
 	}
 }
