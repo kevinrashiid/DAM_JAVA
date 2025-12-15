@@ -18,7 +18,7 @@ public class ciclo {
 		if(m.getCurso()==1) {//si es de primero 
 			primero[this.numModuloPrimero]=m;
 			numModuloPrimero++;
-		}else {
+		}else {//si NO es de segundo
 			segundo[this.numModuloSegundo]=m;
 			numModuloSegundo++;
 		}
@@ -30,4 +30,17 @@ public class ciclo {
 	public void setNombreCiclo(String nombreCiclo) {
 		this.nombreCiclo = nombreCiclo;
 	}
+	
+	//TODO FUNCION PARA DEVOLVER LOS MODULOS
+	public modulo[] verModulo(int curso) {
+		modulo[] modulos;
+		if(curso==1) {
+			modulos=primero;
+		}else {
+			modulos=segundo;
+		}
+		return modulos;
+	}
+	
+	
 }

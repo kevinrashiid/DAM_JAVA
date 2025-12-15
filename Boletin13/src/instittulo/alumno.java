@@ -38,11 +38,7 @@ public class alumno extends persona{
 		this.mayorEdad = mayorEdad;
 	}
 	
-	//FUNCION QUE AÑADE UN ALUMNO A UN GRUPO
-	public void añadirAlumno(String nombre, String apellido,String grupo) {
-		
-		
-	}
+	
 	
 }
 

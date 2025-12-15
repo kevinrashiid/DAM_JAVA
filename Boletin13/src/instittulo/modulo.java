@@ -16,4 +16,7 @@ public class modulo {
 	public int getCurso() {
 		return this.año;
 	}
+	public String getNombre() {
+		return this.nombre;
+	}
 }
