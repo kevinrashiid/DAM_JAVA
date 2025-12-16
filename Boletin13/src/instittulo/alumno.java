@@ -13,6 +13,7 @@ public class alumno extends persona{
 			this.mayorEdad=true;
 		}
 	}
+	
 	public int getEdad() {
 		return edad;
 	}
