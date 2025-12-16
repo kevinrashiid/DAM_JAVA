@@ -8,7 +8,6 @@ public class conductor {
 	private int pCarnet;
 	private int añoNacimiento;
 	private int añoCarnet;
-	private int antiguedad;
 	
 	public conductor(String nif,int pCarnet, int añoNacimiento,int añoCarnet) {
 		this.nif=nif;
@@ -30,7 +29,7 @@ public class conductor {
 	
 	//ANTIGUEDAD DEL CONDUCTOR
 	public int antiguedad() {
-		this.antiguedad=0;
+		int antiguedad=0;
 		LocalDate hoy=LocalDate.now();		
 		DateTimeFormatter formato1= DateTimeFormatter.ofPattern("yyyy");
 		String fechaConFormato=hoy.format(formato1);
