@@ -14,14 +14,12 @@ public class protectora {
 			}
 		}
 		return animalesAdoptados;
-	}
-	
+	}	
 	//FUNCION QUE MUESTRE LOS ANIMALES ADOPTADOS
 	public void animalesAdoptados(animales[] adoptados) {
 		adoptados=animalesAdoptados;
 		for(int i=0;i<adoptados.length;i++) {
 			System.out.println(adoptados[i]);
 		}
-	}
-	
+	}	
 }
