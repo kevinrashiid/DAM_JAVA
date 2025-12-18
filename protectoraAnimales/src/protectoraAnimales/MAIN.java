@@ -13,9 +13,12 @@ public class MAIN {
 		
 		animales[] adoptados=new animales[1];
 		
-		kevin.adoptarAnimal(garfield,adoptados);
-		kevin.adoptarAnimal(zeus,adoptados);
+//		kevin.adoptarAnimal(zeus,adoptados);
 		
+		protectora huellitas=new protectora();
+		
+		huellitas.adoptarAnimal(garfield);
+		huellitas.animalesAdoptados(adoptados);
 		
 		
 	}
